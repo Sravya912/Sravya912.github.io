@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<style>
+.favourite-places-bg-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  background-image: url("https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=");
+  background-size: cover;
+  padding: 20px;
+}
+.favourite-place-card-heading {
+  color: #ff0000;
+  font-family: "Times New Roman";
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading1 {
+  color: #DAA520;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading2 {
+  color: #808000;
+  font-family: "Times New Roman";
+  font-size: 17px;
+  font-weight: normal;
+  text-align: start;
+}
+.favourite-place-card-container {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin: 15px;
+  /* Arrange elements horizontally */
+   /* Center vertically */
+}
+
+.favourite-place-card-image {
+  width: 150px;
+  height: 150px;
+  float: left;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.favourite-place-card-description {
+  padding: 10px;
+  margin: 10px;
+  color: #05070a;
+  font-family: "Times New Roman";
+  font-size: 16px;
+
+  /* Allow content to grow and take available space */
+  
+}
+
+.favourite-places-heading {
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 7px; /* Add margin at the bottom of the heading */
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="favourite-places-bg-container">
+    <div class="favourite-place-card-container">
+    <h1 class="favourite-place-card-heading">Ardhagiri Veeranjaneya Swamy Temple</h1>
+        <p class="favourite-place-card-description">
+     Ardhagiri is a hill where Hanuman temple is located.Sri Ardhagiri Veeranjaneya Swamy Temple has its origin attributed to one of the most important event at Ramayana. It’s the occasion at which Veeranjaneya Swamy carried the Sanjeevana Parvatha to the battle-place to save the life of Sri Lakshmana. This ancient temple is located on the luscious hills of the Aragonda village, Chitoor District. And it is at a 22 KM drive-away distance from the South India’s most famous Ganesha temple from Kanipakam.
+The name Ardhagiri came from a myth related to Tretayuga, when Lord Hanuman was transporting Sanjeevani Mountain (mountain that consists of herbs for life), half of the mounatain fell down at this place and hence, the name Ardhagiri. In the local language, it means Half Mountain (Ardhra=half, giri=mountain).</p>
+      <img
+        src="https://devotionalyatra.com/wp-content/uploads/2023/05/Ardhagiri-Anjaneya-Swamy-Temple.jpg"
+        style="width: 300px; height: 300px;  object-fit: fill;  border: 3px solid #f03a3a;  border-radius: 15%; margin: 20px; float: left; align-items: center; "
+      />
+        <h1 class="favourite-place-card-heading1">History Of Ardhagiri Veeranjaneya Swamy Temple</h1>
+        <p class="favourite-place-card-description">
+     The origin of this Sri Ardhagiri Veeranjaneya Swamy Temple is intricately connected to one of the most glorious Purana in Ramayana – the Lord Hanuman carries the Sanjeevani Parvatha to save his beloved swami’s brother – Lakshmana. It signifies the immense power and hefty devotion towards his Lord’s Rama. According to legends, while the Lord Veeranjaneya Swamy was carrying the Sanjeevani Parvatha, a part of the rock nearly broke-off and fell at the location of the temple. This place later came to be known by the name Aragonda. Today there exists a big tank, where the water has come into contact with the divine Sanjeevini Medicinal plant. Even after thousands of years, the water still holds the extraordinary power to cure almost all the diseases known to mankind. This water has proven its capacity to cure the extreme cases of acute diseases such as TB, asthma, cancer & joint pains. This water also has proven rejuvenating capacity against lethargy, fatigue and other physical discomfort.</p>       
+          <h1 class="favourite-place-card-heading1">Festivals celebrated in Ardhagiri Veeranjaneya Swamy Temple</h1>
+         <div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Full moon day(Pournami)</a>
+        <li><a href="#tabs-2">Hanuman Jayanti</a></li>
+        <li><a href="#tabs-3">Ugadi</a></li>
+        <li><a href="#tabs-4">Sri Rama Navami</a></li>
+        <li><a href="#tabs-5">Diwali</a></li>
+
+    </ul>
+    <div id="tabs-1">
+    <h2 class="favourite-place-card-heading2">Full moon day(Pournami)</h2>
+     <p  class="favourite-place-card-description">Pournami, also known as Purnima, is the full moon day, and it holds significance in Hindu lunar calendars. While specific customs and rituals on Pournami may vary, it's generally considered an auspicious day. At the Ardhagiri Anjaneya Swamy Temple, Pournami is celebrated as a significant religious occasion.On the day of Pournami, special pujas (prayer ceremonies) are performed at the temple. These pujas are dedicated to Lord Anjaneya (Hanuman) and are conducted with great devotion and precision. Devotees visit the temple in large numbers to participate in the Pournami celebrations. They come seeking blessings, peace, and spiritual fulfillment.During the Pournami festivities, priests chant Vedic mantras and perform rituals to invoke the blessings of Lord Anjaneya. This includes the recitation of sacred texts and hymns.Devotees offer flowers, garlands, incense, and prasadam (sacred food) to Lord Anjaneya as a sign of devotion and surrender.Oil lamps or diyas are lit in the temple premises and around the idol of Lord Anjaneya to create a sacred and luminous atmosphere.Pournami celebrations often involve the active participation of the local community, with volunteers assisting in various tasks related to the festival. Pournami is celebrated on a night when the moon is full and bright. The natural beauty of the moonlight adds to the divine ambiance of the temple.Pournami is associated with the removal of darkness and the spread of spiritual enlightenment. It is a time for self-reflection, prayers, and seeking blessings for personal growth and well-being.<br>
+The Pournami festival at the Ardhagiri Anjaneya Swamy Temple is a time when devotees come together to connect with the divine and experience a sense of peace and spiritual renewal. It's a celebration of faith, unity, and the profound significance of the full moon in Hindu tradition.</p>
+    </div>
+    <div id="tabs-2">
+        <h2 class="favourite-place-card-heading2">Hanuman Jayanti</h2>
+         <p  class="favourite-place-card-description">Hanuman Jayanti is one of the significant festivals celebrated at the Ardhagiri Anjaneya Swamy Temple in Andhra Pradesh. This festival is dedicated to Lord Hanuman, the monkey god known for his unwavering devotion to Lord Rama.On Hanuman Jayanti, devotees gather at the temple to offer their prayers and seek Lord Hanuman's blessings. Many devotees have a deep-rooted faith in Lord Hanuman and consider this day especially auspicious. The festival involves elaborate pujas (prayer ceremonies) and rituals conducted in honor of Lord Hanuman. Priests chant hymns, offer flowers, incense, and prasadam (sacred food), and perform aarti (ritual of offering light).The temple is adorned with colorful decorations, flowers, and rangoli (traditional art patterns) to create a festive and sacred atmosphere. Devotees sing devotional songs and bhajans (hymns) dedicated to Lord Hanuman, extolling his virtues and heroic deeds.In some regions, processions are organized with a statue or idol of Lord Hanuman. Devotees carry the idol on a chariot, and the procession may include traditional music and dance performances.The Hanuman Chalisa, a devotional hymn in praise of Lord Hanuman, is recited by devotees with great devotion. Prasadam, which is considered to be blessed by the deity, is distributed among the devotees. This can include sweets, fruits, or other offerings.Hanuman Jayanti witnesses a display of immense faith and devotion among the devotees. Many observe fasts and visit the temple to offer their prayers and seek Lord Hanuman's blessings for strength, courage, and protection.<br>
+Hanuman Jayanti is a special occasion for devotees to express their devotion and seek the blessings of Lord Hanuman at the Ardhagiri Anjaneya Swamy Temple, reinforcing their faith in the monkey god's divine qualities.
+ </p>
+    </div>
+    <div id="tabs-3">
+     <h2 class="favourite-place-card-heading2">Ugadi</h2>
+        <p  class="favourite-place-card-description">Ugadi, the Telugu New Year, is a joyous occasion celebrated with fervor at the Ardhagiri Anjaneya Swamy Temple. The temple is adorned with colorful decorations, and a sense of renewal fills the air.
+The day begins with special pujas and rituals dedicated to Lord Anjaneya. Devotees, dressed in traditional attire, gather to seek the blessings of the deity for a prosperous year ahead. The temple resonates with the chanting of holy hymns.
+One of the highlights of Ugadi celebrations is the Panchanga Sravanam, the reading of the new year's almanac, which foretells the year's prospects. People eagerly listen to the predictions for the year.
+Ugadi is also a time for cultural performances, including music and dance, showcasing the rich heritage of the region. The distribution of Ugadi Pachadi, a special dish symbolizing the diverse flavors of life, is a cherished tradition.
+Ugadi at the Ardhagiri Anjaneya Swamy Temple signifies the spirit of hope, new beginnings, and cultural vibrancy within the community.
+</p>
+    </div>
+<div id="tabs-4">
+     <h2 class="favourite-place-card-heading2">Sri Rama Navami</h2>
+       <p class="favourite-place-card-description">Sri Rama Navami is a significant celebration at the Ardhagiri Anjaneya Swamy Temple, honoring the birth of Lord Rama. The temple comes alive with vibrant decorations and devotees clad in traditional attire. The day begins with the performance of special pujas, invoking Lord Rama's blessings. The idol of Lord Anjaneya is adorned with fragrant flowers, and devotional hymns fill the air.
+
+As the day progresses, devotees engage in recitations from the epic Ramayana, narrating the life and deeds of Lord Rama. The atmosphere is steeped in devotion, with offerings of fruits, flowers, and sweets made to the deities.
+
+The evening culminates in a grand procession of Lord Anjaneya's idol through the temple premises, accompanied by chanting and bhajans. The festivities promote unity, spirituality, and the values epitomized by Lord Rama, such as dharma (righteousness) and compassion. It's a time for devotees to seek the divine grace and celebrate the ideals of Lord Rama.
+</p>
+</div>    
+    
+<div id="tabs-5">
+     <h2 class="favourite-place-card-heading2">Diwali</h2>
+        <p class="favourite-place-card-description">
+Diwali at the Ardhagiri Anjaneya Swamy Temple is a vibrant celebration marked by the illumination of countless lamps and candles. Devotees gather to worship Lord Anjaneya, fostering an eco-friendly and cracker-free environment in line with environmental consciousness. Spiritual songs and bhajans resonate, symbolizing the victory of good over evil. The festival encourages community unity, sharing sweets and gifts to express love. Prasadam, sacred food, is distributed as a blessing. Diwali serves as a time for inner reflection and spiritual growth, with controlled fireworks displays enhancing the festivities. It is a joyous celebration of light's triumph over darkness, fostering unity and faith..</p>
+</div>    
+    
+<div id="tabs-6">
+     <h2 class="favourite-place-card-heading2">Rakhi Pournami </h2>
+        <p class="favourite-place-card-description">This comes on Sravana Suddha Pournami. Vishesha Archana is performed on that day. A new sacred thread is worn by Lord Surya.</p>
+</div>          
+</div>
+     <h1 class="favourite-place-card-heading1">Location</h1>
+        <p class="favourite-place-card-description">
+     Sri Ardhagiri Veerajaneya Swamy Temple located in Aragonda (V), Thavanampalli (M), Chittoor(Dt), Andhara Pradesh .</p>
+    <h1 class="favourite-place-card-heading1">Gallery</h1>
+    <div class="container" style="width: 600px; height: 400px;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://devotionalyatra.com/wp-content/uploads/2023/05/Anjaneya-Swamy.jpg" style="width: 600px; height: 400px;  padding: 25px;">
+  </div>
+
+  <div class="mySlides" >
+    <div class="numbertext">2 / 6</div>
+    <img src="https://devotionalyatra.com/wp-content/uploads/2023/05/Architecture-of-Anjaneya-Swamy-Temple.jpg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://lh5.googleusercontent.com/p/AF1QipM5Z8SPWl3l2RwPuL8jF-d3ndF1WSyqPnzxWp5l=s296-w296-h168-n-k-no-v1" style="width: 600px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://mytempletrips.in/wp-content/uploads/2015/05/DSC_0409.jpg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROWcDFKo8jakcv8n06XqQiFOC34_g24KIWvw&usqp=CAU" style="width: 500px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn-oHRnIXcaN5ZucZu6RCJ4PokSONeOEh11Q&usqp=CAU" style="width: 500px; height: 400px;">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+      </div>
+    </div>
+  </div>
+  <div id="sectionTajMahalDetailedView"></div>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

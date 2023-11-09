@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<style>
+.favourite-places-bg-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  background-image: url("https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=");
+  background-size: cover;
+  padding: 20px;
+}
+.favourite-place-card-heading {
+  color: #ff0000;
+  font-family: "Times New Roman";
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading1 {
+  color: #DAA520;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading2 {
+  color: #808000;
+  font-family: "Times New Roman";
+  font-size: 17px;
+  font-weight: normal;
+  text-align: start;
+}
+.favourite-place-card-container {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin: 15px;
+  /* Arrange elements horizontally */
+   /* Center vertically */
+}
+
+.favourite-place-card-image {
+  width: 150px;
+  height: 150px;
+  float: left;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.favourite-place-card-description {
+  padding: 10px;
+  margin-left-right: 10px 10px;
+  color: #05070a;
+  font-family: "Times New Roman";
+  font-size: 16px;
+
+  /* Allow content to grow and take available space */
+  
+}
+
+.favourite-places-heading {
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 7px; /* Add margin at the bottom of the heading */
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="favourite-places-bg-container">
+    <div class="favourite-place-card-container">
+    <h1 class="favourite-place-card-heading">JaganMohini Keshava Swamy Temple</h1>
+        <p class="favourite-place-card-description">
+The Ryali temple is known as Lord JaganMohini Keshava Swamy temple. The temple’s art and architecture are very unique. But the most unique feature of this temple is the idol of the presiding deity which 5 feet tall and 3 feet wide and has been beautifully and gracefully carved out of a single black saligrama stone which portrays Keshava Swamy, on the front and the back side of the stone portrays JaganMohini, a lovely and attractive woman. This idol has been carved skillfully to evoke respect and adoration in the minds of the devotees. Lord Maha Vishnu who is shown here in the form of Keshava Swamy has four hands. He is shown holding "Shankha" (conch) and "Chakra" (disc) in two hands while the other two hands hold "Gadha" and "Manthara" mountain. Opposite this temple, is the temple of Lord Shiva in the form of Sri Umakamandaleswaraswami. Lord Brahma created a Lingam & performed abhishekam with water from his kamandalam & henceforth Lord Siva is being worshipped here as Sri Umakamandaleswaraswami. Along with Sri Maha Vishnu with his conch & discuss are carved the forms Sridevi, Boodevi, Saint Narada and his thumbura, Ramba, Oorvasi, Kinnara, Kimpurusha, Govardhana Krishna, Adi Shesha (the serpant), Garuda & Ganga devi. Water keeps sprouting from the underground at the idol's feet. This water wets the the flowers at the Lord's feet & the water from these flowers is sprinkled on devotees. There is also a separate shrine for Sri Sathya Narayana Swamy along with Sri Lakshmi Devi.</p>
+      <img
+        src="https://cdn.s3waas.gov.in/s36f3ef77ac0e3619e98159e9b6febf557/uploads/2017/06/2017101047-e1507636640849-150x150.jpg"
+        style="width: 300px; height: 300px;  object-fit: fill;  border: 3px solid #f03a3a;  border-radius: 15%; margin: 20px; float: left; align-items: center; "
+      />
+        <h1 class="favourite-place-card-heading1">History Of JaganMohini Keshava Swamy Temple</h1>
+        <p class="favourite-place-card-description">
+     According to the legend “Bhagavatam” while Devatas and Rakshas were quarrelling over sharing of holy Devine nectar “Sree Maha Vishnu” came to the rescue of Devatas in the guise of Mohini and convinced both the rivalry groups promising to distribute holy Devine nectar in equal share to Devatas and Rakshas. But in the interest of universal peace and welfare of sages, holy and Devine nectar was distributed among Devatas alone and the Mohini disappeared.
+
+Lord Siva having seen the most fascinating beauty of Mohini allured her. He chased her for getting for a while the presence of his consort Parvathi Devi it is the general belief that the holy incident was the result of birth of “AYYAPPA SWAMY”. One flower from the plait of Mohini fell down and it was smelt by Lord Siva. Then he surprisingly found “Sree Maha Vishnu” in the form of Mohini and felt shy for his behavior. The place where the flower from the plait of Mohini fell is named as RYALI the Telugu meaning of “Fall”.
+
+This place known as Ryali for the above reason became above of Lord Siva and Sree Mahavishnu with the form of Mohini on back side Lord Brahma consecrated the Siva Lingam with his Kamandalam and hence Lord Siva at Ryali is worshipped as Sri Uma Kamandalesara Swamy Varu, Sri Mahavishnu with the form of Mohini on backside is worshipped as Sri Jaganmohini Kesava Swamy varu both Siva and Vishnu Temples are located facing each other. This is very rare feature at Ryali where Vishnu and Lord Siva Temples faces each other in East, West direction.
+
+During 11th Century, this village was a part of wild Forest and these parts were under the rule of Chola Rajas. Sri Raja Vikrama Deva who ruling these parts during those days came to this place for hunting. Having been tired after hunting wild animals, he took rest under the shade of a big ponna tree, and fell in deep sleep and got a dream. Lord Sri Maha Vishnu appeared in his dream and informed that his shrine was located in the under ground of this area and directed the “Raja to get the wooden made chariot pull in the area and where the nail of chariot fell, the shrine can be found in the under ground of that place. Raja has done accordingly and the land where the nail of chariot fell was excaved and found the idol making the dream of Raja true. He constructed a small temple during 11th Century and arranged worship during his regime. Gradually prakarams were developed in the year 1936 (Data nama Samvatsara) it was renovated.The Shrine of Sri jaganmohini kesava Swamy varu is Salagrama Ekasila with 5 feet height and 3 feet width.
+
+Salgramasila is itself the form of Sri Maha Vishnu. The idol of Sree Kesava Swamy varu of “Sri Mahavishnu” in front side and Jagan Mohini on back side. The tem incarnations Lord Sree Maha Vishnu with consorts, Sri Devi, BhooDevi, Sage Narada, Thumbura, Rambha, Urvasi, Kinnera, Kimpurusha, Lord Krishna with Govardhanagiri, Adiseshu, Garuda and Ganga are beautifully, scluptured around the shrine. The most miracle and rare feature is that, Ganga always flows from the feet of Sri Maha Vishnu is the origin of Akasa Ganga and this truth can be witnessed here. The most wonderful architectural beauty of Shrine, and flow of Ganga from the feet of Swamy varu are really unique features and shrine became very sacred. The architectural beauty of idol can not be described in words. Further it gives impression as it is new idol though its origin is of 11th Century.This shrine is “SWAYAMBHU” people visiting the temple form several parts of the Country believe that the shrine is not of man made but certainly creation of Devatas and Darsan of Swamy varu gives the feeling of presence of real God.</p>       
+          <h1 class="favourite-place-card-heading1">Festivals celebrated in JaganMohini Keshava Swamy Temple</h1>
+         <div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Sri Jaganmohini Kesava Swamy Kalyanam</a></li>
+        <li><a href="#tabs-2">Sri Rama Satyanarayana Swamy kalyanam</a></li>
+        <li><a href="#tabs-3">Sri Venugopala Swamy kalyanam </a></li>
+        <li><a href="#tabs-4">Sravana Bahula Astami Sri Krishnastami </a></li>
+        <li><a href="#tabs-5">Karthiaka sudha Dwadasi </a></li>
+        <li><a href="#tabs-6">Devi Navaratrams</a></li>
+        <li><a href="#tabs-7">Mukkoti Ekadasi</a></li>
+        <li><a href="#tabs-8">Bheeshma Ekadasi</a></li>
+
+    </ul>
+    <div id="tabs-1">
+    <h2 class="favourite-place-card-heading2">Sri Jaganmohini Kesava Swamy Kalyanam</h2>
+     <p  class="favourite-place-card-description">The Sri Jaganmohini Kesava Swamy Kalyanam, conducted from Chaitra Suddha Navami to Pournami, typically falling in the months of March or April, is a sacred and joyous festival celebrated at the Ryali Sri Jaganmohini Kesava Swamy Temple in Andhra Pradesh.
+
+During this auspicious festival, the divine wedding of Lord Kesava Swamy and his divine consort, Jaganmohini, is celebrated with great devotion and enthusiasm. The temple is adorned with magnificent decorations, and the deities are dressed in resplendent bridal attire. Elaborate rituals and pujas are performed, showcasing the rich traditions and cultural heritage of the region.
+
+Devotees from near and far gather to witness and participate in the divine union of the Lord and the Goddess, seeking their blessings for happiness, prosperity, and marital harmony. The festival creates a spiritually charged atmosphere, resonating with the sounds of hymns and religious fervor.
+
+Sri Jaganmohini Kesava Swamy Kalyanam is not only a celebration of divine love but also a testament to the enduring faith and devotion of the devotees who come to Ryali to partake in this sacred event.
+</p>
+    </div>
+    <div id="tabs-2">
+        <h2 class="favourite-place-card-heading2">Sri Rama Satyanarayana Swamy kalyanam</h2>
+         <p  class="favourite-place-card-description">The Sri Rama Satyanarayana Swamy Kalyanam at Ryali's Sri Jaganmohini Kesava Swamy Temple is a sacred festival observed from Visakha Sudha Ekadasi to Pournami, typically in April or May. During this auspicious period, devotees celebrate the divine wedding of Lord Rama Satyanarayana Swamy with great devotion. The temple is adorned with vibrant decorations, and the deities are dressed in splendid bridal attire. Elaborate rituals, pujas, and sacred baths are conducted, creating a spiritually charged atmosphere. Devotees flock to the temple to witness this sacred union and seek blessings for prosperity and spiritual well-being. The festival showcases the enduring faith and devotion of devotees.
+ </p>
+    </div>
+    <div id="tabs-3">
+     <h2 class="favourite-place-card-heading2">Sri Venugopala Swamy kalyanam </h2>
+        <p  class="favourite-place-card-description">The Sri Venugopala Swamy Kalyanam is a divine celebration held at the Sri Jaganmohini Kesava Swamy Temple in Ryali from Jyesta Sudha Ekadasi to Pournami, typically occurring in June. During this sacred period, the celestial wedding of Lord Venugopala Swamy is commemorated with great devotion and grandeur. The temple is beautifully adorned, and the deities are adorned in resplendent bridal attire, mirroring the divine union. Elaborate rituals, pujas, and ceremonial baths are performed, creating a spiritually charged environment. Devotees throng to the temple to witness this holy matrimony and seek blessings for prosperity and spiritual fulfillment. The festival exemplifies unwavering faith and devotion to the Lord.</p>
+    </div>
+<div id="tabs-4">
+     <h2 class="favourite-place-card-heading2">Sravana Bahula Astami Sri Krishnastami </h2>
+       <p class="favourite-place-card-description">Sravana Bahula Astami, also known as Sri Krishnastami, is a vibrant festival celebrated at the Sri Jaganmohini Kesava Swamy Temple in Ryali every August. This joyous occasion marks the divine birth of Lord Krishna, an incarnation of Lord Vishnu. The temple radiates with fervor and devotion during this time. Elaborate decorations and floral arrangements adorn the temple premises. Devotees participate in special pujas, bhajans, and cultural programs to commemorate Lord Krishna's birth. A highlight of the festival is the cradle ceremony, where the idol of baby Krishna is placed in a beautifully decorated cradle and swung gently. Pilgrims and visitors come from far and wide to seek the blessings of Lord Krishna on this auspicious day.</p>
+</div>    
+    
+<div id="tabs-5">
+     <h2 class="favourite-place-card-heading2">Karthiaka sudha Dwadasi </h2>
+        <p class="favourite-place-card-description">
+Karthika Sudha Dwadasi, also known as Ksheerabdi Dwadasi, is celebrated with great enthusiasm at the Sri Jaganmohini Kesava Swamy Temple in Ryali every November. This significant event falls on the twelfth day of the bright fortnight in the month of Karthika. Devotees throng to the temple to observe this auspicious occasion. The highlight of the festival is the ceremonial bathing of the presiding deity, Lord Kesava Swamy, with gallons of milk, signifying purity and devotion. Elaborate rituals, prayers, and special pujas are performed throughout the day. Pilgrims participate with unwavering faith to seek the blessings of the Lord and experience the divine atmosphere that envelops the temple during this sacred festival..</p>
+</div>    
+    
+<div id="tabs-6">
+     <h2 class="favourite-place-card-heading2">Devi Navaratrams</h2>
+        <p class="favourite-place-card-description">Devi Navaratrams is an annual festival celebrated at the Sri Jaganmohini Kesava Swamy Temple in Ryali during the month of October. This nine-day-long event is dedicated to the worship of the Divine Mother, and it holds immense significance for devotees. Each day of the festival is marked by special pujas and rituals performed in honor of the Goddess. The temple premises come alive with colorful decorations and a vibrant spiritual atmosphere. Pilgrims from far and wide gather to participate in the festivities, seeking the blessings of the Goddess. It's a time of devotion, cultural performances, and community gatherings that fosters a sense of unity and religious fervor among the devotees.</p>
+</div>    
+    
+<div id="tabs-7">
+     <h2 class="favourite-place-card-heading2">Mukkoti Ekadasi.</h2>
+        <p class="favourite-place-card-description">Mukkoti Ekadasi is a significant religious festival celebrated at the Sri Jaganmohini Kesava Swamy Temple in Ryali. This auspicious occasion falls in the month of December or January. The main highlight of Mukkoti Ekadasi is the opening of the temple's three gates, also known as "Mukkoti." Devotees believe that passing through these gates and having darshan (sacred viewing) of the Deity on this day absolves them of their sins and helps them attain spiritual liberation.
+
+Pilgrims and visitors flock to the temple, creating a divine and joyous atmosphere. The festival emphasizes devotion, prayer, and seeking blessings for a prosperous and virtuous life. Mukkoti Ekadasi is a spiritually enriching experience for all who participate.<br />
+1st Day - Vratam<br>
+2nd Day - Utti Festival from 7 pm at the Holy Garden.<br />
+3rd Day up to 9th Day - The function will be celebrated from 6pm onwards<br />
+Prasadams will be distributed to the devotees</p>
+</div>
+    
+<div id="tabs-8">
+     <h2 class="favourite-place-card-heading2">Bheeshma Ekadasi</h2>
+        <p  class="favourite-place-card-description">Bheeshma Ekadasi is a sacred festival celebrated at the Sri Jaganmohini Kesava Swamy Temple in Ryali. This observance typically occurs in the month of January or February. It commemorates the renowned warrior Bheeshma's devotion to Lord Vishnu. On this day, devotees fast, engage in prayers, and visit the temple to seek blessings.
+
+One of the significant rituals during Bheeshma Ekadasi is the "Akshaya Patra" (inexhaustible vessel), believed to provide an unlimited supply of food for the temple Deity. Pilgrims gather to participate in these rituals and to witness the spectacular decorations and celebrations. The festival symbolizes devotion and serves as a reminder of the importance of unwavering faith in one's spiritual journey.</p>
+</div>        
+</div>
+     <h1 class="favourite-place-card-heading1">Location</h1>
+        <p class="favourite-place-card-description">
+   Ryali is located 40 Km from Rajahmundry, 74 Km from Kakinada and 34 Km from Amalapuram and it is situated between the rivers Vashista and Gautami, Tributaries of river Godavari, this is the site of the renowned Jagan Mohini Kesava Swamy temple.</p>
+    <h1 class="favourite-place-card-heading1">Gallery</h1>
+    <div class="container" style="width: 600px; height: 400px;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://lh5.googleusercontent.com/p/AF1QipOrkNy8j4rbS5K8Zv9tymJ2LmojW4wEK4R2sysh=s296-w296-h168-n-k-no-v1" style="width: 600px; height: 400px;  padding: 25px;">
+  </div>
+
+  <div class="mySlides" >
+    <div class="numbertext">2 / 6</div>
+    <img src="https://bookofachievers.com/images/snip_pics/T7PPNPBekSIh/images+3_1645773110682.jpg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7MqEx8NjrGNW4KWi6B2LDCz7BxdqxkE-2OrA8IvJODR33NHI9xnA3HSxVBA4008knt6E&usqp=CAU" style="width: 600px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAEKsq8IRIJLfyKSKGJWbBDzAjNOlzgJQ-qw&usqp=CAU" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzv8hd4Qoy7X4c8BLz93DKHGrb7_pd4BdpjA&usqp=CAU" style="width: 500px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://telugu.nativeplanet.com/img/2016/12/19-1482138140-419px-gopuram-of-ryali-temple-east-godavari-district-andhra-pradesh1.jpg" style="width: 500px; height: 400px;">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+      </div>
+    </div>
+  </div>
+  <div id="sectionTajMahalDetailedView"></div>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<style>
+.favourite-places-bg-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  background-image: url("https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=");
+  background-size: cover;
+  padding: 20px;
+}
+.favourite-place-card-heading {
+  color: #ff0000;
+  font-family: "Times New Roman";
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading1 {
+  color: #DAA520;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading2 {
+  color: #808000;
+  font-family: "Times New Roman";
+  font-size: 17px;
+  font-weight: normal;
+  text-align: start;
+}
+.favourite-place-card-container {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin: 15px;
+  /* Arrange elements horizontally */
+   /* Center vertically */
+}
+
+.favourite-place-card-image {
+  width: 150px;
+  height: 150px;
+  float: left;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.favourite-place-card-description {
+  padding: 10px;
+  margin-left-right: 10px 10px;
+  color: #05070a;
+  font-family: "Times New Roman";
+  font-size: 16px;
+
+  /* Allow content to grow and take available space */
+  
+}
+
+.favourite-places-heading {
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 7px; /* Add margin at the bottom of the heading */
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="favourite-places-bg-container">
+    <div class="favourite-place-card-container">
+    <h1 class="favourite-place-card-heading">Sri Raghavendra Swamy Mutt Temple</h1>
+        <p class="favourite-place-card-description">
+       Sri Raghavendra Teertharu is a saint & preacher of Dvaita Philosophy. He was the pontiff of the Madhva Matha which was then 
+     known as Vibhudendra Matha for close to 50 years. There are innumerable miracles associated with him and he is known to have
+     blessed people from all walks of life - irrespective of their caste, sect and creed. Mantralayam is the chosen divine place by
+     Rayaru to bless his devotees. The Brindavana at Mantralayam is a beacon for all those seeking both worldly and other-worldly
+     blessings.</p>
+      <img
+        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/f9/54/a8/img-20181007-114027-largejpg.jpg?w=1100&h=-1&s=1"
+        class="favourite-place-card-image"
+        style="width: 300px; height: 300px;  object-fit: fill;  border: 3px solid #f03a3a;  border-radius: 15%; margin: 20px; float: left; align-items: center; "
+      />
+        <h1 class="favourite-place-card-heading1">History Of Raghavendra Swamy Temple</h1>
+        <p class="favourite-place-card-description">
+     The mutt was originated from Jadadguru Sri Madhwacharya himself and later the mutt was periodically named after the respective 
+     pontiffs. At the time of pontification of the great Sri Raghavendra teertha (also known as Sri Raghavendra Swamy) the mutt became
+     popularly known as Sri Raghavendra Swamy mutt.<br>The Raghavendra Math is considered to be one of the main institutes established by
+     Sri Madhwacharya. <br>So, earlier the matha was known as Kumbhakonam Matha or Dakshinadi Math and later the matha was made popular as 
+     Sri Vijayendra Mutt after Vijayendra Tirtha by Sudhindra Tirtha, a disciple and successor to the pontificate of Kumbakonam Matha. 
+     After Sudhindra Tirtha his disciple, the most venerated dvaita saint Raghavendra Tirtha continued in the pontifical lineage as the
+     pontiff of the matha.</p>       
+          <h1 class="favourite-place-card-heading1">Festivals celebrated in Raghavendra Swamy Temple</h1>
+         <div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Raghavendra Swamy Aradhana</a></li>
+        <li><a href="#tabs-2">Vyasa Puja</a></li>
+        <li><a href="#tabs-3">Vadiraja Aradhane</a></li>
+        <li><a href="#tabs-4">Sri Rama Navami</a></li>
+        <li><a href="#tabs-5">Dasara</a></li>
+        <li><a href="#tabs-6">Karthika Masa</a></li>
+        <li><a href="#tabs-7">Deepavali</a></li>
+       
+
+    </ul>
+    <div id="tabs-1">
+    <h2 class="favourite-place-card-heading2">Raghavendra Swamy Aradhana</h2>
+     <p  class="favourite-place-card-description">Raghavendra Swamy Aradhana is the most revered and celebrated festival at the Sri Raghavendra Swamy Mutt Temple in Mantralayam, Andhra Pradesh. This annual festival, observed on the Aradhana day of Sri Raghavendra Swamy, typically in August, holds immense significance for devotees. It commemorates the saint's life and teachings, attracting pilgrims from all over India.
+
+The festivities are marked by special pujas, religious discourses, and cultural programs. Devotees participate in a series of rituals, including the Abhishekam (ritual bath) of the saint's idol and the offering of the "Maha Naivedyam," a grand feast.
+
+The temple's serene location on the banks of the Tungabhadra River enhances the spiritual experience. Thousands gather to pay their respects, seek blessings, and witness the temple's grandeur during this time. Raghavendra Swamy Aradhana is a remarkable event that reinforces the spiritual and cultural significance of Sri Raghavendra Swamy Mutt Temple, where faith and devotion merge with the picturesque backdrop of the Tungabhadra River.</p>
+    </div>
+    <div id="tabs-2">
+        <h2 class="favourite-place-card-heading2">Vyasa Puja</h2>
+         <p  class="favourite-place-card-description">Vyasa Puja is an important festival celebrated at the Sri Raghavendra Swamy Mutt Temple in Mantralayam, Andhra Pradesh, situated on the serene banks of the Tungabhadra River. The festival marks the birthday of Sage Vyasa, a revered figure who authored numerous sacred texts in Hinduism. Devotees gather to pay homage to his contributions to religious and philosophical literature. Special pujas and rituals are conducted to honor Sage Vyasa, and it's a time for spiritual reflection and knowledge sharing. The temple's location along the riverside provides an ideal setting for devotees to connect with their spiritual roots and seek blessings on this significant occasion. Vyasa Puja reinforces the temple's commitment to the dissemination of knowledge and spiritual wisdom.
+ </p>
+    </div>
+    <div id="tabs-3">
+     <h2 class="favourite-place-card-heading2">Vadiraja Aradhane</h2>
+        <p  class="favourite-place-card-description">The Vadiraja Aradhane festival is celebrated at the Sri Raghavendra Swamy Mutt Temple in Mantralayam, Andhra Pradesh, situated along the picturesque Tungabhadra River. This festival pays tribute to the esteemed saint Vadiraja Swamiji and his contributions to the Madhwa tradition of Hinduism. Devotees gather to honor his memory through special pujas, rituals, and religious activities.
+<br>
+During this festival, the temple becomes a hub of spiritual devotion and reverence. It serves as a platform for devotees to connect with the teachings and legacy of Vadiraja Swamiji while enjoying the serene and spiritual atmosphere provided by its scenic riverside location. Vadiraja Aradhane is a time of deep spiritual reflection and community celebration at the temple.</p>
+    </div>
+<div id="tabs-4">
+     <h2 class="favourite-place-card-heading2">Sri Rama Navami</h2>
+       <p class="favourite-place-card-description">Sri Rama Navami and Vyasa Puja are two important festivals celebrated at the Sri Raghavendra Swamy Mutt Temple in Mantralayam, Andhra Pradesh, nestled along the tranquil Tungabhadra River. Sri Rama Navami honors the birth of Lord Rama, celebrated with devotional fervor and pujas. Vyasa Puja, on the other hand, marks the birthday of Sage Vyasa, a profound figure in Hinduism who authored sacred texts.
+
+These festivals bring together devotees in a spiritual and scenic setting, fostering religious observance and knowledge-sharing. The temple's riverside location enhances the spiritual experience, making these occasions of deep reverence and celebration, strengthening the temple's role in preserving religious traditions and disseminating spiritual wisdom.</p>
+</div>    
+    
+<div id="tabs-5">
+     <h2 class="favourite-place-card-heading2">Dasara</h2>
+        <p class="favourite-place-card-description">Dasara, the Navaratri festival, is celebrated with great enthusiasm at the Sri Raghavendra Swamy Mutt Temple in Mantralayam, Andhra Pradesh, set against the serene backdrop of the Tungabhadra River. This nine-day festival is dedicated to Goddess Durga and includes elaborate pujas, cultural programs, and religious discourses. Devotees come together to seek the blessings of the divine feminine and celebrate the victory of good over evil. The temple's riverside location enhances the spiritual ambiance, providing a beautiful setting for the festivities. Dasara strengthens the sense of community, devotion, and cultural significance at the temple, making it a notable celebration in Mantralayam.</p>
+</div>    
+    
+<div id="tabs-6">
+     <h2 class="favourite-place-card-heading2">Karthika Masa </h2>
+        <p class="favourite-place-card-description">Karthika Masa is a month-long festival celebrated at the Sri Raghavendra Swamy Mutt Temple in Mantralayam, Andhra Pradesh, beautifully situated along the tranquil Tungabhadra River. Observed in November or December, this festival is dedicated to Lord Shiva and includes special pujas and spiritual activities. Devotees flock to the temple to undertake rituals, light lamps, and seek divine blessings. The temple's riverside location adds to the serene and sacred atmosphere, making it an ideal place for devotion and spiritual growth. Karthika Masa strengthens the temple's role as a center of religious observance and underscores the importance of Lord Shiva in the region's spiritual landscape.</p>
+</div>    
+    
+<div id="tabs-7">
+     <h2 class="favourite-place-card-heading2">Deepavali</h2>
+        <p class="favourite-place-card-description">
+Deepavali, the festival of lights, is celebrated at the Sri Raghavendra Swamy Mutt Temple in Mantralayam, Andhra Pradesh, set beside the serene Tungabhadra River. Devotees light lamps and offer prayers to signify the triumph of light over darkness and good over evil. The temple's riverside location enhances the ambiance, creating a visually spectacular and spiritually uplifting celebration. Deepavali is a time for festive gatherings, cultural programs, and the exchange of well-wishes, reinforcing the temple's significance in fostering a sense of community and spirituality among devotees.</p>
+</div>
+    
+</div>
+     <h1 class="favourite-place-card-heading1">Location</h1>
+        <p class="favourite-place-card-description">
+       Sri Raghavendra Matha ( the moola vrindavana place of Sri Raghavendra teertha) is located on the bank of Tungabhadra River in 
+     Mantralayam in Adoni taluk of Kurnool district in Andhra Pradesh, India.</p>
+    <h1 class="favourite-place-card-heading1">Gallery</h1>
+    <div class="container" style="width: 600px; height: 400px;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://pbs.twimg.com/media/FSuzWAyaIAE56si.jpg:large" style="width: 600px; height: 400px;  padding: 25px;">
+  </div>
+
+  <div class="mySlides" >
+    <div class="numbertext">2 / 6</div>
+    <img src="https://content3.jdmagicbox.com/comp/bangalore/61/080p4100361/catalogue/sri-raghavendra-swamy-mutt-rajajinagar-2nd-block-bangalore-temples-t4h8qk6kr6.jpg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVBv5xXhzL_Rnm6ieVzrsoc9Ne17wayQNkgg&usqp=CAU" style="width: 600px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://srsmatha.org/srsnews/news/20230905/20230905_Sarvasamarpanotsava-Lastdayof352ndAradhanaMahotsava-04.09.2023/ROY_5625.JPG" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://lh3.googleusercontent.com/p/AF1QipPLw8JgfDy5pdnQsjXGa5jhr2MLtYqzP66bPwoX=w768-h768-n-o-v1" style="width: 500px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://srsmatha.org/srsnews/news/20230905/20230905_Sarvasamarpanotsava-Lastdayof352ndAradhanaMahotsava-04.09.2023/ROY_5625.JPG" style="width: 500px; height: 400px;">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+      </div>
+    </div>
+  </div>
+  <div id="sectionTajMahalDetailedView"></div>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

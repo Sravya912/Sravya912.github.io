@@ -1,0 +1,41 @@
+body{
+    background-image: url('Hampi.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+header{
+    background-color: #8F2100; 
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+.header-title {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Georgia", Times, serif;
+    color: gold; 
+}
+.nav-links{
+    margin-left: 45%;
+}
+.nav-links li{
+    display: inline;
+    margin-right: 15px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: gold;
+    font-weight: bold;
+    font-family: "Georgia", Times, serif;
+}
+#active {
+    font-size: 28px;
+    font-weight: bold;
+}
+.logo {
+    width: 70px; 
+    height: auto;
+    margin-right: 5px;
+}

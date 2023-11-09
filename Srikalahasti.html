@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<style>
+.favourite-places-bg-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  background-image: url("https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=");
+  background-size: cover;
+  padding: 20px;
+}
+.favourite-place-card-heading {
+  color: #ff0000;
+  font-family: "Times New Roman";
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading1 {
+  color: #DAA520;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading2 {
+  color: #808000;
+  font-family: "Times New Roman";
+  font-size: 17px;
+  font-weight: normal;
+  text-align: start;
+}
+.favourite-place-card-container {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin: 15px;
+  /* Arrange elements horizontally */
+   /* Center vertically */
+}
+
+.favourite-place-card-image {
+  width: 150px;
+  height: 150px;
+  float: left;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.favourite-place-card-description {
+  padding: 10px;
+  margin: 10px;
+  color: #05070a;
+  font-family: "Times New Roman";
+  font-size: 16px;
+
+  /* Allow content to grow and take available space */
+  
+}
+
+.favourite-places-heading {
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 7px; /* Add margin at the bottom of the heading */
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="favourite-places-bg-container">
+    <div class="favourite-place-card-container">
+    <h1 class="favourite-place-card-heading">Srikalahasti Temple</h1>
+         <p class="favourite-place-card-description">
+    The Srikalahasti Temple is dedicated to Lord Shiva, who is a God with immense religious significance for Hindus. It was constructed in the year 1516 by Krishnadevraya – the king of the Vijayanagara empire. The temple has an elaborate structure that takes one’s breath away with its breathtaking design right from the entrance. The temple has intricate carvings of numerous mythological stories that can be explored in the divine environment. The temple is often referred to as the Kailasa and Kashi of the south. It is advisable to book hotels in Kalahasti near the temple to enjoy a memorable time with friends and family.<br>
+The temple is constructed in such a way that it represents one of the five elements – Air or Vaayu. There is an abundance of divine and vibrant energy in the air over there. The temple manages to attract visitors from all over the world with its mesmerizing architecture and beauty. South India has many temples famous for their architecture, but the Srikalahasti Temple stands out from all. The architecture of this temple is to be noted as the temple has highly ornamented gopurams with intricately carved interiors. This temple is like a treasure trove for people who love studying and exploring South Indian temple architecture.<br>
+The Srikalahasti Temple is considered as one of the Pancha Bhoota Stalam, where the presiding deity is worshipped as Air or Vaayu Lingam. This temple is considered as the Kashi and Kailasa of the South. The temple is mentioned numerous times in the songs sung by Saivite saints of the first century. All the other temples close down during the Solar and the Lunar eclipse, except for the Srikalahasti temple which is the only temple to remain open on those days in India. Rahu-Kethu pooja is a significant pooja done here and Srikalahasti Temple is famous for the same. People believe that if one performs this pooja, it will protect the people from the astrological effects of Rahu and Kethu.</p>
+      <img
+        src="https://www.oyorooms.com/travel-guide/wp-content/uploads/2020/01/srikalahasti-templeandhra-pradesh-india-3.jpg"
+        style="width: 300px; height: 300px;  object-fit: fill;  border: 3px solid #f03a3a;  border-radius: 15%; margin: 20px; float: left; align-items: center; "
+      />
+        <h1 class="favourite-place-card-heading1">History Of Srikalahasti Temple</h1>
+        <p class="favourite-place-card-description">Sri Kalahasti is named after the staunch devotees of Lord Siva. They were Spider (Sri), The Serpent ( Kala) and the Elephant ( Hasti). Appeased with their unflinching devotion, Lord Siva gave them a boon that their names be merged with the Vayu Linga and Called as Sri Kalahasteeswara.<br>
+Hasti used to clean Shiva Linga by carrying river water with its trunk and placing Bilva Leaves on top of Shiva Linga.
+The Spider ( Sri) protects deity from external damage by weaving his web to provide shelter for the Shiva Lingam.
+The Snake (Kala) Used to place its precious gem on The Linga to adorn the Lord. In this way, they all worshipped The Vayu Linga separately without knowing what the other was doing.
+One day, the Spider had built a very big and thick web around the deity to protect it from dust and weather while Snake places its gem. The Elephant not knowing this and assuming that this form of Puja by Sri and Kala is a desecration by the Seeming miscreants pours water on it and cleans it up. This causes a war between the three. The Snake punishes the elephant by entering its trunk and in the process kills itself, while the elephant runs amok and hit its trunk and head against the Shiva Linga. During this Struggle, the spider is squashed against the Linga by the Elephant’s trunk and the elephant dies due to the Snake’s poison.
+Lord Shiva then appeared and gave Moksha to all of three of them for their selfless devotion. The Spider takes rebirth as great king while Elephant and The Snake reaches heaven for satisfying all its karma.
+The King continues his good work from his previous birth and builds a variety of temples that seeks to protect the underlying deity with tons of stones. It is interesting to note that all his temples, keep the deity beyond the access of an elephant.
+In Sri Kalahasti Temple, access to the deity is through a narrow passage in the side of the building that prevents an Elephant from extending its trunk over the Lord from any Side.
+This Temple is popularly known as Dakshina Kailasam.<br>
+        <strong>Architecture of Srikalahasti Temple: </strong>The main entrance of the Srikalahasti Temple faces the south and the main shrine faces the west direction. The Shiva Lingam inside the shrine is made up of white stone and is in the shape of an elephant’s trunk. The principle gopuram of the temple is approximately one hundred and twenty feet high. The temple complex has a mandap inside which has about a hundred intricately carved pillars that were built during Krishnadevraya’s reign, a Vijaynagara King in 1516. There is a nine feet tall rock-cut shrine dedicated to Lord Ganesha. The temple also houses shrines for Jnana Prasanna Mamba, Kasi Viswanatha, Suryanarayan, Subramanya, Annapurna, and Sad Ganapathi. They all are adorned with images of Ganapati, Mahalakshmi Ganapathi, Vallabha Ganapati, and Sahasra Lingeshwara. The temple complex also has two additional mandaps – The Sadyogi Mandap and the Jalkoti Mandap. It also has two water bodies – Chandra Pushkarani and Surya Pushkarani.</p>       
+          <h1 class="favourite-place-card-heading1">Festivals celebrated in Srikalahasti Temple</h1>
+         <div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Maha Shivaratri</a></li>
+        <li><a href="#tabs-2">Vinayaka Chaturthi</a></li>
+        <li><a href="#tabs-3">Arudra Darshanam</a></li>
+        <li><a href="#tabs-4">Panguni Uttaram</a></li>
+        <li><a href="#tabs-5">Karthika Masam</a></li>
+        <li><a href="#tabs-6">Pradosham</a></li>
+    </ul>
+    <div id="tabs-1">
+    <h2 class="favourite-place-card-heading2">Maha Shivaratri</h2>
+     <p  class="favourite-place-card-description">The festival of Maha Shivaratri is celebrated all over the country, and in different places and ways in different states. In the state of Andhra Pradesh, the Maha Shivaratri is celebrated at mainly Kalahasti, in Sri Kalahasteshwara Temple. It is also celebrated at Srisailam in the temple of Bharamarambha Malikarjunaswamy Temple. The Maha Shivaratri means ‘Night of the Shiva’ and it is believed to be the day when Lord Shiva married Parvati. 
+The Maha Shivaratri festival is celebrated in Andhra Pradesh when pilgrims go all the way to Kalahasti and Srisailam to visit the temples there. There is a strict fast observed throughout the day. Throughout the night, the Shiva Lingam is worshipped by washing it every three hours with milk, curd, honey, rose water etc with the holy chant of ‘Om Namah Shivaya’ chanted at the background with devotion and concentration. 
+<strong>Time for celebrating Maha Shivratri Festival: </strong>
+The Maha Shivaratri is celebrated on the 13th or the 14th day of the dark half of Phalgun, that falls during the months of February or March.</p>
+    </div>
+    <div id="tabs-2">
+        <h2 class="favourite-place-card-heading2">Vinayaka Chaturthi</h2>
+         <p  class="favourite-place-card-description">Vinayaka Chaturthi, also known as Ganesh Chaturthi, is a significant Hindu festival celebrated at the Srikalahasti Temple in Andhra Pradesh. This festival is dedicated to Lord Ganesha, the elephant-headed god of wisdom and beginnings.<br>
+The festival begins with the installation of Lord Ganesha's idol in the temple. Devotees often participate in the installation ceremony, seeking the deity's blessings for the occasion.The day is marked by special pujas and rituals dedicated to Lord Ganesha. These pujas typically include the offering of various fruits, sweets, and flowers to the deity.Devotees participate in processions carrying idols or images of Lord Ganesha, parading through the temple premises. These processions are often accompanied by music, dance, and devotional songs. Modak, a sweet delicacy believed to be Lord Ganesha's favorite, is offered to the deity. Devotees offer modaks as a symbol of their devotion and seek his blessings.At the conclusion of the festival, the idol of Lord Ganesha is taken in a colorful procession for immersion in a water body. This symbolizes the departure of Lord Ganesha while seeking his return the following year.
+As an act of service and charity, Annadanam, the offering of free meals to devotees, is organized during the festival.<br>
+Vinayaka Chaturthi is a time of great joy and devotion at the Srikalahasti Temple. Devotees come to seek the blessings of Lord Ganesha, who is revered as the remover of obstacles and the god of new beginnings. The festival not only celebrates the birth of Lord Ganesha but also serves as an occasion for people to come together in a spirit of celebration, unity, and reverence for the beloved elephant-headed god.</p>
+    </div>
+    <div id="tabs-3">
+     <h2 class="favourite-place-card-heading2">Arudra Darshanam</h2>
+        <p  class="favourite-place-card-description">Arudra is the name of a star. There are 27 stars that are used by the Hindu calendar. Arudra is one of the stars. Arudra means a Golden Red flame.<br>
+Ardra Nakshatram, also known as Arudara or Thiruvathirai in South India, is the sixth Nakshatra among the 27 Nakshatras. The astrological prediction of Ardra Nakshatra as per Moon Sign is that of Mithuna Raasi or Gemini Zodiac. Mercury or Budha is the Lord of the birth star.
+Arudra Darisanam , Thiruvadhirai is a very important Tmail festival dedicated to Lord Shiva and considered to be his birth day also as the star Arudra falls on this day and coincides  with Pournami.<br>
+Arudra Darshan is a significant and spiritually significant festival celebrated at the Srikalahasti Temple in Andhra Pradesh. This festival is dedicated to Lord Nataraja, a form of Lord Shiva, and is observed with great devotion and enthusiasm.The festival begins with a grand procession of the temple deity in the form of Lord Nataraja. The idol of Lord Nataraja is adorned with traditional attire and jewelry, and it is placed on a beautifully decorated chariot.
+ A major highlight of Arudra Darshan is the special abhishekam (ritual bath) of the Shiva Lingam and the idol of Lord Nataraja. The deities are bathed with various sacred substances, including milk, honey, ghee, and sandalwood paste. Devotees actively participate in this ritual by offering these sacred substances to the deities.
+Special pujas and homams (fire rituals) are conducted in honor of Lord Nataraja. Devotees can participate in these rituals, seeking the deity's blessings and participating in the traditional ceremonies.
+The recitation of the Rudram, a sacred Vedic chant dedicated to Lord Shiva, is an integral part of the festival. Devotees participate in the chanting, which is believed to invoke Lord Shiva's blessings and grace.
+Arudra Darshan at the Srikalahasti Temple is a time of deep spiritual significance and devotion. The festival is a celebration of Lord Nataraja's cosmic dance, symbolizing the creation and destruction of the universe. It is an occasion for devotees to seek the blessings of Lord Shiva in his divine form as the cosmic dancer and to immerse themselves in the rich cultural and religious traditions of the temple. </p>
+    </div>
+<div id="tabs-4">
+     <h2 class="favourite-place-card-heading2">Panguni Uttaram</h2>
+       <p class="favourite-place-card-description">Panguni Uthiram has a great religious and spiritual significance among Hindus Tamil people. It is believed that moon transit in Uthiram Nakshatra in the month of Chaitra on full moon day. Many celestial marriage took place on this auspicous day. This day is also celebrated as Gauri Kalyanam day as Lord Shiva married Goddess Parvati in the form of Goddess Gauri on this auspicious day in Kanchipuram. This day signifies the importance of marriage. Goddess Laxmi appeared on earth from churning the ocean.<br>This day is also known as Kalyan Vrat and as per scriptures it is believed that people, who observe fast on this day, get good and desired life partner. Lord Shiva and Goddess Parvati is worshiped on this day. People offer prayers to Lord Murugan also and seek his blessings for happy life. A special sweet dish named 'Payasam' is made to offer as a bhog prasad.This festival is mainly followed in the southern states of India like Kerala, Karnataka, and Andhra Pradesh. On the day of Panguni Uthiram, devotees visit Lord Murugan temple. In most of these temples, on this day, the divine marriage of the God and Goddess is conducted and some special rituals are performed by the Priests</p>
+</div>    
+    
+<div id="tabs-5">
+     <h2 class="favourite-place-card-heading2">Karthika Masam</h2>
+        <p class="favourite-place-card-description">Karthika Masam is a highly auspicious and significant month in the Hindu lunar calendar, and it is celebrated with great devotion and enthusiasm at the Srikalahasti Temple in Andhra Pradesh. This month is dedicated to Lord Shiva, and special rituals and ceremonies are performed during this time.<br>The entire month of Karthika is marked by daily abhishekam (ritual bath) of the Shiva Lingam, the symbolic representation of Lord Shiva. Devotees actively participate in these abhishekam ceremonies, seeking the blessings of Lord Shiva. Devotees light lamps (deepams) in the temple premises, creating a divine and serene atmosphere. Lighting lamps during Karthika is considered highly auspicious and is believed to dispel darkness and ignorance. Pradosham is a significant fortnightly event dedicated to Lord Shiva. Devotees gather at the temple to participate in the evening rituals and seek the blessings of Lord Shiva.The recitation of the Rudram, a sacred Vedic chant dedicated to Lord Shiva, is an integral part of the Karthika Masam celebrations. Devotees participate in the chanting, which is believed to invoke Lord Shiva's blessings and grace.Cultural events, including music and dance performances, are often organized during Karthika Masam to entertain and spiritually uplift the devotees.<br>
+Karthika Masam is a time of great spiritual significance at the Srikalahasti Temple. Devotees come to seek the blessings of Lord Shiva and immerse themselves in the rich religious and cultural traditions of the temple. The lighting of lamps, the daily abhishekam, and the recitation of sacred chants create a serene and devotional atmosphere, making Karthika Masam a deeply spiritual and blissful period for devotees.</p>
+</div>    
+    
+<div id="tabs-6">
+     <h2 class="favourite-place-card-heading2">Pradosham </h2>
+        <p class="favourite-place-card-description">This festival is dedicated to Lord Shiva and Goddess Parvati. During this time, the devotees keep fast and offer their prayers to the deities and seek their blessings. This festival is also known as Pradosham in the southern parts of the country. When Pradosham falls on a monday, it is referred to as Soma Pradosham – for Tuesday, it is called Bhauma Pradosham, for Wednesday it is referred to as Budh Pradosham, while Pradosham on a Saturday is called Shani Pradosham.It is believed that worshipping Lord Shiva and Goddess Parvati with dedication and devotion on this auspicious day can take the devotees closer to their wishes. Worshipping the deities on Budh Pradosh Vrat brings good luck, prosperity and happiness. Some devotees also worship Lord shiva in the form of Lord Nataraj.</p>
+</div>         
+</div>
+     <h1 class="favourite-place-card-heading1">Location</h1>
+        <p class="favourite-place-card-description">
+     The Srikalahasti Temple is located in the town of Srikalahasti, in Tirupati district in the state of Andhra Pradesh, India.</p>
+    <h1 class="favourite-place-card-heading1">Gallery</h1>
+    <div class="container" style="width: 600px; height: 400px;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://www.oyorooms.com/travel-guide/wp-content/uploads/2020/01/srikalahasti-templeandhra-pradesh-india.jpg" style="width: 600px; height: 400px;  padding: 25px;">
+  </div>
+
+  <div class="mySlides" >
+    <div class="numbertext">2 / 6</div>
+    <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/08/Ganesh-Chaturthi-Festival-Feature.jpg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://i2.wp.com/hindupad.com/wp-content/uploads/2012/12/Shiva-Tandavam-Arudra-Darshan.jpg?fit=640%2C421" style="width: 600px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThN0wCkECTgOfVPFyqssFohXx7hI-WVa1LUA&usqp=CAU" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://3.bp.blogspot.com/-qvkxAa8oqK8/WABwlCa2wwI/AAAAAAAAAOI/_z98c88zE3Ar0X7XMTcOpY50oS1fWX0kACLcB/s1600/hindu-temples-guide-sri-kal.jpg" style="width: 500px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://atmanirvana.com/wp-content/uploads/2020/10/16473467_656237414549136_5790263729260040702_n.jpg" style="width: 500px; height: 400px;">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+      </div>
+    </div>
+  </div>
+  <div id="sectionTajMahalDetailedView"></div>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

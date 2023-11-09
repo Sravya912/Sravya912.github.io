@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<style>
+.favourite-places-bg-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  background-image: url("https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=");
+  background-size: cover;
+  padding: 20px;
+}
+.favourite-place-card-heading {
+  color: #ff0000;
+  font-family: "Times New Roman";
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading1 {
+  color: #DAA520;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading2 {
+  color: #808000;
+  font-family: "Times New Roman";
+  font-size: 17px;
+  font-weight: normal;
+  text-align: start;
+}
+.favourite-place-card-container {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin: 15px;
+  /* Arrange elements horizontally */
+   /* Center vertically */
+}
+
+.favourite-place-card-image {
+  width: 150px;
+  height: 150px;
+  float: left;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.favourite-place-card-description {
+  padding: 10px;
+  margin-left-right: 10px 10px;
+  color: #05070a;
+  font-family: "Times New Roman";
+  font-size: 16px;
+
+  /* Allow content to grow and take available space */
+  
+}
+
+.favourite-places-heading {
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 7px; /* Add margin at the bottom of the heading */
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="favourite-places-bg-container">
+    <div class="favourite-place-card-container">
+    <h1 class="favourite-place-card-heading">Japali Anjaneya swamy Temple</h1>
+        <p class="favourite-place-card-description">
+    Japali theertham is the most broadly known heavenly theertham which is being visited by generally travelers.In the sacred land 
+     of Jabali, atop the picturesque Tirumala Hill in Andhra Pradesh's Chittoor district, the remarkable connection between Hanuman 
+     and the venerable sage Jabali unfolds. Here, Hanuman is known as Rudramsha Sambhatu, and his character is adorned with profound
+     knowledge of God's nature and its hidden secrets. He's not only a scholar but also a devout worshiper of Lord Rama, with his heart
+     forever immersed in the sweet remembrance of Rama's name</p>
+      <img
+        src="https://steemitimages.com/1280x0/https://files.steempeak.com/file/steempeak/meena0017/9Nbo8QJT-image.png"
+        style="width: 300px; height: 300px;  object-fit: fill;  border: 3px solid #f03a3a;  border-radius: 15%; margin: 20px; float: left; align-items: center; "
+      />
+        <h1 class="favourite-place-card-heading1">History Of Japali Anjaneya swamy Temple</h1>
+        <p class="favourite-place-card-description">
+     Anjanisutha, born to Anjani, takes the form of Rudratejo, radiating divine luminance. It is within these lush woods,surrounded by
+     the symphony of waterfalls, that Hanuman, devoted to Vanaravatara (the form of a monkey), finds his resting place, embracing the 
+     very essence of his divine sanctuary.
+     Legend has it that thirty crore gods once aspired for Lord Vishnu to descend in the avatar of Lord Rama. Jabali, the sage, embarked
+     on a profound journey, chanting at numerous sacred spots, including the present hill, invoking the form of Hanuman even before his
+     incarnation. His penance drew the attention of Lord Rudra, who, pleased by Jabali's devotion, provided a glimpse into the future.This
+     revelation foretold Hanuman's incarnation as Vanaragraganya, leading an assembly of gods in a magnificent journey.The place itself,
+     named Jabali, is nothing short of sacred. It holds the essence of a Tirtha, where coastal kings from distant lands gather  to bask 
+     in its sanctity. Sage Jabali, known for hiding the sin of speech by uttering words he shouldn't have, sought purification.He immersed
+     himself in the holy waters of Ramagundam within the Kshetra, ridding himself of the fault that weighed on his soul.Hanuman , an epitome
+     of devotion, finds solace amid the thick forest and surrounding trees. His unwavering dedication to Lord Rama is symbolized by his
+     presence within the sanctum sanctorum, where he stands, adorned with a club and vermilion, dressed in silver armor. The ceremonial 
+     idols of Sri Sitaramachandra Swami rest upon his head, representing the embodiment of security and happiness.Devotees seeking blessings
+     visit the tree root Ganapati and believe that their wishes will be swiftly granted if they circumambulate the tree king located outsid
+     the temple. It's a place where countless Mahatmas, Sadhus, Yogis, and Munus have achieved spiritual enlightenment. The faithful believe
+     that the Tirtharajam's sacred waters can wash away the sins of those burdened by Pancha Mahapatakas and demons.As the narrative unfolds,
+     the legends tell of Lord Rama and Sita bathing in this hallowed land. Lord Rama's purifying bath took place at  Ramakund, while Sita 
+     Devi found solace in Sitakund, where water flows from the hills, believed by devotees to hold medicinal properties.The nearby presence
+     of Venugopala Swamy's temple and Hathiram Bawaji's samadhi further enhance the spiritual allure of this sacred place. Thousands of 
+     devotees make their pilgrimage to the Tirumala Kshetra, which, as fate would have it, is not far from Tirumala, and many come here 
+     seeking solace. It is believed that by bathing in the Ramkund Tirtham for seven consecutive Tuesdays and circumambulating the temple
+     in wet clothes, one's heartfelt wishes can be fulfilled. Thus, the land of Jabali stands as a testament to devotion, where the stories
+     of Hanuman and the sage Jabali continue to inspire the hearts of the faithful.</p>       
+          <h1 class="favourite-place-card-heading1">Festivals celebrated in Japali Anjaneya swamy Temple</h1>
+         <div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Hanuman Jayanti</a></li>
+        <li><a href="#tabs-2">Sri Rama Navami</a></li>
+        <li><a href="#tabs-3">Vaikunta Ekadashi</a></li>
+        <li><a href="#tabs-4">Hanuman Vratam</a></li>
+        <li><a href="#tabs-5">Pradosha Puja</a></li>
+
+    </ul>
+    <div id="tabs-1">
+    <h2 class="favourite-place-card-heading2">Hanuman Jayanti</h2>
+     <p  class="favourite-place-card-description">Hanuman Jayanti at the celebrated Japali Anjaneya Swamy Temple near Tirupati is a joyous and highly revered occasion. It marks the birth anniversary of Lord Hanuman, the embodiment of devotion and strength. Devotees from far and wide gather at the temple to commemorate this day with great devotion. Special pujas and rituals are performed, including abhishekams (ritual baths) of the idol of Lord Hanuman. The temple resonates with the chanting of Hanuman Chalisa and other devotional songs. Devotees seek the blessings of Lord Hanuman for strength, courage, and protection. The entire atmosphere is filled with spiritual fervor and dedication during this significant festival. </p>
+    </div>
+    <div id="tabs-2">
+        <h2 class="favourite-place-card-heading2">Sri Rama Navami</h2>
+         <p  class="favourite-place-card-description">Sri Rama Navami at the celebrated Japali Anjaneya Swamy Temple near Tirupati is a grand and auspicious festival. It commemorates the birth of Lord Rama, an incarnation of Lord Vishnu. The temple becomes a hub of activity and devotion during this time. Elaborate decorations, processions, and special pujas mark the celebration. The main sanctum, dedicated to Lord Anjaneya (Hanuman), is beautifully adorned. Devotees visit the temple to offer their prayers, seeking the blessings of Lord Rama and Lord Hanuman. The atmosphere is filled with a sense of divinity, and the recitation of Ramayana and bhajans adds to the spiritual ambiance, making it a sacred and memorable occasion.
+ </p>
+    </div>
+    <div id="tabs-3">
+     <h2 class="favourite-place-card-heading2">Vaikunta Ekadashi</h2>
+        <p  class="favourite-place-card-description">Vaikunta Ekadashi, celebrated at the Japali Anjaneya Swamy Temple near Tirupati, is a significant and revered festival. It falls on the 11th day of the lunar month in the Hindu calendar. This day is believed to be highly auspicious for devotees seeking salvation and liberation. The temple witnesses a surge of devotees who come to pay their respects to Lord Anjaneya (Hanuman), considered the gateway to Lord Vishnu. Elaborate rituals, special pujas, and processions are conducted on this occasion. The temple is beautifully decorated, and the divine atmosphere resonates with devotional fervor. Devotees fast, sing bhajans, and stand in long queues to pass through the Vaikunta Dwaram (the gateway to heaven), seeking spiritual enlightenment and eternal bliss. It is a day of deep spiritual significance and devotion.</p>
+    </div>
+<div id="tabs-4">
+     <h2 class="favourite-place-card-heading2">Hanuman Vratam</h2>
+       <p class="favourite-place-card-description">Hanuman Vratam is a significant festival celebrated at the Japali Anjaneya Swamy Temple near Tirupati. This observance is dedicated to Lord Hanuman, a revered deity in Hinduism known for his unwavering devotion to Lord Rama. Devotees observe a fast and perform various rituals in honor of Hanuman on this day. The festivities often include reading or listening to the Hanuman Chalisa, singing bhajans, and visiting temples dedicated to Lord Hanuman. Many devotees also visit the Japali Anjaneya Swamy Temple to seek the blessings of Lord Hanuman. It is a day of deep devotion and spiritual reflection, where people express their love and reverence for the mighty Lord Hanuman.</p>
+</div>    
+    
+<div id="tabs-5">
+     <h2 class="favourite-place-card-heading2">Pradosha Puja</h2>
+        <p class="favourite-place-card-description">Pradosha Puja is a revered festival celebrated at the Japali Anjaneya Swamy Temple near Tirupati. It is dedicated to Lord Shiva and is observed during the twilight hours on the 13th day of each lunar fortnight. Devotees gather at the temple to perform special prayers and rituals, seeking the blessings of Lord Shiva. During Pradosha Puja, the priest offers sacred items and performs abhishekam (ritual bathing) of the deity. It is believed that worshiping Lord Shiva during this auspicious time brings spiritual growth, removes sins, and fulfills the wishes of the devotees. The serene surroundings of the Japali Anjaneya Swamy Temple make it a tranquil place for this divine observance, creating a spiritually uplifting experience for all who participate.</p>
+</div>          
+</div>
+     <h1 class="favourite-place-card-heading1">Location</h1>
+        <p class="favourite-place-card-description">
+      Japali Theerthan is located on the way to Papavinasanam from Tirumala It is about just 3 Kms from Tirumala. From the road side,one has
+     to walk about 1 KM inside the forest to reach the Teertham.. Its a sacred water body (Theertham) situated opposite to the Lord Hanuman Temple.</p>
+    <h1 class="favourite-place-card-heading1">Gallery</h1>
+    <div class="container" style="width: 600px; height: 400px;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://viharadarshani.in/wp-content/uploads/2023/07/Japali-anjaneya-swamy-temple.jpg" style="width: 600px; height: 400px;  padding: 25px;">
+  </div>
+
+  <div class="mySlides" >
+    <div class="numbertext">2 / 6</div>
+    <img src="https://www.sakshi.com/sites/default/files/styles/rich_cards/public/article_images/2021/04/12/ad.jpg?itok=_iU_HmMU" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://www.sakshi.com/sites/default/files/styles/rich_cards/public/article_images/2021/04/12/ad.jpg?itok=_iU_HmMU" style="width: 600px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/06/db/50/c9/the-temple.jpg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4BPBaRqtfic-kFeTC4WD7iASecr85sp6I9w&usqp=CAU" style="width: 500px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://files.yappe.in/place/full/japali-anjaneya-swami-devalayam-431318.webp" style="width: 500px; height: 400px;">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+      </div>
+    </div>
+  </div>
+  <div id="sectionTajMahalDetailedView"></div>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<style>
+.favourite-places-bg-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  background-image: url("https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=");
+  background-size: cover;
+  padding: 20px;
+}
+.favourite-place-card-heading {
+  color: #ff0000;
+  font-family: "Times New Roman";
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading1 {
+  color: #DAA520;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading2 {
+  color: #808000;
+  font-family: "Times New Roman";
+  font-size: 17px;
+  font-weight: normal;
+  text-align: start;
+}
+.favourite-place-card-container {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin: 15px;
+  /* Arrange elements horizontally */
+   /* Center vertically */
+}
+
+.favourite-place-card-image {
+  width: 150px;
+  height: 150px;
+  float: left;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.favourite-place-card-description {
+  padding: 10px;
+  margin-left-right: 10px 10px;
+  color: #05070a;
+  font-family: "Times New Roman";
+  font-size: 16px;
+
+  /* Allow content to grow and take available space */
+  
+}
+
+.favourite-places-heading {
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 7px; /* Add margin at the bottom of the heading */
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="favourite-places-bg-container">
+    <div class="favourite-place-card-container">
+    <h1 class="favourite-place-card-heading">Tirupati Balaji Temple</h1>
+        <p class="favourite-place-card-description">
+         Tirupati sri venkateswara swamy temple is considered one of the most ancient and sacred temples of lord vishnu in the country.
+     Balaji temple is believed to be over 2000 years old. As per legend ,lord vishnu manifested himself as lord sri venkateswara 
+     to save mankind from trias and troubles of kali yuga.It was constructed over a period of time starting from 300 CE.It is most 
+     visiting pilgrimage.the tirupati Balaji temple has been a major center for the vaishnavism tradition and has been a source of 
+     inspiration for many poets,saints and scholars.It  is famous for laddu prasadmand and seven-storey gopuram.
+     The Sri Venkateswara Swami Temple is renowned for its wealth, being one of the richest temples in the world in terms of 
+     donations received and assets held.The temple showcases South Indian architectural style and has a rich history, with 
+     construction believed to have started around 300 CE. The Garbhagruha (Sanctum Sanctorum) is called Ananda Nilayam, and the
+     presiding deity, Venkateswara, stands in an east-facing posture in the Garbha Gruha. The temple follows the Vaikhanasa Agama 
+     tradition of worship and is one of the eight Vishnu Swayambhu Kshetras. It is also listed as the 75th Divya Desam. The temple
+     complex includes modern Queue complex buildings to manage the pilgrim crowd, a complex for offering free meals to pilgrims 
+     called Tarigonda Vengamamba Annaprasadam, facilities for hair tonsuring, and various pilgrim lodging sites.</p>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Tirumala_090615.jpg"
+        style="width: 300px; height: 300px;  object-fit: fill;  border: 3px solid #f03a3a;  border-radius: 15%; margin: 20px; float: left; align-items: center; "
+      />
+        <h1 class="favourite-place-card-heading1">History Of Tirupati Balaji Temple</h1>
+        <p class="favourite-place-card-description">
+     The temple is often referred to as Kaliyuga Vaikuntha, and its deity is known as Kaliyuga Prathyaksha Daivam. It's also 
+      recognized by other names such as Tirumala Temple, Tirupati Temple, and Tirupati Balaji Temple. Venkateswara is known by
+      various other names including Balaji, Govinda, and Srinivasa.Tirumala Hills are part of the Seshachalam Hills range and 
+      rise to an elevation of 853 meters above sea level. These hills have seven peaks, symbolizing the seven heads of Adisesha,
+      and the temple is situated on the seventh peak, known as Venkatadri, near the holy water tank of Sri Swami Pushkarini. This
+      is why it's often referred to as the "Temple of Seven Hills." The town of Tirumala spans an area of about 10.33 square miles.
+      he temple has many legends associated with the manifestation of the deity in Tirumala. According to one of these legends, 
+      Lord Venkateswara will remain in the temple for the entire duration of the present Kali Yuga. Other stories include the presence
+      of deities such as Lakshmi, Padmavati, and the history of the temple's administration.<br>
+      The temple has received significant endowments and donations throughout history, particularly during the reign of various dynasties 
+      like the Pallavas, Cholas, and Vijayanagara Empire. In the 16th century, Emperor Krishnadevaraya was a frequent donor and visitor to
+      the temple. After the decline of the Vijayanagara Empire, rulers from different regions continued to contribute to the temple. It was
+      during this period that the temple's wealth and size increased. Maratha general Raghoji I Bhonsle also contributed valuables to the temple.
+      The great philosopher and theologian Ramanujacharya visited Tirupati multiple times and played a significant role in the temple's rituals 
+      and administration. He established the Tirupati Jeeyar Mutt, which continues to oversee temple rituals.
+      Over time, the temple's administration changed hands from various dynasties and rulers to the East India Company, Mahants, and eventuall 
+      the Tirumala Tirupati Devasthanams (TTD), which now manages the temple.The Sri Venkateswara Swami Temple is a site of historical and 
+      linguistic significance, with numerous inscriptions in languages like Kannada, Sanskrit, Tamil, and Telugu. The temple also houses a 
+      valuable collection of copper plates inscribed with the Telugu Sankirtanas of Tallapaka Annamacharya and his descendants, making it
+      an essential resource for linguists and musicologists
+.</p>       
+          <h1 class="favourite-place-card-heading1">Festivals celebrated in Tirupati Balaji Temple</h1>
+         <div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Vaikuntha Ekadasi</a></li>
+        <li><a href="#tabs-2">Rama Navami</a></li>
+        <li><a href="#tabs-3">Janmashtami</a></li>
+        <li><a href="#tabs-4">Skanda Shashthi in Tirupati</a></li>
+        <li><a href="#tabs-5">Brahmoutsavam</a></li>
+        <li><a href="#tabs-6">Dolotsavam</a></li>
+        <li><a href="#tabs-7">Adhyayanotsavam</a></li>
+        <li><a href="#tabs-8">Pavitroutsavam</a></li>
+        <li><a href="#tabs-9">Makar Sankranti</a></li>
+        <li><a href="#tabs-10">Chandramaana Yugadi</a></li>
+        <li><a href="#tabs-11">Vasanthotsavam</a></li>
+        <li><a href="#tabs-12">Koli Alwar</a></li>
+        <li><a href="#tabs-13">Teppotsavam</a></li>
+        <li><a href="#tabs-14">Padmavathi Parinayam</a></li>
+        <li><a href="#tabs-15">Deepavali</a></li>
+        
+    </ul>
+    <div id="tabs-1">
+    <h2 class="favourite-place-card-heading2">Vaikuntha Ekadasi</h2>
+     <p  class="favourite-place-card-description">Vaikuntha Ekadasi is a grand and spiritually significant festival celebrated in the Tirupati-Tirumala region of Andhra Pradesh. It usually falls in December or January and is observed with immense devotion. Devotees throng the famous Sri Venkateswara Temple in Tirumala to mark this occasion. The day is believed to be the one when the gates of Lord Vishnu's celestial abode, Vaikuntha, are open to receive the faithful. Pilgrims undertake austerities, sing devotional songs, and participate in a special procession. The festival creates a divine atmosphere, allowing devotees to seek blessings and spiritual progress, making it a highly anticipated event in the Tirupati-Tirumala region.</p>
+    </div>
+    <div id="tabs-2">
+        <h2 class="favourite-place-card-heading2">Rama Navami</h2>
+         <p  class="favourite-place-card-description">Rama Navami, celebrated in Tirupati-Tirumala, is a significant Hindu festival honoring the birth of Lord Rama, one of the most revered deities. The Sri Venkateswara Temple is adorned with vibrant decorations, and special pujas and religious processions take place. Devotees from across the country flock to the temple to participate in these celebrations, seeking the divine blessings of Lord Rama. The festival creates a spiritually charged atmosphere, fostering devotion and reverence. It underlines the enduring importance of Lord Rama in the hearts of devotees and showcases the temple's role as a hub of religious and cultural significance in Tirupati-Tirumala.
+ </p>
+    </div>
+    <div id="tabs-3">
+     <h2 class="favourite-place-card-heading2">Janmashtami</h2>
+        <p  class="favourite-place-card-description">Janmashtami, celebrated in Tirupati-Tirumala, marks the birth of Lord Krishna, an avatar of Lord Vishnu. The Sri Venkateswara Temple observes this festival with great devotion and grandeur. Special pujas and ceremonies are held to honor Lord Krishna, and devotees congregate to participate in these rituals. The temple premises come alive with spiritual fervor, cultural performances, and recitations of the Bhagavad Gita. The celebration typically includes a midnight procession symbolizing Lord Krishna's birth. Janmashtami serves as a reminder of the divine play of Lord Krishna and the enduring significance of his teachings in the Hindu tradition. It reinforces the temple's role as a center of spiritual devotion in Tirupati-Tirumala.</p>
+    </div>
+<div id="tabs-4">
+     <h2 class="favourite-place-card-heading2">Skanda Shashthi</h2>
+       <p class="favourite-place-card-description">
+It is celebrated on the sixth day in the month of Aippasi as destruction of evil by supreme power.</p>
+</div>    
+    
+<div id="tabs-5">
+     <h2 class="favourite-place-card-heading2">Brahmoutsavam</h2>
+        <p class="favourite-place-card-description">The nine day celebration of the Brahmoutsavam festival starts few days before where the cleaning of the idol of Lord Venkateshwara. The preparation of the festival is done by decorating temple, decorating palkii, Nava Dhyanam, performing homas, Poorna kumbha, etc. The first day Dwajarohanam, pedda Sesha Vahanam, second day activity Chinna Sesha Vahanam and Hamsa Vahanam, third day activity involves Simha Vahanam and Mutyapu Pandiri Vahanam, fourth day activity includes Kapilvriksha Vahanam and Sarva Bhoopala Vahanam, fifth day activity involves Mohini Avataram and Garuda Seva, Sixth day activity includes Hanumantha Vahanam and Swarna ratham, Gajavahanam, seventh day activity includes Suryaprabha Vahanam and Chandraprabha Vahanam, on eighth day rathoutsavam is celebrated and in evening Aswa Vahanam and on the last day of the auspicious festival Pallaki Utsavam, Chakrasananam and Golden Tiruchi Utsavam, dwajavarohanam are celebrated.
+
+The story behind the festival as narrated in Varaha Puranam is-“ the creator of the world Lord Brahama celebrated the festival firstly in honor of Lord Venkateshwara and hence the festival was named Brahmotsavam. The festival is celebrated in Sep-Oct during sharad Navratri. The ninth day of festival is celebrated as the jayanti of Lord Venkateshwara. Other festivals celebrated in Tirupati are Vasantotsavam (March/April), Teppotsavam (Boat Festival in July/August), Pavitrotsavam (Kartikam in November/December), etc.</p>
+</div>    
+    
+<div id="tabs-6">
+     <h2 class="favourite-place-card-heading2">Dolotsavam</h2>
+        <p class="favourite-place-card-description">
+Dolotsavam is a festival celebrated by decorating Lord Venkateshwara along with his consorts the swing or boat which floats in Pushkarini (water tank).</p>
+</div>    
+    
+<div id="tabs-7">
+     <h2 class="favourite-place-card-heading2">Adhyayanotsavam</h2>
+        <p class="favourite-place-card-description">In the month of Maargaseersh (Dec-Jan) the Vaikunth Ekadashi is celebrated. Sri Malyapa Swami and his consorts are taken out during the festival. Before Vaikunth Ekadashi the preparation of the festival starts. The festival is celebrated for 20 days. The first 10 days are termed as Pahalpaththu and the next 10 days are Raapatththu.</p>
+</div>
+    
+<div id="tabs-8">
+     <h2 class="favourite-place-card-heading2">Pavitroutsavam</h2>
+        <p  class="favourite-place-card-description">
+On Shukla Dashami this five day purification festival is celebrated in the month of Shravana (June-July).The ceremony of purification is Pavitrotsavam which is performed for three days, during Sarvanam (August) on tenth day of shuklapaksha. </p>
+</div>
+
+<div id="tabs-9">
+     <h2 class="favourite-place-card-heading2">Makar Sankranti</h2>
+        <p  class="favourite-place-card-description">
+On the day when Sun starts its journey towards North so it is known as Uttaryan. It is celebrated in the mid of the month of January. The planetary position of Sun changes and it enters Makar rashi.</p>
+</div>
+    
+<div id="tabs-10">
+     <h2 class="favourite-place-card-heading2">Chandramaana Yugadi</h2>
+        <p  class="favourite-place-card-description">
+In the month of Pratipada (March-April) Chandramaana Yugadi is celebrated. The festival is celebrated for 40days. </p>
+</div>   
+     
+<div id="tabs-11">
+     <h2 class="favourite-place-card-heading2" >Vasanthotsavam</h2>
+        <p class="favourite-place-card-description">In the month of Chaitra (March) on Triyodasi, Chaturdasi and Poornima a festival is conducted at Tirumala temple. Sri Malayappa Swami and his consorts are taken out and abhishekam is done in vasantha mantapam. On third day Lord Ram, Lakshman and Goddesses Sita are also taken out on palki.
+Vasanthotsavam is a festival of colors, celebrated for 3days. The color spray is played between Lord Venkateshwara and his consorts along with devotees. The cost to be paid to enjoy the color festival is Rs.3000 per 10person.</p>
+</div>  
+      
+<div id="tabs-12">
+     <h2 class="favourite-place-card-heading2">Koli Alwar</h2>
+        <p  class="favourite-place-card-description">
+The “Holy shrine” is performed for the purification of the temple and its premises. It is performed four times in a year before Ugadi, Anivara Asthanam, Vaikuntha Ekadashi, and Annual Utsavam.</p>
+</div>
+<div id="tabs-13">
+     <h2 class="favourite-place-card-heading2">Teppotsavam</h2>
+        <p  class="favourite-place-card-description">
+On Phalgun Poornima the five day festival is celebrated in Swami Pushkarini.</p>
+</div>
+    
+<div id="tabs-14">
+     <h2 class="favourite-place-card-heading2">Padmavathi Parinayam</h2>
+        <p  class="favourite-place-card-description">
+
+Wedding of Lord Venkateshwara and Padmavathi is celebrated in the month of May. The three day lasting festival includes dancing, singing, etc. </p>
+</div>   
+     
+<div id="tabs-15">
+     <h2 class="favourite-place-card-heading2" >Deepavali</h2>
+        <p class="favourite-place-card-description">
+It is celebrated on the day when Lord Rama along with Goddesses Sita and Lord Laxman returned to his homeland after killing Ravana and after completing his vanvas of 14 years. It is a celebration of five days where the main pooja is done on no moon day. It is also celebrated as Maha Lakshmi birthday. The lamps are lit in all houses and the houses are decorated. It is also known as festival of light.
+</p>
+</div>  
+</div>
+     <h1 class="favourite-place-card-heading1">Location</h1>
+        <p class="favourite-place-card-description">
+     Tirupati, city, southeastern Andhra Pradesh state, southern India. It lies in the Palkonda Hills, about 8 miles (13 km) northeast 
+     of Chandragiri and 67 miles (108 km) northwest of Chennai in Tamil Nadu state.</p>
+    <h1 class="favourite-place-card-heading1">Gallery</h1>
+    <div class="container" style="width: 600px; height: 400px;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://im.hunt.in/cg/Tirupati/City-Guide/Brahmoutsavam.jpg" style="width: 600px; height: 400px;  padding: 25px;">
+  </div>
+
+  <div class="mySlides" >
+    <div class="numbertext">2 / 6</div>
+    <img src="https://www.adotrip.com/public/images/festivals/master_images/5c3da98c228cb-Tirupati_Festival_Attractions.jpg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://content.thisday.app/uploads/Tirumala_Tirupati_Brahmotsavam_Schedule_1_ad46de731f.jpeg" style="width: 600px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://1.bp.blogspot.com/-FE893m5nlUE/YROgZwnSrfI/AAAAAAAApIw/lo3nrv4r_NcWrFbFn4GaFocOB-9L6TKdQCLcBGAsYHQ/w1200-h630-p-k-no-nu/165121274_1378317299186528_5761593671895122907_n.jpg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://dc1fpv8kkq7dm.cloudfront.net/images/festivals/5c3da98bc14bc-Tirupati%20Festival%20Trip.jpg" style="width: 500px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSu05NUG5UltL3oWERDhzfSLoku3qpiXkU-g&usqp=CAU" style="width: 500px; height: 400px;">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+      </div>
+    </div>
+  </div>
+  <div id="sectionTajMahalDetailedView"></div>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

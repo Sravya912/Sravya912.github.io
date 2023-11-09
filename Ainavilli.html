@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<style>
+.favourite-places-bg-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  background-image: url("https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=");
+  background-size: cover;
+  padding: 20px;
+}
+.favourite-place-card-heading {
+  color: #ff0000;
+  font-family: "Times New Roman";
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading1 {
+  color: #DAA520;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading2 {
+  color: #808000;
+  font-family: "Times New Roman";
+  font-size: 17px;
+  font-weight: normal;
+  text-align: start;
+}
+.favourite-place-card-container {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin: 15px;
+  /* Arrange elements horizontally */
+   /* Center vertically */
+}
+
+.favourite-place-card-image {
+  width: 150px;
+  height: 150px;
+  float: left;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.favourite-place-card-description {
+  padding: 10px;
+  margin-left-right: 10px 10px;
+  color: #05070a;
+  font-family: "Times New Roman";
+  font-size: 16px;
+
+  /* Allow content to grow and take available space */
+  
+}
+
+.favourite-places-heading {
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 7px; /* Add margin at the bottom of the heading */
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="favourite-places-bg-container">
+    <div class="favourite-place-card-container">
+    <h1 class="favourite-place-card-heading">Ainavilli Sidhi Vinayaka Temple</h1>
+        <p class="favourite-place-card-description">
+     
+ Ainavalli temple is dedicated to Lord Ganesha. This is a small and beautiful temple complex. The complex also hosts
+     Visweswara Swamy and Annapurna devi, Keshava Swamy and Bhoo devi. The complex also has temple for Kala Bhairava, who is 
+     considered kshetrapalaka.In this area of Konaseema is AINAVILLI, where the “SIDDI VINAYAKA TEMPLE” is situated. Before 
+     performing Daksha Yagna Daksha Prajapati was supposed to have performed puja of Vinayaka at this place for its successful
+     completion. This is written in the “KSHETRA PURANA” of this place.
+     It is believed that he fulfills the wishes of his devotees quickly. Devotees take a vow to visit the temple again if 
+     their wishes are fulfilled.</p>
+      <img
+        src="https://media-cdn.tripadvisor.com/media/photo-s/0d/5a/40/e8/temple-complex.jpg"
+        style="width: 300px; height: 300px;  object-fit: fill;  border: 3px solid #f03a3a;  border-radius: 15%; margin: 20px; float: left; align-items: center; "
+      />
+        <h1 class="favourite-place-card-heading1">History Of Sidhi Vinayaka Temple
+</h1>
+        <p class="favourite-place-card-description">
+     According to the Stala Purana, Lord Ganapati has resided here since the Krit Yuga. Legend has it that Daksha Prajapati 
+     worshipped Lord Ganesha at this very site before embarking on the Dakshayajna in Draksharama. Furthermore, the esteemed
+     sage Vyasa consecrated the Ganapati idol here before commencing the Dakshina Yatra. The temple's restoration and
+     development have seen the involvement of many patrons, from the later Eastern Chalukyas to the rulers of Peddapuram.
+     Ayanavilli temple finds mention in the historical account of Sripadavallabha, documented by Sankarabhattu in the 14th 
+     century AD. The text recounts that Sripadavallabhu's maternal grandfather conducted the Golden Ganapati Yajna in
+     Ainavilli, during which Lord Ganeshatha appeared with Sarthamayakantula, signifying the acceptance of the offerings.
+     It is believed that Sripada declared the impending birth of Vallabhbhu.
+     In most temples, the primary deity (Moolavirat) faces east, but here Siddhi Vinayaka gazes southward, embracing His 
+     devotees and safeguarding their abodes. This unique orientation is particularly auspicious for households with main 
+     doors situated on the south side, as it is believed to ward off disturbances.
+     The ancient Moolavirat of Siddhi Ganesha is revered with daily rituals, pujas, archanas, and abhishekams. The abhishek
+     service holds particular importance in this temple. Brahmotsavams spanning five days, featuring Panchanik Diksha, grace
+     the temple during Vaisakh Shuddha Ekadashi to the Full Moon, an auspicious time for Shiva Keshavas. Purnimanadu Kalyanam
+     marks the culmination of these celebrations, concluding with the grand Gramotsavam.
+     Vinayaka Navratri, spanning nine days from Bhadrapada Shuddha Chavithi, adds to the festive fervor. Prabhala Utsav is 
+     joyously celebrated on Makar Sankranti, and Kanumanadu is observed with devotion. Vijayadashami, the first day of 
+     Kartikam, initiates Gramotsavam, while the temple witnesses lively celebrations on four Mondays and Krishnashtami.
+     The Temple also conducts an annual study festival in the month of Magha. During this event, the Lord receives a 
+     ceremonial anointing with waters from the sacred rivers Ganga, Yamuna, Godavari, Saraswati, Narmada, Indus, and Kaveri.
+     A lakh of pens are placed at the feet of Siddhi Vinayaka and offered devotion in the form of Lakshma durvams. These 
+     pens are then distributed to students, who believe that writing exams with them brings success and excellence in their 
+     studies.</p>       
+          <h1 class="favourite-place-card-heading1">Festivals celebrated in Sidhi Vinayaka Temple
+</h1>
+         <div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Vinayaka Chavithi</a></li>
+        <li><a href="#tabs-2">Karthika Masam</a></li>
+        <li><a href="#tabs-3">Prabha Festival</a></li>
+        <li><a href="#tabs-4">Maha Shivaratri</a></li>
+        
+
+    </ul>
+    <div id="tabs-1">
+    <h2 class="favourite-place-card-heading2">Vinayaka Chavithi</h2>
+     <p  class="favourite-place-card-description">Vinayaka Chavithi, celebrated in September at Ainavilli Sidhi Vinayaka Temple, is a highly significant festival honoring the birth of Lord Ganesha. Devotees from far and wide gather to participate in this grand celebration with immense devotion. The temple is adorned with vibrant decorations, and a beautifully crafted idol of Lord Ganesha takes center stage. Special prayers, pujas, and rituals are conducted, accompanied by the rhythmic chants of sacred hymns. Devotees offer various offerings, including modakas, coconuts, and flowers, seeking the Lord's blessings and the removal of obstacles. Vinayaka Chavithi at Ainavilli Sidhi Vinayaka Temple is a time of spiritual devotion and festivity.
+    <div id="tabs-2">
+        <h2 class="favourite-place-card-heading2">Kalyanotsavams</h2>
+         <p  class="favourite-place-card-description">Suryanarayana Swami Vari Kalyanotsavams
+           Ancient Hindu Temple - Sungod temple located near Srikakulam Town in Arasavalli.
+Lord Surya's Kalynotsavam is celebrated from Chaitra Suddha Ekadashi to Bahula Padyami (6days). Generally it comes in the month of March and April. Lord Surya has 3 consorts. They are named Usha, Padmini & Chaya, daughter of devasilpi (mason) Viswakarma. The Lord Married them.
+ </p>
+    </div>
+    <div id="tabs-3">
+     <h2 class="favourite-place-card-heading2">Prabha Festival</h2>
+        <p  class="favourite-place-card-description">Prabha Festival, celebrated in Ainavilli Sidhi Vinayaka Temple, is a significant annual event, typically occurring in the months of February or March. This festival is known for its grandeur and spirituality, attracting a large number of devotees. It involves the illumination of the temple with thousands of oil lamps, creating a mesmerizing and ethereal atmosphere. Special pujas, cultural performances, and religious discourses are held during this time. Devotees gather to witness the radiant spectacle, seeking blessings and offering their devotion. The Prabha Festival is a captivating and spiritually enriching experience that strengthens the temple's role as a center of religious and cultural significance.</p>
+    </div>
+<div id="tabs-4">
+     <h2 class="favourite-place-card-heading2">Maha Shivaratri</h2>
+       <p class="favourite-place-card-description">Maha Shivaratri, celebrated in February or March at Ainavilli Sidhi Vinayaka Temple, is a highly revered festival dedicated to Lord Shiva. It is observed with great devotion and spiritual fervor. Devotees come together to offer special prayers, conduct abhishekams (ritual baths), and participate in night-long vigils. The temple is beautifully decorated, and the atmosphere is filled with spiritual energy. This auspicious occasion is an opportunity for devotees to seek Lord Shiva's blessings, spiritual growth, and the removal of sins. Maha Shivaratri strengthens the temple's significance in promoting the worship of Lord Shiva and underscores its role as a place of deep devotion and religious observance. </p>
+</div>    
+    
+ 
+</div>
+     <h1 class="favourite-place-card-heading1">Location</h1>
+        <p class="favourite-place-card-description">
+    Sri Vigneswara Swamy Devastanam, Ainavilli  Mandal, East Godavari District,  Andhra Pradesh,
+     Ainavilli is located at a distance of 72 Km from Kakinada (Via Yanam, Amalapuram and Mukteswaram), 55 Km from Rajahmundry (Via
+     Ravulapalem, Kotapeta and Vanapalli) and 14 Kms from Amalapuram (Mukteswaram).According to Vaastu Sastra the most suitable places 
+     to build temples are, on the bank of a river, near the sea – hore, at the confluence of rivers, on top of a mountain or near
+     places of sanctity.</p>
+    <h1 class="favourite-place-card-heading1">Gallery</h1>
+    <div class="container" style="width: 600px; height: 400px;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/e0/74/6a/siddhi-vinayaka-idol.jpg?w=1200&h=1200&s=1" style="width: 600px; height: 400px;  padding: 25px;">
+  </div>
+
+  <div class="mySlides" >
+    <div class="numbertext">2 / 6</div>
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0a/4a/09/56/ainavilli-temple.jpg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://i.pinimg.com/originals/49/62/44/4962449edf62424eaa80ec04c6129369.png" style="width: 600px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://lh5.googleusercontent.com/p/AF1QipNTH6nSDYVGAFoRKh8MjokI9ueNinSVyVAwxwk=s296-w296-h168-n-k-no-v1" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://i0.wp.com/www.rvatemples.com/wp-content/uploads/2018/08/vigneswara-swamy6.jpeg?fit=455%2C584&ssl=1" style="width: 500px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://res.cloudinary.com/chasset/image/upload/c_scale,f_webp,h_207,w_370/v1/hbimages/mobile/location/1505447884329-sri-bala-balaji-temple.jpg" style="width: 500px; height: 400px;">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+      </div>
+    </div>
+  </div>
+  <div id="sectionTajMahalDetailedView"></div>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

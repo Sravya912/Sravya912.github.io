@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<style>
+.favourite-places-bg-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  background-image: url("https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=");
+  background-size: cover;
+  padding: 20px;
+}
+.favourite-place-card-heading {
+  color: #ff0000;
+  font-family: "Times New Roman";
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading1 {
+  color: #DAA520;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading2 {
+  color: #808000;
+  font-family: "Times New Roman";
+  font-size: 17px;
+  font-weight: normal;
+  text-align: start;
+}
+.favourite-place-card-container {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin: 15px;
+  /* Arrange elements horizontally */
+   /* Center vertically */
+}
+
+.favourite-place-card-image {
+  width: 150px;
+  height: 150px;
+  float: left;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.favourite-place-card-description {
+  padding: 10px;
+  margin-left-right: 10px 10px;
+  color: #05070a;
+  font-family: "Times New Roman";
+  font-size: 16px;
+
+  /* Allow content to grow and take available space */
+  
+}
+
+.favourite-places-heading {
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 7px; /* Add margin at the bottom of the heading */
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="favourite-places-bg-container">
+    <div class="favourite-place-card-container">
+    <h1 class="favourite-place-card-heading">Kukkuteswara Swamy Temple</h1>
+        <p class="favourite-place-card-description">
+Lord Shiva is known as Kukkuteshwara Swamy here. The consort of Kukkuteshwara Swamy is known as Raja Rajeswari. The temple has huge premises, well maintained. its a very peaceful temple. On the back of the temple, there is a big pond where Gayasura's statue in the lying form can be seen.
+Kukkuteswara Swamy Temple Pithapuram in Andhrapradesh become famous as Padagaya. The primal deity of this is Lord Shiva in the form of Cock. This Shakti Peetham is famous for the name Puruhutika.</p>
+      <img
+        src="https://www.astrojyoti.com/wp-content/uploads/2021/08/Puruhutika-Devi-temple.jpg"
+        style="width: 300px; height: 300px;  object-fit: fill;  border: 3px solid #f03a3a;  border-radius: 15%; margin: 20px; float: left; align-items: center; "
+      />
+        <h1 class="favourite-place-card-heading1">History Of Kukkuteswara Swamy Temple</h1>
+        <p class="favourite-place-card-description">Kukkuteswara Swamy Temple History 1:<br>
+      Pithapuram is an equally sacred and holy place with ‘Kedaram’ in northern India and ‘Kumbhakonam’ in southern India. This place was visited by the sage Vyasa with his disciples and was written in Bhimakhanda of Skanda Purana, one of the eighteen epics.
+The great poet, “Srinadha”, wrote in the third chapter of “Bheemeswara Purana” as follows. The next four places that give salvation or “Moksha, are (banaras), Varanasi, Kedaram, Kumbhakonam and Pithapuram (Kukkuteswara Stanamu). Pithapuram became Paadagaya Keshetram. Formerly, KRUTAYUGA had a demon king, Gayasura. Through his austere penance and sacrifice, he attained royalty in heaven and ruled over the three Lokas (Swarga, Marthya, Patalam). He led three Lokas following the sacrifices made by the sages. Defeated by Gayasura, Lord Indra and other deities approached the Trimurthies (Brahma, Vishnu and Maheswara) to restore their position. Trimuthies disguised as Brahmins visited Gayasura.
+Gayasura used to fulfill the desires of the people who asked him by virtue of his kind and charitable qualities. By his mere visit, even sinners used to get rid of their sins and reached heaven. Gayasura received them warmly and worshipped with utter respect, (Arghya and Padya) and received their blessing. He asked them to tell the cause of their arrival. Then they were told to offer a sacred place to perform the sacrifice. He promised to provide the place. They asked to give his body as it was a holy place to perform the sacrifice. He agreed to it.
+
+They gathered material, sages and deities and requested Gayasura to commence yaaga (Sacrifice). The Gayasura extended his body from Gaya in Bihar State to Pithapuram in Andhra State and asked them to start sacrifice (yaaga) They started yaaga on his chest. Yaaga was intended to finish in seven days, counting every day, from early in the morning (i.e. cock crowing time). After six days, the deities prayed to Lord Eswara to spoil the Yaaga. Then Lord Eswara in the Form of a Cock at midnight (Lingodhbhava kala), (Before early in the morning) sounded “Kokkuroko,” Gayasura thought that the Yaaga was over and moved his body. Then they were ready to kill Gayasura as he spoiled their sacrifice. Gayasura accepted this. By pleasing with the words of Gayasura, they asked him to request them a boon. Then Gayasura told them that he had no personal desires. But for the benefit of the world, he requested Vishnu to be at his head, at the naval cavity Brahma, and at the feet of Eswara in the form of Cock, permanently. These three places should be treated as holy places and if anybody performed shraddha karmas in these places, their fore Fathers would reach salvation without rebirth.
+
+For that reason, Lord Vishnu is being Worshipped in the form of Gadadhara in ‘Gaya’ in Bihar even today. Brahma who’s in the form of Girijadevi is receiving prayers by devotees in Nabhigaya which is in Orissa State near Jajipur railway station.
+
+Pithapuram in Andhrapradesh become famous as padagaya. The primal deity of this is Lord Shiva in the form of Cock. This Shakti Peetham is famous for the name Puruhutika.<br>
+Kukkuteswara Swamy Temple History 2:<br>
+Once Indra cheated Ahalya (wife of Gautama Maharshi) in the form of Gautama and was cursed by the Maharshi. Indra lost his testes and got the symbols of Yoni all over his body. He felt very sad and prąyed Gautama a lot. Finally, the Rishi accepted and told that the Yoni symbols will look like eyes so that Indra will be called as Sahasraksha thereafter. But Indra lost his testes. He wanted to regain them. He left his kingdom, came to Piithika puri and did Tapasya for Jaganmata. After a long time, Jaganmata appeared before him and blessed him with wealth and testes. Indra was very happy and prąyed her as Puruhutika Devi (One who was worshiped by Indra).<br>
+
+Kukkuteswara Swamy Temple History 3:<br>
+Once Goddess Parvathi, Laxmi Devi and Saraswathi wanted to test the loyalty of Anasuya Mata towards her husband and sent Trinity to Earth to test her.</p>       
+          <h1 class="favourite-place-card-heading1">Festivals celebrated in Kukkuteswara Swamy Temple</h1>
+         <div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Sani Thrayodasi</a></li>
+        <li><a href="#tabs-2">Dassera Festivals</a></li>
+        <li><a href="#tabs-3">Kaartika Masam</a></li>
+        <li><a href="#tabs-4">Maha Shiva Rathi</a></li>
+        <li><a href="#tabs-5">Magha Masam Thrayodasi</a></li>
+    </ul>
+    <div id="tabs-1">
+    <h2 class="favourite-place-card-heading2">Sani Thrayodasi</h2>
+     <p  class="favourite-place-card-description">The Sani Thrayodasi festival at Sri Kukkuteswara Swamy Temple in Pithapuram is a sacred celebration dedicated to Lord Shani, the deity associated with the planet Saturn. Devotees gather to seek blessings and alleviate the effects of Saturn in their horoscopes. Rituals include special pujas and abhishekams to Lord Shani's idol. This festival offers solace and spiritual reflection, helping devotees find relief from life's challenges under the guidance of Lord Shani, holding immense cultural and religious significance. </p>
+    </div>
+    <div id="tabs-2">
+        <h2 class="favourite-place-card-heading2">Dassera Festivals</h2>
+         <p  class="favourite-place-card-description">Dassera Festival at Sri Kukkuteswara Swamy Temple in Pithapuram is a grand celebration of the victory of good over evil. The festival marks the triumph of Lord Rama over the demon king Ravana, symbolizing the victory of righteousness. The temple hosts various religious and cultural events, including processions, music, and special pujas. Devotees gather to witness the festivities, seek blessings, and revel in the joyous atmosphere, making it a significant cultural and spiritual event in the region.
+ </p>
+    </div>
+    <div id="tabs-3">
+     <h2 class="favourite-place-card-heading2">Kaartika Masam</h2>
+        <p  class="favourite-place-card-description">During Kaartika Masam at Sri Kukkuteswara Swamy Temple in Pithapuram, the devout gather to observe special religious activities. This holy month is dedicated to Lord Shiva and holds immense significance for Lord Kartikeya devotees. Pilgrims engage in daily prayers, lighting lamps, and performing abhishekam (ritual bathing) to the deity. The temple is illuminated with oil lamps, creating a serene and spiritual ambiance. This sacred observance fosters devotion and piety among devotees, and it is a time for seeking divine blessings and spiritual growth.</p>
+    </div>
+<div id="tabs-4">
+     <h2 class="favourite-place-card-heading2">Maha Shiva Rathi</h2>
+       <p class="favourite-place-card-description">Maha Shivaratri at Sri Kukkuteswara Swamy Temple in Pithapuram is a grand celebration of Lord Shiva. Devotees gather on this auspicious night, fasting and offering prayers to the divine lord. Special pujas and abhishekams (ritual baths) are performed, and the temple resonates with the chanting of sacred mantras. The night is filled with deep spiritual fervor, and devotees seek Lord Shiva's blessings for their well-being. It's a time when the temple comes alive with devotion and reverence for the deity, fostering a strong sense of spirituality among the worshippers. </p>
+</div>    
+    
+<div id="tabs-5">
+     <h2 class="favourite-place-card-heading2">Magha Masam Thrayodasi </h2>
+        <p class="favourite-place-card-description">Magha Masam Thrayodasi is a revered festival celebrated at Sri Kukkuteswara Swamy Temple in Pithapuram. Occurring on the 13th day of the Magha month in the Hindu calendar, this festival holds immense religious significance. Devotees flock to the temple to offer prayers, perform rituals, and light lamps, creating a deeply spiritual ambiance. The occasion is believed to bestow divine blessings and usher in prosperity. It strengthens the spiritual bond between the temple and its devotees, emphasizing the cultural and religious importance of this festival, where faith and tradition come together in a sacred and joyous celebration.
+</p>
+</div>    
+    
+    
+</div>
+     <h1 class="favourite-place-card-heading1">Location</h1>
+        <p class="favourite-place-card-description">
+     Kukkuteswara Swamy Temple Devasthanam, Padagaya Kshetram, Pithapuram, 533450, East Godavari, Andhra Pradesh, India.</p>
+    <h1 class="favourite-place-card-heading1">Gallery</h1>
+    <div class="container" style="width: 600px; height: 400px;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://images.tv9telugu.com/wp-content/uploads/2021/07/kukkuteswara-swamy-2.jpg" style="width: 600px; height: 400px;  padding: 25px;">
+  </div>
+
+  <div class="mySlides" >
+    <div class="numbertext">2 / 6</div>
+    <img src="https://images.tv9telugu.com/wp-content/uploads/2021/07/kukkuteswara-swamy-5.jpg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://images.tv9telugu.com/wp-content/uploads/2021/07/kukkuteswara-swamy-6.jpg" style="width: 600px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://papikondalu-tour-package.com/temples-around-rajahmundry/punnami-tourism/Kukkuteshwara-Swamy-Temple-Pithapuram.jpg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://cdn.s3waas.gov.in/s36f3ef77ac0e3619e98159e9b6febf557/uploads/2017/06/2017062369-202x300.jpg" style="width: 500px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL6nEYJYFIVfF5uDOXogncT2CJTnSDmkLU3Q&usqp=CAU" style="width: 500px; height: 400px;">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+      </div>
+    </div>
+  </div>
+  <div id="sectionTajMahalDetailedView"></div>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

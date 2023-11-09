@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<style>
+.favourite-places-bg-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  background-image: url("https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=");
+  background-size: cover;
+  padding: 20px;
+}
+.favourite-place-card-heading {
+  color: #ff0000;
+  font-family: "Times New Roman";
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading1 {
+  color: #DAA520;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading2 {
+  color: #808000;
+  font-family: "Times New Roman";
+  font-size: 17px;
+  font-weight: normal;
+  text-align: start;
+}
+.favourite-place-card-container {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin: 15px;
+  /* Arrange elements horizontally */
+   /* Center vertically */
+}
+
+.favourite-place-card-image {
+  width: 150px;
+  height: 150px;
+  float: left;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.favourite-place-card-description {
+  padding: 10px;
+  margin-left-right: 10px 10px;
+  color: #05070a;
+  font-family: "Times New Roman";
+  font-size: 16px;
+
+  /* Allow content to grow and take available space */
+  
+}
+
+.favourite-places-heading {
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 7px; /* Add margin at the bottom of the heading */
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="favourite-places-bg-container">
+    <div class="favourite-place-card-container">
+    <h1 class="favourite-place-card-heading">Sri Govindaraja Swamy temple</h1>
+        <p class="favourite-place-card-description">
+     Sri Govindarajaswamy Temple is an ancient temple. We can see the deity lying down in yoga nidra position, facing east, holding his right hand under his head while holding his left hand straight over his body. Sridevi and Bhudevi, the consorts of Vishnu, are seated at the foot of Govindaraja. According to legend, this God is the replica of Chidambaram Divya Desa Perumal. The presiding Perumal of Chidambaram, Sri Govindaraja Swamy, was brought and kept in Tirupati during the Muslim invasion of South India. After the situation at Chidambaram returned to normalcy, the vigraham of Lord Govindaraja Swamy was taken back from Tirupati. Please note mobile phones are not allowed inside the temple.</p>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/8/82/Natraja_Temple.jpg"
+        style="width: 300px; height: 300px;  object-fit: fill;  border: 3px solid #f03a3a;  border-radius: 15%; margin: 20px; float: left; align-items: center; "
+      />
+        <h1 class="favourite-place-card-heading1">History Of Sri Govindaraja Swamy temple</h1>
+        <p class="favourite-place-card-description">
+     When South India was invaded by Muslim rulers, the presiding deity of Chidambaram, Sri Govindaraja Swamy was brought and kept safely in Tirupati. After the situation at Chidambaram returned to normalcy, the vigraham of Lord Sri Govindaraja Swamy was taken back to Chidambaram from Tirupati.
+One day, Sri Ramanujacharya had a vision of Lord Govindaraja Swamy in his dream. He was advised by the Lord to make arrangements for Him to reside in Tirupati. Sri Ramanujacharya, by then was aware of Sri Govindaraja Swamy’s stay at Tirupati during Muslim invasion. He, with the help of the king visited the place he saw in his dream. To their astonishment, they found the vigraham of Lord Govindaraja Swamy in that place.
+Sri Ramanujacharya advised the king to construct a temple for the Lord and houses for the people, who perform kainkaryam in the Sri Govindaraja Swamy temple.<br>
+As per Aithihyam it is said that, Sri Govindaraja Swamy is the elder brother of Sri Venkateswara Swamy who accomplished the ever magnificent marriage between Sri Venkateswara Swamy and Padmavathi Ammavaru. Sri Govindaraja Swamy was the caretaker of massive wealth being obtained from king Kubera for conducting the wedding. He efficiently utilised this wealth to conduct one of the most glorious weddings of the history.
+
+Hence Sri Govindaraja Swamy is considered to be the god who helps you to elevate your wealth and manage the wealth acquired efficiently.<br>
+This temple is a remarkable achievement of the ancient south Indian architecture. It's tall and remarkable seven storied outer Gopuram with 11 kalasas was dated back to 14-15th century. This temple is one of the huge temples in Chittoor district. This Gopuram is enriched with the handwork depicting the scenes from Baghavata, Ramayana and Lord Sri Venketeswara swamy's life.
+
+The tall primary Gopuram is followed by a smaller but no less remarkable inner Gopuram. The inner Gopuram holds a decorative courtyard with a spacious inner stone hall, which protects the devotee's even during the busy festival times.</p>       
+          <h1 class="favourite-place-card-heading1">Festivals celebrated in Sri Govindaraja Swamy temple</h1>
+         <div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Vaisakha Festival (Annual Brahmotsavam )</a></li>
+        <li><a href="#tabs-2">Adhyanotsavam</a></li>
+        <li><a href="#tabs-3">Thiruvadipuram</a></li>
+        <li><a href="#tabs-4">Sri Salai Nachiyar Panguni Uttiram</a></li>
+        <li><a href="#tabs-5">Radhasapthami</a></li>
+        <li><a href="#tabs-6">Jyestabhishekam</a></li>
+        <li><a href="#tabs-7">Buggotsavam</a></li>
+        <li><a href="#tabs-8">Pushpayaga</a></li>
+        <li><a href="#tabs-9">Float festival</a></li>
+    </ul>
+    <div id="tabs-1">
+    <h2 class="favourite-place-card-heading2">Vaisakha Festival (Annual Brahmotsavam )</h2>
+     <p  class="favourite-place-card-description">The Vaisakha Festival is a significant and spiritually enriching celebration held annually at the Sri Govindaraja Swamy Temple in Tirupati, Andhra Pradesh. This grand festival takes place during the auspicious month of Vaisakha, typically falling between April and May.
+Devotees and pilgrims from far and wide converge at the temple to participate in the festivities. The temple complex comes alive with colorful decorations, fragrant flowers, and illuminated lamps. Special rituals and pujas are conducted throughout the festival, drawing worshippers seeking divine blessings.
+The centerpiece of the Vaisakha Festival is the procession of the temple's utsava murti (festive deity) of Lord Govindaraja Swamy. This grand procession features the deity adorned with exquisite jewelry and colorful silk attire, carried on a lavishly decorated chariot. The air resonates with the sound of bhajans and devotional music as thousands join in the procession.
+The Vaisakha Festival is not only a celebration of religious significance but also a cultural extravaganza with various programs and cultural events that enrich the spiritual experience. It symbolizes devotion, unity, and the joy of seeking the divine</p>
+    </div>
+    <div id="tabs-2">
+        <h2 class="favourite-place-card-heading2">Adhyanotsavam</h2>
+         <p  class="favourite-place-card-description">The Adhyanotsavam Festival, celebrated at the Sri Govindaraja Swamy Temple in Tirupati, is a solemn and spiritually significant event. This festival typically takes place during the auspicious month of Margashira, which falls between November and December. Devotees and pilgrims gather at the temple to participate in this observance.
+Adhyanotsavam is a festival dedicated to education and the pursuit of knowledge. It commemorates the tradition of learning and the importance of scriptures and sacred texts in Hinduism. During this festival, special pujas (rituals) and homams (fire ceremonies) are conducted, focusing on seeking blessings for wisdom and knowledge. The priests and scholars recite and chant verses from the sacred texts as a form of worship and spiritual learning.
+Devotees, including students and scholars, come to the temple to seek the blessings of Lord Govindaraja Swamy for success in their academic pursuits and spiritual growth. The festival underscores the significance of education and the divine wisdom contained in ancient scriptures. It is a unique blend of faith, scholarship, and spirituality.
+ </p>
+    </div>
+    <div id="tabs-3">
+     <h2 class="favourite-place-card-heading2">Thiruvadipuram</h2>
+        <p  class="favourite-place-card-description">The Thiruvadipuram Festival is a significant religious celebration conducted at the Sri Govindaraja Swamy Temple in Tirupati. This festival is observed in honor of Lord Sri Govindaraja Swamy, one of the presiding deities of the temple. Thiruvadipuram typically falls on the 20th day of the Tamil month of Margazhi, which corresponds to late December or early January.
+The festival is marked by elaborate rituals and special ceremonies dedicated to Lord Govindaraja Swamy. Devotees throng to the temple to witness and participate in the festivities. The highlight of the Thiruvadipuram Festival is the grand procession of the Utsava murti (the deity's processional idol) of Lord Govindaraja Swamy. The deity is adorned with magnificent jewelry and silk garments, making for a splendid and spiritually uplifting sight.
+Throughout the day, various pujas (rituals), abhishekams (ritual baths), and aradhanas (offerings) are performed. The temple resonates with the devotional fervor of the devotees, who gather to seek the blessings of Lord Govindaraja Swamy. The Thiruvadipuram Festival is a testament to the rich cultural and religious heritage of the region, and it provides a deeply spiritual experience for all who participate.</p>
+    </div>
+<div id="tabs-4">
+     <h2 class="favourite-place-card-heading2">Sri Salai Nachiyar Panguni Uttiram</h2>
+       <p class="favourite-place-card-description">The Sri Salai Nachiyar Panguni Uttiram Festival is a highly revered celebration conducted at the Sri Govindaraja Swamy Temple in Tirupati. This annual festival occurs during the Tamil month of Panguni, usually in March or April, and coincides with the Uttiram Nakshatra (star), a highly auspicious celestial alignment.
+The primary deity of the festival is Sri Salai Nachiyar, the divine consort of Lord Govindaraja Swamy. The festival is a grand and vibrant affair, attracting thousands of devotees from far and wide. The centerpiece of the festivities is the spectacular procession of Sri Salai Nachiyar and Lord Govindaraja Swamy, adorned with exquisite ornaments and colorful garments. Devotees offer their prayers and seek the blessings of the divine couple during this time.
+The Sri Salai Nachiyar Panguni Uttiram Festival encapsulates the cultural and spiritual essence of the region, uniting the community in devotion and celebration. It is a time of joy and devotion, fostering a deep sense of spiritual connection among the participants. The grandeur and significance of this festival make it a cherished tradition in the Sri Govindaraja Swamy Temple's calendar.
+</p>
+</div>    
+    
+<div id="tabs-5">
+     <h2 class="favourite-place-card-heading2"> Radhasapthami</h2>
+        <p class="favourite-place-card-description">Radhasapthami, celebrated at the Sri Govindaraja Swamy Temple in Tirupati, is a significant Hindu festival that honors the cosmic alignment and the divine relationship between Lord Surya (the Sun God) and Goddess Sridevi (Mahalakshmi). This festival falls on the seventh day (Sapthami) of the bright half (Shukla Paksha) in the Hindu month of Magha, typically in January or February.
+Devotees gather at the temple early in the morning to witness the ritualistic event. It begins with the ceremonial drawing of Kolams (colorful patterns) on the temple floor. The deity of Lord Surya is worshipped with deep devotion and fervor. The festival signifies the importance of solar energy in sustaining life and its association with prosperity and well-being. Radhasapthami is a beautiful blend of spirituality and cultural significance, drawing pilgrims and tourists to partake in this sacred observance.</p>
+</div>    
+    
+<div id="tabs-6">
+     <h2 class="favourite-place-card-heading2">Jyestabhishekam</h2>
+        <p class="favourite-place-card-description">TTD is organizing a grand festival of Jyestabhishekam (Abhidyeyaka Abisekam) at Sri Govindaraja Swamy temple from June 30 -July 2 where in the Golden Kavacha of utsava idols of Sri Govindaraja Swami and His consorts are removed and readorned three days after the rituals.
+
+As part of the proceedings of the fête Kavachadivasam will be performed on Day -1 that is June 30, Kavacha Pratista and Kavacha Samarpana rituals are observed on July 1 and 2.
+
+On all three days, TTD Archakas will perform Maha Shanti Homa and Punyahavachanam in the morning followed by Snapana Tirumanjanam to the utsava idols and Veedhi Utsavams.
+
+Legends say that the Jyestabhishekam fete is observed in the temple every year during Ashada month in the advent of the Jyesta star. Tirumala Senior Pontiff Sri Sri Sri Pedda Jeeyarswami will commence his Chaturmasa Diksha at Tirumala from July 3.
+
+A descendant of Sri Ramanujacharya, the senior Tirumala pontiff will commence his vratam a day after Purnima at Tirumala by offering prayers at Varahaswami temple, Swami Pushkarani ahead of entering the Srivari temple.
+
+He will be accompanied in his holistic procession from his mutt near Bedi Anjaneya temple along with his second in command Sri Sri Sri Chinna Jeeyarswami and his disciples.
+
+The TTD EO and other temple officials will receive at the temple Mahadwaram and lead him for Srivari Darshan. Thereafter both the pontiffs will be presented with a sacred vastram.
+
+</p>
+</div>    
+    
+<div id="tabs-7">
+     <h2 class="favourite-place-card-heading2">Buggotsavam</h2>
+        <p class="favourite-place-card-description">The annual Buggotsavam began on a grand religious note in Sri Govinda Raja Swamy temple in Tirupati on Friday. This festival takes place in Sri GT for three days.<br>
+On the first day, after Suprabhatam, Lord Sri Govindaraja Swamy was brought to Bugga located inside the temple along with His consorts.
+In the evening Snapana tirumanjanam, Samarkand and Asthanam were performed to the deities followed by Unjal Seva. Later on the deities reached Bugga (small pond like water body)and blessed the devotees.
+</p>
+</div>
+    
+<div id="tabs-8">
+     <h2 class="favourite-place-card-heading2">Pushpayaga</h2>
+        <p  class="favourite-place-card-description">The annual Pushpayaga Mahotsavam taken up by TTD in the ancient temple of Lord Sri Govindaraja Swamy at the pilgrim city of Tirupati enthralled the devotees on Monday.
+
+The floral bath lasted nearly four hours amidst the chanting of vedic verses from scriptures by temple priests. About five tonnes of various variety of flowers were offered on the deities of Lord Sri Govindaraja accompanied by His consorts Sridevi and Bhudevi.
+
+The flowers were later distributed as ‘prasadam’ to the devotees, who thronged the temple to witness the new ‘seva’.
+
+This ritual is usually performed to overcome the sins committed either knowingly or unknowingly by temple priests, officials, staff and devotees during brahmotsavams or nitya kainkaryams.
+
+Temple Deputy EO Smt Varalakshmi, Garden Suptd Sri Srinivas and others were a </p>
+</div>
+
+<div id="tabs-9">
+     <h2 class="favourite-place-card-heading2">Float festival</h2>
+        <p  class="favourite-place-card-description">The annual float festival in the famous Lord Govindaraja Swamy Temple in Tirupati will be conducted from February 8 to February 14 for seven days by TTD.
+During the festival, the processional deities Sri Kodanda Rama Swamy on Feb 8, Sri Parthasaradhi Swamy on Feb 9, Sri Kalyana Venkateswara Swamy on Feb 10, Sri Krishna Swamy Varu and Andal Ammavaru on Feb 11, Sri Govindaraja Swamy Varu on Feb 12 to Feb 14 will be taken out procession in Pushkarini in the evenings.
+Special programmes such as bhajans, annamaiah sankeerthanas programmes will be performed by TTDs Dharma Prachara Parishad, Annamacharya Project during the programmes.
+    </p>
+</div>
+</div>
+     <h1 class="favourite-place-card-heading1">Location</h1>
+        <p class="favourite-place-card-description">
+    Sri Govindaraja Swami locatied at a distance of 1 km from Tirupati Railway Station & 22 km from Tirumala Tirupati Balaji Temple, Sri Govindaraja Swami Temple is one of the important temples in Tirupati, located in the heart of the city. It is one of the best places to visit in Tirupati city.</p>
+    <h1 class="favourite-place-card-heading1">Gallery</h1>
+    <div class="container" style="width: 600px; height: 400px;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://4.bp.blogspot.com/--2zFMyirlsw/WKQxjSvyv0I/AAAAAAAAEZ4/CfmLOhGi6KADrjsuO8cwXiUYozScoXb3ACLcB/s280/Govindaraja%2BSwamy%2BTemple%2BIn%2BTirupati.png" style="width: 600px; height: 400px;  padding: 25px;">
+  </div>
+
+  <div class="mySlides" >
+    <div class="numbertext">2 / 6</div>
+    <img src="https://1.bp.blogspot.com/-Pfvux2rMa1U/VTwTVTlSTII/AAAAAAAACck/AbLQdcsuySA/s1600/Govindaraja%2BSwamy%2BTemple%2BGopuram.jpg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://feeds.abplive.com/onecms/images/uploaded-images/2022/02/02/5fda86b273ad9159fab2eae9728b1ea0_original.jpg" style="width: 600px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://2.bp.blogspot.com/-znxgijQsxzo/UvZqGKbuEbI/AAAAAAAABRM/8FhyAljznqA/s1600/Govindarajaswamy+temple-warangal+00302022014_2124.JPG" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://qph.cf2.quoracdn.net/main-qimg-2c4cd1d2559e01b2984f7f0841b0cbed-lq" style="width: 500px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMG31btmgAjh_sOLZlVFlRaWAQhvELjPJZCw&usqp=CAU" style="width: 500px; height: 400px;">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+      </div>
+    </div>
+  </div>
+  <div id="sectionTajMahalDetailedView"></div>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

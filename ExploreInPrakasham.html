@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prakasam</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Temples,to visit,near me,prominent,not so famous">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="header.css">
+        <style>
+            a {
+                text-decoration: none;
+             }
+            .banner{
+                background-color:gold;
+                padding:15px;
+                text-align:center;
+            }
+           .temples-list {
+                list-style-type: none; 
+            }
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+           }
+           .temples-list li {
+                margin: 10px;
+                padding: 10px;
+                background-color: orange;
+                border-radius: 5px;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+                transition: transform 0.2s ease-in-out;
+           }
+           .temples-list li:hover {
+                transform: scale(1.05);
+           }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="favicon.ico.png" alt="TempleTales Logo" class="logo">
+            <h1 class="header-title">TempleTales</h1>
+            <ul class="nav-links">
+                <li><a href="TempleTales.html">Home</a></li>
+                <li><a href="Explore.html" id="active">Explore</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </header>
+            <h1 class="banner">Explore Temples in Prakasam</h1>   
+	 <div class="container">
+                <ul class="temples-list">
+                    <li><div style="display: flex; align-items: center;">
+                        <img src="valluramma.jpg" alt="Valluramma" width="150" height="150">
+                        <div style="padding: 20px;">
+                    	      <p><b>Valuramma Talli Temple</b></p>
+                            <p><b>Location:</b>Valluru,Ongole</p>
+                            <p><b>Diety:</b>Valluramma Talli</p>
+                            <p><a href="valluru.html">Know More >></a></p>
+	             </div></div>
+                    </li>
+                    <li><div style="display: flex; align-items: center;">
+                        <img src="tripu.jpg" alt="tripuranthakam" width="150" height="150">
+                        <div style="padding: 20px;">
+                    	      <p><b>Tripuranthakam</b></p>
+                            <p><b>Location:</b>Tripuranthakam,Prakasam</p>
+                            <p><b>Diety:</b>Lord Shiva</p>
+                            <p><a href="tripuranthakam.html">Know More >></a></p>
+	             </div></div>
+                    </li>
+                </ul>
+            </div>         
+    </body>
+</html>

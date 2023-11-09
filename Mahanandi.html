@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<style>
+.favourite-places-bg-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  background-image: url("https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=");
+  background-size: cover;
+  padding: 20px;
+}
+.favourite-place-card-heading {
+  color: #ff0000;
+  font-family: "Times New Roman";
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading1 {
+  color: #DAA520;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading2 {
+  color: #808000;
+  font-family: "Times New Roman";
+  font-size: 17px;
+  font-weight: normal;
+  text-align: start;
+}
+.favourite-place-card-container {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin: 15px;
+  /* Arrange elements horizontally */
+   /* Center vertically */
+}
+
+.favourite-place-card-image {
+  width: 150px;
+  height: 150px;
+  float: left;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.favourite-place-card-description {
+  padding: 10px;
+  margin-left-right: 10px 10px;
+  color: #05070a;
+  font-family: "Times New Roman";
+  font-size: 16px;
+
+  /* Allow content to grow and take available space */
+  
+}
+
+.favourite-places-heading {
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 7px; /* Add margin at the bottom of the heading */
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="favourite-places-bg-container">
+    <div class="favourite-place-card-container">
+    <h1 class="favourite-place-card-heading">Mahanandiswara Temple</h1>
+        <p class="favourite-place-card-description">
+    Mahanandiswara temple in Mahanandi mandal is a reputed pilgrim center and that dates back to the 7th century A.D. It is Located at a distance of 14 Kms from Nandyal district.It is a scenic spot having its location to the east of the Nallamalas hill range in a natural set up of ravishing beauty surrounded by thick forest.Within 15 km radius from Mahanandi, there are nine Nandis (Bulls) known as Nava Nandis. Mahanandi is famous for the Mahanandiswara Temple and foremost shrines of Nava Nandis. The nine Nandi temples are Mahanandi, Shivanandi, Vinayakanandi, Somanandi, Prathamanandi, Garudanandi, Suryanandi, Krishnanandi and Naganandi.</p>
+      <img
+        src="https://aptourism.gov.in/media-data/images/987/DPP_0002.jpg"
+        style="width: 300px; height: 300px;  object-fit: fill;  border: 3px solid #f03a3a;  border-radius: 15%; margin: 20px; float: left; align-items: center; "
+      />
+        <h1 class="favourite-place-card-heading1">History Of Mahanandiswara Temple</h1>
+        <p class="favourite-place-card-description">
+     The 7th century Mahanandiswara Temple dedicated to Lord Shiva is very famous and sacred place. Though the initial structure was built by Chalukyas in 7th century, several additions were done in 10th and 15th centuries. The gopuram over central sanctum is built in Badami Chalukyan style of architecture and other structures in the temple are in Vijayanagara style. According to the legend, the local kings known as Nandas ruled here in the 10th century AD and they built a number of temples and worshipped their ancestral deity the Nandi, hence the name Mahanandi.<br>The remarkable feature here is the crystal clear water in Pushkarini which flows throughout the year. The water is so clear and pure that even a needle at the bottom can be seen clearly. There are nearly three pools in Mahanandi Temple. Two pools lie outside the temple. The third pool which lies within temple premises has uninterrupted water flow which originates from the basement of Garbha Gruha where main deity (Shiva Ling) is placed. This 60 square feet tank has a Mandapam at its middle and the inlet and outlets of tank are built in such away, the water level always remains at five feet high. Thus devotees can have a dip in this holy tank. Here devotees are allowed to offer prayers to Shiva Ling and touch the water underneath the Lingam in the main Sanctum Sanctorum. There is a huge Nandi statue outside the Mahanandiswara Temple.</p>       
+          <h1 class="favourite-place-card-heading1">Festivals celebrated in Mahanandiswara Temple</h1>
+         <div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Maha Sivrathri</a></li>
+        <li><a href="#tabs-2">Kartik Purnima</a></li>
+        <li><a href="#tabs-3">Ugadi</a></li>
+        <li><a href="#tabs-4">Vaikunta Ekadasi</a></li>
+        <li><a href="#tabs-5">Vijayadashami</a></li>
+        
+    </ul>
+    <div id="tabs-1">
+    <h2 class="favourite-place-card-heading2">Maha Sivrathri</h2>
+     <p  class="favourite-place-card-description">Maha Shivaratri, one of the most revered Hindu festivals, is celebrated with great devotion and fervor at the Sri Mahanandiswara Swamy Temple in Kadapa. This grand festival typically falls in the month of February or March. Devotees from near and far gather at the temple to honor Lord Shiva, the supreme deity of destruction and transformation.
+
+The festival is marked by day-long fasting, night-long vigils, and special pujas dedicated to Lord Shiva. The temple complex comes alive with the sound of bells, chants, and the fragrance of incense. The Shiva Lingam, the central deity, is adorned with fresh flowers, and devotees pour milk, honey, and other sacred offerings as a symbol of their devotion.
+
+Maha Shivaratri is not just a religious observance; it's a night of introspection and spiritual awakening. It's believed that on this night, Lord Shiva performs the heavenly dance of creation and destruction, and those who worship him with sincerity are blessed with spiritual insight, inner peace, and liberation from the cycle of birth and death. The celebration culminates with the breaking of the fast and the distribution of prasad (blessed food) to the devotees, filling the air with an atmosphere of divine grace and joy.
+ </p>
+    </div>
+    <div id="tabs-2">
+        <h2 class="favourite-place-card-heading2">Kartik Purnima</h2>
+         <p  class="favourite-place-card-description">Kartik Purnima is a significant religious observance at the Sri Mahanandiswara Swamy Temple in Kadapa. Celebrated on the full moon day in the Hindu month of Kartik, this festival holds immense spiritual importance. Devotees gather at the temple to offer prayers and seek the blessings of Lord Shiva. The day is marked by special rituals, including deepams (oil lamps) lighting, circumambulation of the temple, and singing of devotional hymns. Kartik Purnima is believed to cleanse the soul and bring merit to those who participate in the festivities. It is a time for deep devotion and spiritual reflection for the temple's devotees.
+ </p>
+    </div>
+    <div id="tabs-3">
+     <h2 class="favourite-place-card-heading2">Ugadi</h2>
+        <p  class="favourite-place-card-description">Ugadi, the Telugu New Year, is celebrated with enthusiasm and devotion at the Sri Mahanandiswara Swamy Temple in Kadapa every March/April. This vibrant festival marks the beginning of a new year and symbolizes fresh beginnings. Devotees throng to the temple to seek divine blessings and participate in various rituals. Special pujas and prayers are conducted to invoke the blessings of the deities. The temple premises come alive with cultural performances, rangoli designs, and a festive atmosphere. Ugadi is a time of joy and hope, where people embrace the future with positivity, seeking prosperity and well-being in the coming year.As the temple's Kshetrapalaka (Mayor) happened to be Bhuvaneswari Sahita RamaLingeswara Swamy, Maha Sivaratri is celebrated in the month of February and March. Special Abhishekas like Rudra Bhishekam, Ekavara Abhishekam are performed at night. The special reason for this to be performed in the night is to keep the people awake (Jagaranam)</p>
+    </div>
+<div id="tabs-4">
+     <h2 class="favourite-place-card-heading2">Vaikunta Ekadasi</h2>
+       <p class="favourite-place-card-description">In the months of December and January, Vaikunta Ekadasi is celebrated with great religious fervor at the Sri Mahanandiswara Swamy Temple in Kadapa. This significant event is dedicated to Lord Vishnu and holds a special place in the hearts of devotees. The festival marks the opening of the celestial doors to Vaikunta, Lord Vishnu's divine abode, and it is believed that those who pass through these gates are granted liberation from the cycle of birth and death. The temple witnesses a surge of pilgrims who engage in prayer, singing devotional songs, and listening to religious discourses, all with the hope of attaining spiritual enlightenment and divine grace. It's a time of deep spiritual significance and devotion for the temple's visitors. </p>
+</div>    
+    
+<div id="tabs-5">
+     <h2 class="favourite-place-card-heading2">Vijayadashami</h2>
+        <p class="favourite-place-card-description">The month of October brings forth the vibrant and spiritually significant festival of Vijayadashami at the Sri Mahanandiswara Swamy Temple in Kadapa. This festival marks the triumph of good over evil and the victory of the goddess Durga over the demon Mahishasura. Devotees gather with great enthusiasm to witness various religious events, including processions, cultural programs, and special pujas. The highlight of the celebration is the immersion of idols in water bodies, symbolizing the goddess's victory. Vijayadashami is a time of joy, cultural expression, and deep spiritual reflection, as devotees come together to seek the blessings of the divine and embrace the triumph of righteousness.</p>
+</div>    
+    
+
+</div>
+     <h1 class="favourite-place-card-heading1">Location</h1>
+        <p class="favourite-place-card-description">
+     Mahanandi is a village located east of the Nallamala Hills of Nandyal District, Andhra Pradesh, India. It is surrounded by forests. Within 15 km of Mahanandi, there are nine Nandi shrines known as Nava nandulu. Mahanandi is one of the Nava Nandis. </p>
+    <h1 class="favourite-place-card-heading1">Gallery</h1>
+    <div class="container" style="width: 600px; height: 400px;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://aptourism.gov.in/media-data/images/989/DPP_0006.jpg" style="width: 600px; height: 400px;  padding: 25px;">
+  </div>
+
+  <div class="mySlides" >
+    <div class="numbertext">2 / 6</div>
+    <img src="https://aptourism.gov.in/media-data/images/986/5-960-720.jpg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://cdn.s3waas.gov.in/s319b650660b253761af189682e03501dd/uploads/bfi_thumb/2022031722-plzxgt7v4kqhuw21x1aezg9zonab6nvn0zlz9bvu8w.jpg" style="width: 600px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://www.pujasthan.com/wp-content/uploads/2022/12/Mahanandi-Temple.jpg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://qph.cf2.quoracdn.net/main-qimg-db96b3823ffc75f07809b71e4facc044-lq" style="width: 500px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIRAd7sBjBFv4e8ygNZXvKXxaS4-Rm7mNTKg&usqp=CAU" style="width: 500px; height: 400px;">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+      </div>
+    </div>
+  </div>
+  <div id="sectionTajMahalDetailedView"></div>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

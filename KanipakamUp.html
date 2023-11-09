@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<style>
+.favourite-places-bg-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  background-image: url("https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=");
+  background-size: cover;
+  padding: 20px;
+}
+.favourite-place-card-heading {
+  color: #ff0000;
+  font-family: "Times New Roman";
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading1 {
+  color: #DAA520;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading2 {
+  color: #808000;
+  font-family: "Times New Roman";
+  font-size: 17px;
+  font-weight: normal;
+  text-align: start;
+}
+.favourite-place-card-container {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin: 15px;
+  /* Arrange elements horizontally */
+   /* Center vertically */
+}
+
+.favourite-place-card-image {
+  width: 150px;
+  height: 150px;
+  float: left;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.favourite-place-card-description {
+  padding: 10px;
+  margin-left-right: 10px 10px;
+  color: #05070a;
+  font-family: "Times New Roman";
+  font-size: 16px;
+
+  /* Allow content to grow and take available space */
+  
+}
+
+.favourite-places-heading {
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 7px; /* Add margin at the bottom of the heading */
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="favourite-places-bg-container">
+    <div class="favourite-place-card-container">
+    <h1 class="favourite-place-card-heading">Varasiddhi Kanipakam Vinayaka Temple</h1>
+        <p class="favourite-place-card-description">
+     Varasiddhi Vinayaka of Kanipakam is famously known as the God of Satya Vakanda. Devotees hold a profound belief that anyone
+     who falsely swears in front of Swami will face divine retribution. Additionally, those struggling with addictions, such as
+     alcoholism,find solace in swearing before Swami, believing that it will help them overcome their vices.
+     Kanipakam is known for its unique blend of Shiva-Vaishnava traditions, as it hosts a cluster of adjacent temple structures 
+     near the primary Ganasatha temple. These temples include Varasiddhi Vinayakaswamy temple, Manikantheswara, Varadaraja, and 
+     Veeranjaneya Swamy temples, each carrying its own mythological significance.The idol itself is known as "Swayambhu," which 
+     means self-manifested.</p>
+      <img
+        src="https://www.holidify.com/images/cmsuploads/compressed/VinayakaTemple_20200508120615.jpg"
+        style="width: 300px; height: 300px;  object-fit: fill;  border: 3px solid #f03a3a;  border-radius: 15%; margin: 20px; float: left; align-items: center; "
+      />
+        <h1 class="favourite-place-card-heading1">History Of Varasiddhi Vinayaka Temple</h1>
+        <p class="favourite-place-card-description">
+     The opulent temple was constructed in the early 11th century by the Chola king, Kulothunga Chola I and further expanded in
+     1336 by the emperors of Vijayanagara dynasty. The name Kanipakam itself breaks into Kani (wetland) and pakam (flow of water 
+     into wetland) due to its presence next to river Bahuda. A Siva Temple was also created in the complex when Kulothunga Chola 
+     expanded the temple.It was to show his devotion to Lord Shiva as well as Lord Ganesha.
+     This temple boasts a rich history, with records suggesting that it was constructed around a millennium ago. The origin of 
+     its name can be traced back to a village called Viharapuri, where three brothers who were born blind, dumb, and deaf lived 
+     on the fruits of their labor as farmers. When a severe drought struck the village, leaving the residents parched and desperate,
+     the three brothers decided to dig deeper into their Etham well in search of water. However, during the excavation, their spade 
+     a massive stone, causing it to bleed. Astonishingly, as the blood from the stone touched the disabled brothers, their impairments
+     were miraculously cured. Word of this incredible incident spread throughout the village, leading to the discovery of the divine 
+     form of 'Gananath' within the well. The villagers, deeply moved, paid their respects to the deity and began the tradition of 
+     offering coconuts to the Lord. The water that flowed from these coconuts onto the Kani Bhumi (meaning a one-acre field) 
+     eventually gave rise to the name 'Kaniparakaram,' which over time, transformed into 'Kanipakam.'
+     The temple of Varasiddhi Ganesha continues to grow, with direct evidence of its expansion seen in a fifty-year-old silver 
+     armor that, even today, Swami cannot wear. In 2002, devoted followers donated this silver armor, symbolizing the ever-
+     increasing reverence for  Swami.The Manikantheswara Swamy Temple, located to the northwest of the Swayambhu Varasiddhi 
+     Vinayaka Swamy Temple, is of historicalimportance, believed to have been constructed during the 11th century by the Chola 
+     king Kulottunga Maharaja.This temple was commissioned by Lord Shiva to preserve the records of Brahmahatya. Its exquisite
+     showcase idols of Mahaganapati, Dakshinamurthy, Surya, Shanmukhu, and Goddess Durga. The temple's Gali Gopuram and Prakara 
+     Mandapa feature finely crafted statues of various deities, leaving a lasting impression on devotees. Inside, there is a 
+     shrine dedicated to Maragadambika Ammavari, where rituals are performed to ward off  Sarpadosha. The annual Vijayadashami 
+     celebrations in honor of Ammavari are a prominent event in the temple's calendar, further enhancing  its significance.</p>       
+          <h1 class="favourite-place-card-heading1">Festivals celebrated in Varasiddhi Vinayaka Temple</h1>
+         <div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Vinayaka Chaturthi</a></li>
+        <li><a href="#tabs-2">Karthika Masam</a></li>
+        <li><a href="#tabs-3">Maha Shivaratri</a></li>
+        <li><a href="#tabs-4">Ganesh Jayanti</a></li>
+        <li><a href="#tabs-5">Ugadi</a></li>
+
+    </ul>
+    <div id="tabs-1">
+    <h2 class="favourite-place-card-heading2">Vinayaka Chaturthi</h2>
+     <p  class="favourite-place-card-description">Vinayaka Chaturthi, celebrated at the Kanipakam Vinayaka Temple in Andhra Pradesh, is a prominent Hindu festival dedicated to Lord Ganesha, the elephant-headed deity. This auspicious occasion marks the birth of Lord Ganesha and typically falls in the Hindu month of Bhadrapada, which corresponds to August or September.
+
+Devotees from far and wide flock to the temple to partake in the grand celebrations. The temple is adorned with vibrant decorations, and the main attraction is the idol of Lord Ganesha, believed to be self-manifested in the temple's well. Special prayers, pujas, and aarti are performed with great devotion, accompanied by the chanting of sacred hymns and bhajans.
+
+Devotees offer various offerings, including modakas, coconuts, and flowers, to seek the Lord's blessings and remove obstacles from their lives. The atmosphere is filled with joy, spirituality, and a sense of unity as people come together to celebrate the divine presence of Lord Ganesha during Vinayaka Chaturthi. </p>
+    </div>
+    <div id="tabs-2">
+        <h2 class="favourite-place-card-heading2">Karthika Masam</h2>
+         <p  class="favourite-place-card-description">Karthika Masam is a significant month-long festival celebrated at the Kanipakam Vinayaka Temple in Andhra Pradesh. It typically occurs in November or December and is dedicated to Lord Shiva. During this sacred period, devotees undertake various rituals and prayers, including lighting lamps and offering prayers to Lord Shiva. The temple premises are illuminated with oil lamps, creating a serene and spiritual atmosphere. Pilgrims take holy dips in the nearby Chitravathi River and visit the temple to seek divine blessings. Karthika Masam is a time of deep devotion and religious observance, enhancing the spiritual significance of the Kanipakam Vinayaka Temple.
+ </p>
+    </div>
+    <div id="tabs-3">
+     <h2 class="favourite-place-card-heading2">Maha Shivaratri</h2>
+        <p  class="favourite-place-card-description">Maha Shivaratri, celebrated at the Kanipakam Vinayaka Temple in Andhra Pradesh, is a grand Hindu festival dedicated to Lord Shiva. Observed in the Hindu month of Phalgun, usually in February or March, it marks a night of deep spiritual significance. Devotees gather at the temple to offer special prayers, abhishekams (ritual bath), and perform all-night vigils. The temple premises are adorned with colorful decorations, and a divine aura envelops the area. This festival is a time for devotees to seek Lord Shiva's blessings for spiritual growth and the removal of sins. Maha Shivaratri is celebrated with utmost devotion, reinforcing the temple's significance.</p>
+    </div>
+<div id="tabs-4">
+     <h2 class="favourite-place-card-heading2">Ganesh Jayanti</h2>
+       <p class="favourite-place-card-description">Ganesh Jayanti, celebrated at the Kanipakam Vinayaka Temple in Andhra Pradesh, marks the birthday of Lord Ganesha. This festival, observed on Vinayaka Chavithi, is a day of special significance for devotees. The temple is adorned with festive decorations, and the idol of Lord Ganesha, believed to be self-manifested in the temple's well, becomes the focal point of the celebrations. Devotees perform elaborate rituals, pujas, and aarti, seeking the Lord's blessings and guidance. They offer modakas, coconuts, and other symbolic items to honor the deity. Ganesh Jayanti is a day of spiritual devotion and gratitude, emphasizing the temple's importance in Ganesha worship. </p>
+</div>    
+    
+<div id="tabs-5">
+     <h2 class="favourite-place-card-heading2">Ugadi</h2>
+        <p class="favourite-place-card-description">
+Ugadi, the Telugu New Year, is celebrated at the Kanipakam Vinayaka Temple in Andhra Pradesh with great enthusiasm and devotion. This festival typically falls in March or April and marks the beginning of a new year in the Hindu calendar. The temple is adorned with colorful decorations, and special pujas and rituals are conducted. Devotees seek divine blessings for a prosperous and auspicious year ahead. The festival is a time for cultural performances, traditional feasts, and the exchange of festive greetings. Ugadi strengthens the sense of community and spirituality among the temple's devotees, making it a significant celebration at Kanipakam Vinayaka Temple.</p>
+</div>    
+    
+
+</div>
+     <h1 class="favourite-place-card-heading1">Location</h1>
+        <p class="favourite-place-card-description">
+     Vinayaka Temple or Sri Varasidhi Vinayaka Swamy Temple is located at Kanipakam in Chittoor district of Anhra Pradesh. The 
+     temple is about 11km from Chittoor and 68 km from Tirupati</p>
+    <h1 class="favourite-place-card-heading1">Gallery</h1>
+    <div class="container" style="width: 600px; height: 400px;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://99pandit.com/wp-content/uploads/2023/05/3-11.webp" style="width: 600px; height: 400px;  padding: 25px;">
+  </div>
+
+  <div class="mySlides" >
+    <div class="numbertext">2 / 6</div>
+    <img src="https://www.templedairy.in/wp-content/uploads/2015/11/DoddaGanesh-3-1.jpg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://www.holidify.com/images/cmsuploads/compressed/ganapati-visarjan-7_092912023853_20190813171349.jpg" style="width: 600px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://gosthala.com/wp-content/uploads/2017/08/facebook-image-2.jpg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://i.ytimg.com/vi/-3BYu9xnKwA/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGH8gVigXMA8=&rs=AOn4CLCdhyMiSaq2dFNjIOFSMk3edru6pA" style="width: 500px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://www.holidify.com/images/cmsuploads/compressed/Kanipakam1_20200508121200.jpg" style="width: 500px; height: 400px;">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+      </div>
+    </div>
+  </div>
+  <div id="sectionTajMahalDetailedView"></div>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

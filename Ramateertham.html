@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<style>
+.favourite-places-bg-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  background-image: url("https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=");
+  background-size: cover;
+  padding: 20px;
+}
+.favourite-place-card-heading {
+  color: #ff0000;
+  font-family: "Times New Roman";
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading1 {
+  color: #DAA520;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading2 {
+  color: #808000;
+  font-family: "Times New Roman";
+  font-size: 17px;
+  font-weight: normal;
+  text-align: start;
+}
+.favourite-place-card-container {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin: 15px;
+  /* Arrange elements horizontally */
+   /* Center vertically */
+}
+
+.favourite-place-card-image {
+  width: 150px;
+  height: 150px;
+  float: left;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.favourite-place-card-description {
+  padding: 10px;
+  margin-left-right: 10px 10px;
+  color: #05070a;
+  font-family: "Times New Roman";
+  font-size: 16px;
+
+  /* Allow content to grow and take available space */
+  
+}
+
+.favourite-places-heading {
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 7px; /* Add margin at the bottom of the heading */
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="favourite-places-bg-container">
+    <div class="favourite-place-card-container">
+    <h1 class="favourite-place-card-heading">Ramatheertam Sri Rama Temple</h1>
+        <p class="favourite-place-card-description">
+     Ramateertham is one of the places made sacred by a traditional connection with Lord Sree Rama. The temple and village at 
+     the base of a chain of hills of solid rock on which are some perennial springs of water, and various places each in a way
+     associated with the name of Rama.Ram temples are adorned with grandeur during the coronation of Lord Rama and the well-
+     being of Sitaram. Shiva temples come alive with fervent devotees on Mahashivratri and during the month of Kartika. Vishnu
+     temples shimmer with exquisite decorations during the Dhanur month, hosting ceremonies unique to their respective months.
+     Yet, in the heart of Uttarandhra Bhadradri, there exists a place that draws devotees all year round, where festivals 
+     continue to grace the calendar. This exceptional place is Ramatheerdham, where the union of Shiva and Keshava can be 
+     witnessed.
+     The famous ancient temple of Ramachandra Swamy can be found here. The beautiful idols of Lord Ramachandra Swamy, Sita and
+     Lakshmana in Silver kavachas can be seen at this temple. There is a beautiful lake in vicinity of the temple. One has to 
+     visit this temple for its serenity.The festivals of Sri Ramanavami and Vaikuntha Ekadasi are celebrated with pomp and 
+     fervour here. Every year Ramateertham GIripradarshana will be organized during Vaikuntha Ekadasi. You can see many 
+     tortoises with Vishnu Namams on their backs, roaming around in the temple. There is also a Rama Stambham installed 
+     by Pedda Jeeyar.</p>
+      <img
+        src="https://cdn.s3waas.gov.in/s3cee631121c2ec9232f3a2f028ad5c89b/uploads/2021/09/2021092243.jpg"
+        class="favourite-place-card-image"
+        style="width: 300px; height: 300px;  object-fit: fill;  border: 3px solid #f03a3a;  border-radius: 15%; margin: 20px; float: left; align-items: center; "
+      />
+        <h1 class="favourite-place-card-heading1">History Of Arasavalli Sun Temple</h1>
+        <p class="favourite-place-card-description">
+      Ram temples are adorned with grandeur during the coronation of Lord Rama and the well-being of Sitaram. Shiva temples come
+     alive with fervent devotees on Mahashivratri and during the month of Kartika. Vishnu temples shimmer with exquisite 
+     decorations during the Dhanur month, hosting ceremonies unique to their respective months. Yet, in the heart of Uttarandhra
+     Bhadradri, there exists a place that draws devotees all year round, where festivals continue to grace the calendar. This 
+     exceptional place is Ramatheerdham, where the union of Shiva and Keshava can be witnessed.
+     Nestled in the Nellimarla mandal of Vizianagaram district in Uttarandhra, Ramatheerdham holds a significant place in the 
+     hearts of devotees. Legend has it that Lord Rama resided in this sacred land for a time and chanted the divine mantra of 
+     Lord Shiva. It is this unique blend of devotion that attracts worshippers from all corners of the world during the sacred
+     occasions of Shivratri and the month of Kartikam.
+     A monolithic mountain, standing tall at 600 meters and stretching two kilometers, lies to the north of this temple. It is 
+     believed that Sita, Rama, and the Pandavas wandered these hallowed grounds. The Koneru, adjacent to the Ram Temple, holds
+     an enchanting quality as its waters never recede. To the west of this water body, you can explore the relics of Bhima's 
+     burra, the sacred Gadi fireplace, Buddha statues, Parnashala, Palukurai, the Panchas of the Pandavas, and Seethamma Puriti
+    Coch Taluk.During their exile in the Dwapara Yuga, the Pandavas are said to have traversed this very region. When they 
+    requested Lord Krishna to accompany them, He entrusted them with the idols of Sitaramalakshman and advised them to worship 
+    these divine forms instead. Historians believe that the presence of Bhima's house in this area serves as evidence of their 
+    sojourn. In the 16th century, King Pusapati Sitaramchandra Maharaja, who ruled the region, was visited by a divine dream in
+    which Lord Rama revealed the location of the idols given to the Pandavas during the Dwapara Yuga. These idols were submerged
+    in a water pond atop Bodikonda. The king retrieved the idols and constructed a temple. Thus, the place was named Ramatirdham
+    due to the idols found in the sacred tirtha. Not only is this the oldest temple in the region, but it is also another 
+    Bhadradri. In his historical account of Visakhapatnam, written around 1880, Carmichael Dora made mention of this revered place.
+    Historical records indicate that Jains had also made their home in this region. The hills of Gurubhaktakonda and Durgakonda 
+    house ancient Buddhist temples, adding to the historical significance of the area. To the north, one can find Nilachalam, 
+    and to the west, there is a Jain temple. Additional sanctuaries here include Vaikunthanathaswamy, Venugopalaswamy, 
+    Lakshmidevi, Madhavaswamy, Varahalakshmi, Narasimhaswamy, Anjaneyaswamy, Alvarula Sannidhi, and Uma Sadashivaswamy. The 
+    footprints of Lord Rama and the impressions of Anjaneyaswamy's feet are still visible on this hill, offering tangible proof
+    of the time Sitarama Lakshmana spent in the Ramatirdham area. Devotees visiting Ram Teertha are encouraged to explore Bhima's
+    house as well.</p>       
+          <h1 class="favourite-place-card-heading1">Festivals celebrated in Arasavalli Temple</h1>
+         <div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Sri Ramalingeswara Swamy Kalyanotsavam</a></li>
+        <li><a href="#tabs-2">Sri Rama Navami</a></li>
+        <li><a href="#tabs-3">Brahmotsavam</a></li>
+        <li><a href="#tabs-4">Vaikuntha Ekadasi</a></li>
+        <li><a href="#tabs-5">Diwali</a></li>
+        
+
+    </ul>
+    <div id="tabs-1">
+    <h2 class="favourite-place-card-heading2">Sri Ramalingeswara Swamy Kalyanotsavam</h2>
+     <p  class="favourite-place-card-description">Sri Ramalingeswara Swamy Kalyanotsavam is a significant and elaborate celebration held at various Hindu temples, including the Ramateertham Temple in Andhra Pradesh. This festival marks the divine celestial wedding of Lord Shiva, represented as Ramalingeswara Swamy, and Goddess Parvati. The Kalyanotsavam is a sacred and joyous event, observed with great devotion. It involves beautifully adorned idols of the divine couple, the recitation of Vedic hymns, and special rituals, symbolizing the union of Lord Shiva and Goddess Parvati. Devotees witness and participate in this divine wedding, seeking blessings, and spiritual grace. The Kalyanotsavam is a time of immense religious significance and celebration in honor of Lord Shiva's marital union. </p>
+    </div>
+    <div id="tabs-2">
+        <h2 class="favourite-place-card-heading2">Sri Rama Navami</h2>
+         <p  class="favourite-place-card-description">Sri Rama Navami is a significant Hindu festival celebrated in Ramateertham and across India, dedicated to Lord Rama, the seventh incarnation of Lord Vishnu. This auspicious day falls on the ninth day (Navami) of the Chaitra month in the Hindu lunar calendar, typically in March or April. Devotees gather at the Ramateertham Temple to commemorate the birth of Lord Rama with special pujas, recitation of the Ramayana, and processions. The temple comes alive with devotion and spiritual fervor as devotees seek Lord Rama's blessings for righteousness and virtue. Sri Rama Navami is a time of deep reverence and celebration, highlighting the significance of Lord Rama in Hinduism.
+ </p>
+    </div>
+    <div id="tabs-3">
+     <h2 class="favourite-place-card-heading2">Brahmotsavam</h2>
+        <p  class="favourite-place-card-description">The Annual Brahmotsavam in Ramateertham is a prominent religious event celebrated with great fervor. It is an elaborate festival dedicated to the presiding deity of the temple, often Lord Shiva or another prominent deity. The Brahmotsavam typically spans over a week and includes a series of grand processions, pujas, and cultural programs. Devotees from far and wide participate, witnessing the adorned deity and seeking divine blessings. The festivities create a vibrant and spiritually charged atmosphere, strengthening the sense of community and devotion among the worshippers. The Annual Brahmotsavam is a significant occasion that showcases the temple's cultural and religious importance in Ramateertham.</p>
+    </div>
+<div id="tabs-4">
+     <h2 class="favourite-place-card-heading2">Vaikuntha Ekadasi</h2>
+       <p class="favourite-place-card-description">Vaikuntha Ekadasi is a highly revered festival celebrated in Ramateertham and many other Hindu temples. This festival usually falls in the month of Margashirsha (December or January) and is dedicated to Lord Vishnu. It holds immense spiritual significance as it marks the opening of the gates to Vaikuntha, Lord Vishnu's celestial abode.
+
+Devotees observe fasts and engage in devotional activities, including special pujas, recitation of religious texts, and singing bhajans. The temple premises are beautifully decorated, and a procession of the deity is a common feature. Devotees believe that passing through the Vaikuntha Dwaram (gate) on this day grants them access to the divine realm. Vaikuntha Ekadasi is a day of profound spiritual significance and devotion in Ramateertham.</p>
+</div>    
+    
+<div id="tabs-5">
+     <h2 class="favourite-place-card-heading2">Diwali</h2>
+        <p class="favourite-place-card-description">Diwali, known as Deepavali, is celebrated in Ramateertham with great enthusiasm and festivity. The village is adorned with colorful decorations, oil lamps, and decorative lights. Families and friends come together to exchange sweets and gifts, and traditional dishes are prepared and shared. Fireworks light up the night sky, adding to the festive atmosphere. Devotees often visit temples, including the Ramateertham Temple, to offer prayers to the Goddess Lakshmi and seek blessings for prosperity and well-being. Diwali is a time for unity, joy, and the triumph of light and goodness over darkness and ignorance, bringing communities in Ramateertham together in celebration.</p>
+</div>    
+ 
+</div>
+     <h1 class="favourite-place-card-heading1">Location</h1>
+        <p class="favourite-place-card-description">
+     Ramateertham is a village panchayat in Nellimarla mandal of Vizianagaram district in Andhra Pradesh in India. It is about 12 km 
+    from Vizianagaram city.</p>
+    <h1 class="favourite-place-card-heading1">Gallery</h1>
+    <div class="container" style="width: 600px; height: 400px;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQru7OViGSrtMsAmNfLZNxYpaQmvWAwq7NqPCyy1Ksq_bmPlGNQrWy87pKzjzGKaDYhv84&usqp=CAU" style="width: 600px; height: 400px;  padding: 25px;">
+  </div>
+
+  <div class="mySlides" >
+    <div class="numbertext">2 / 6</div>
+    <img src="https://encyclopedia.pub/media/common/202211/mceclip0-637497022afcc.png" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToj0d0SLxCIJnJRGUU8cr8bOd6HVA8TX0Mjg&usqp=CAU" style="width: 600px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://assets.thehansindia.com/hansindia-bucket/3970_temple2.jpg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/40/bd/64/ramayanam-temple.jpg?w=300&h=300&s=1" style="width: 500px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgrvfyjG3AwAW8rHlNV8tTtEjdg--K-XmdnA&usqp=CAU" style="width: 500px; height: 400px;">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+      </div>
+    </div>
+  </div>
+  <div id="sectionTajMahalDetailedView"></div>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

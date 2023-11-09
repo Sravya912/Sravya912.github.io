@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<style>
+.favourite-places-bg-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  background-image: url("https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=");
+  background-size: cover;
+  padding: 20px;
+}
+.favourite-place-card-heading {
+  color: #ff0000;
+  font-family: "Times New Roman";
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading1 {
+  color: #DAA520;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading2 {
+  color: #808000;
+  font-family: "Times New Roman";
+  font-size: 17px;
+  font-weight: normal;
+  text-align: start;
+}
+.favourite-place-card-container {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin: 15px;
+  /* Arrange elements horizontally */
+   /* Center vertically */
+}
+
+.favourite-place-card-image {
+  width: 150px;
+  height: 150px;
+  float: left;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.favourite-place-card-description {
+  padding: 10px;
+  margin-left-right: 10px 10px;
+  color: #05070a;
+  font-family: "Times New Roman";
+  font-size: 16px;
+
+  /* Allow content to grow and take available space */
+  
+}
+
+.favourite-places-heading {
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 7px; /* Add margin at the bottom of the heading */
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="favourite-places-bg-container">
+    <div class="favourite-place-card-container">
+    <h1 class="favourite-place-card-heading"> Mangalagiri Panakala Lakshmi Narasimha Swamy Temple </h1>
+        <p class="favourite-place-card-description">
+          The Lord that has established himself on the hill is in the form of Narasimha which Lord Vishnu 
+          assumed to kill Hiranyakasipu, a rakshasa father of Prahlada, a great devotee.He is also called as Sudarsana Narasimhaswamy.
+          The legend says that Namuchi, a Rakshasa after great penance obtained a boon from Brahma that he would not be killed by anything
+          that is either wet or dry.  He began to harass Indra and the Devathas. Encouraged and supported by Lord Vishnu, Indra commenced 
+          destroying the army of Rakshasa Namuchi, who did in a cave in Sukshmakaram (small size) giving up his sthulakaram.Indra dipped 
+          Sudarsanam, the disc of Lord Vishnu in the foam of the ocean and sent it into the cave. Lord Vishnu manifesting himself at the
+          centre of the disc destroyed the Pranavayuvu  of the Rakshasa with the fire of his exhalation. He thus got the name of Sudarsana Narasimha.
+          The blood that flowed from the body of the Rakshasa seemed to have formed into a pool at the foot of the hill which is known hill. 
+          The Devathas themselves were unable to withstand the fire of the anger of the Lord and they prayed for appeasement. The Lord took 
+          amrutam (nectar) and cooled down. It was in Krithayugam. The Lord said that he would be satisfied with ghee in Threthayugam, with milk
+          in Dwaparayugam and with panakam(Jaggery water) in Kaliyugam. Hence the Lord is called in Kaliyugam as Panakala Lakshmi Narasimhaswamy.</p>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoUTy_4DhseJ-nELAKNCbx98K2HQTdBfp-Xw&usqp=CAU"
+        style="width: 300px; height: 300px;  object-fit: fill;  border: 3px solid #f03a3a;  border-radius: 15%; margin: 20px; float: left; align-items: center; "
+      />
+        <h1 class="favourite-place-card-heading1">History Of Mangalagiri Panakala Lakshmi Narasimha Swamy Temple </h1>
+        <p class="favourite-place-card-description">
+          At the foot of the hill, there is another temple whose origin is traced to the time of Yudhishtira, the eldest of the pandavas.
+          Yudhishtira is said to be the founder of the chief image of this temple and the deity here is called Sri Lakshmi Narasimha Swamy. 
+          In Vijayawad itself, which is 8 miles from Mangalagiri there is a hill called Indrakeeladri in which Arjuna is said to have done tapascharya
+          in order to obtain the weapon Pasupata from Lord Siva. About 200 years back Raja Vasireddy Venkatadri Naidu who ruled from Amaravati as his 
+          capital constructed a stupendous gopuram (tower) on the eastern gate of the Lakshmi Narasimhaswamy. It is one of the highest gopurams in 
+          South India and only one of its type in this part of India. It is 153ft. in height and 49 feet wide with 11 storeys, and gates facing east
+          and west. This great and imposing tower dwarfs the central shrine. The devoted patience of thousands of skilled craftsmen and the labour of
+          many more apprentices which had gone into this great structure is a testimony to the religious fervour which characterized the builder. 
+          After constructing the gopuram, it was leaning towards one direction.The Kancheepuram Architects suggested to dig a tank opposite to the tower.
+          After digging the tank, it is said that, the tower became straight.The Image of the Lord in the form of Narasimha (man-lion) and that of Lakshmi
+          Devi to his left are of stone. The garland of the Lord with 108 saligramams is of special significance here. Dakshanavrutha Sankham, a special
+          conch believed to be one that was used by Lord Krishna and resented by the Maharaja Sarfoji of Tanjore, is one more possession of significance 
+          of the Lord. There is also an ancient ratha belonging to the temple with ornamental wood carvings depicting the scenes from the great epics of 
+          Bharata, Bhagavatha and Ramayana. Thimmaraju Devaraju a military chieftain of the Vijayanagar rulers improved this temple. He had constructed 
+          prakarams, mandapas, gopurams, five images of Lord Bhairava, a festival chariot, ten varieties of courts for annual ceremonies, flower gardens
+          lakes and tanks. He had also installed utsava vigrahas in the temple. To the north of the temple there is a temple of Sri Rajyalakshmi to the
+          south that of Rama with Sita and Lakshmana and to the west vahanasala.The Lakshmi narayana temple and the Anjaneya Mandiram in Pedda Bazar are
+          the other places of worship in the town.</p>       
+          <h1 class="favourite-place-card-heading1">Festivals celebrated in  Mangalagiri Panakala Lakshmi Narasimha Swamy Temple </h1>
+         <div id="tabs">
+    <ul>
+        <br>
+        <li><a href="#tabs-1">Nrusimha Jayanthi</a></li>
+        <li><a href="#tabs-2">Navaratri</a></li>
+        <li><a href="#tabs-3">Sankranti</a></li>
+        <li><a href="#tabs-4">Sri RamaNavami</a></li>
+    </ul>
+    <div id="tabs-1">
+        <h2 class="favourite-place-card-heading2">Nrusimha Jayanthi</h2>
+         <p  class="favourite-place-card-description">Narasimha Jayanti is a Hindu festival that is celebrated on the fourteenth day of the Hindu month of Vaisakha (April-May).Hindus regard this as the day the deity Vishnu assumed his fourth avatar in the form of a "man-lion", known as Narasimha, to vanquish the oppressive asura king Hiranyakashipu and protect his devotee Prahlada.The legend of Narasimha represents the victory of knowledge over ignorance and the protection offered by God to his devotees.
+         </p>
+    </div>
+    <div id="tabs-2">
+        <h2 class="favourite-place-card-heading2">Navaratri</h2>
+         <p  class="favourite-place-card-description">This is a nine-night festival dedicated to the worship of the goddess Durga in her various forms. It is a significant festival celebrated with great devotion and enthusiasm.
+         </p>
+    </div>
+    <div id="tabs-3">
+        <h2 class="favourite-place-card-heading2">Sankranti</h2>
+         <p  class="favourite-place-card-description">This is a harvest festival celebrated in many parts of India. It marks the transition of the sun into the zodiac sign of Makara (Capricorn) and is a time of feasting and celebrations.
+         </p>
+    </div>
+    <div id="tabs-4">
+        <h2 class="favourite-place-card-heading2">Sri RamaNavami</h2>
+         <p  class="favourite-place-card-description">Rama Navami is a Hindu festival that celebrates the birth of Rama, one the most popularly revered deities in Hinduism, also known as the seventh avatar of Vishnu. He is often held as an emblem within Hinduism for being an ideal king and human through his righteousness, good conduct and virtue.The festival falls on the ninth day of the bright half (Shukla Paksha) of the lunar cycle of Chaitra (March–April), the first month in the Hindu calendar. It is also part of the Chaitra Navaratri festival in spring.
+         </p>
+    </div>
+</div>
+     <h1 class="favourite-place-card-heading1">Location</h1>
+        <p class="favourite-place-card-description">
+            Panakala Narasimha temple is located in Mangalagiri of Guntur District, which is in the boarder area between Guntur and Krishna Districts. Mangala means Auspicious and Giri means Hill. So this area is called as Mangalagiri which means Auspiciushill. Laxmi Devi done tapas on this hill and hence it is called as Auspicious Hill. </p>
+    <h1 class="favourite-place-card-heading1">Gallery</h1>
+    <div class="container" style="width: 600px; height: 400px;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQErFzAfaC3NDf5LGmfmwkTnVz1SYEd0JjHrw&usqp=CAU" style="width: 600px; height: 400px;  padding: 25px;">
+  </div>
+
+  <div class="mySlides" >
+    <div class="numbertext">2 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDIVKCHAnRjy62Tm_RtanUmJqZkU8DAXkxyA&usqp=CAU" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvUsQzTRfTXbFHHTuYht7PdW7ph4OgXmXsIw&usqp=CAU" style="width: 600px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxTXE7ADcl_gWezCC9QV3zDT9jbArYSmryg&usqp=CAU" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ISWP0MxDdFR0S3Ut0R_zn96Pg25Bcxr69g&usqp=CAU" style="width: 500px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToi-iQNV-MlnfC1pEMQv6YyCItO4N41L2spQ&usqp=CAU" style="width: 500px; height: 400px;">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+      </div>
+    </div>
+  </div>
+  <div id="sectionTajMahalDetailedView"></div>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

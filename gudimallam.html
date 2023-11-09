@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<style>
+.favourite-places-bg-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  background-image: url("https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=");
+  background-size: cover;
+  padding: 20px;
+}
+.favourite-place-card-heading {
+  color: #ff0000;
+  font-family: "Times New Roman";
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading1 {
+  color: #DAA520;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading2 {
+  color: #808000;
+  font-family: "Times New Roman";
+  font-size: 17px;
+  font-weight: normal;
+  text-align: start;
+}
+.favourite-place-card-container {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin: 15px;
+  /* Arrange elements horizontally */
+   /* Center vertically */
+}
+
+.favourite-place-card-image {
+  width: 150px;
+  height: 150px;
+  float: left;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.favourite-place-card-description {
+  padding: 10px;
+  margin-left-right: 10px 10px;
+  color: #05070a;
+  font-family: "Times New Roman";
+  font-size: 16px;
+
+  /* Allow content to grow and take available space */
+  
+}
+
+.favourite-places-heading {
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 7px; /* Add margin at the bottom of the heading */
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="favourite-places-bg-container">
+    <div class="favourite-place-card-container">
+    <h1 class="favourite-place-card-heading">Parasurameswara Temple</h1>
+        <p class="favourite-place-card-description">
+     Sri Parasurameswara Temple is built on the banks of the Suvaranamukhi river. There is a fascinating tale about this place.
+Gudimallam village is about 30 kms from Tirupati via the Tirupati – Sri kalahasti route near to Papanaidupet, has got great prominence because it has a beautiful Shiva Temple, which is popularly known as the Parasurameswara Temple. The Gudimallam Temple is considered to be the oldest Shiva temple identified so far tracing to 3rd century BC. The Lord here is known as Parasurameswara and this lingam is believed to depict the trinity. The legend of the temple connects it to Parasurama, an avatar of Lord Vishnu.
+Lord Shiva in the Gudimallam Shiva Temple is worshiped as Parasurameshwara. The Shivalinga is very special here. The Shivalinga enshrined in the sanctum sanctorum here is not in the form of a linga but the form of Lord Shiva as a superhero hunter in human form. This lingam is a human lingam made of dark coffee-colored stone.</p>
+      <img
+        src="https://gotirupati.com/wp-content/uploads/2014/10/Gudimallam2-1.jpg"
+        style="width: 300px; height: 300px;  object-fit: fill;  border: 3px solid #f03a3a;  border-radius: 15%; margin: 20px; float: left; align-items: center; "
+      />
+        <h1 class="favourite-place-card-heading1">History Of Parasurameswara Temple</h1>
+        <p class="favourite-place-card-description">
+     This is an ancient Shiva temple dating back to the Andhra Satavahana period. Historians determined by inscriptions found here that it was built in the 2nd or 3rd century BC. More information about the temple is available at the Museum at Chandragiri Fort.
+The temple was kept in its heyday by the Chandragiri kings for some time. Later, Muslim rulers destroyed the temple along with the Chandragiri principality. Otherwise, Moola Virat Swami was not harmed.<br>
+The penis is about five feet long and one foot wide. Lord Shiva, carved as if protruding from the front of the lingam with a bulge on the front of the lingam, was in the form of a standing (standing deity) on the shoulders of an unconscious man. Swami is with both hands. He holds the legs of a lamb (upside down) with his right hand and a small (shell) in his left hand.He was carrying an ax to his left shoulder. Swami Jatabhara (as if all the knots were tied above) was wearing a headband, several rings for the ears and various ornaments, wrapped around the waist, and a half-length (cloth from the waist to the knees) that hung down in the middle.The folds hanging in the middle of the cloth are most clearly visible. Swami’s body parts are visible as if the cloth is very delicate. It is a fact that the Lord does not have Yagnopaveetham. A deep sunken line separating the upper part of the penis and the lower part of the lower penis, clear, resembling the entire penis and penis. This gender is considered to be the oldest gender. It is also known as an example of contemporary Shaivite worship. Gudimallam was under the control of the Department of Archeology till 2009.
+Gudimallam is a small village. It is about thirty kilometers from Tirupati. This temple is also known as the Parashurameshwara Temple.
+The oldest Shiva lingam in the world. Historians date it to the 1st century BC. In 1911, an ancient scientist named Gopinathrao researched for a year and spread the existence of this Shiva lingam to the world. The seven-foot Shiva lingam, which resembles a male organ like nowhere else in the world, is engraved with a replica of Rudra standing on the shoulders of a fairy holding a beast with one hand and a sheep with the other.
+Scientists believe that the dress of this Rudru, who wore a turban and a dowry, dates back to the Rig Veda period. There is no information about the stone used to engrave this linga which details the ancient Saiva worship process. The sanctum sanctorum of the temple is also majestic in the shape of a yard flower. Excavations around the lingam have uncovered the remains of an ancient temple dating back to the 2nd century AD. The temple was taken over by the Archaeological Society of India in 1954 by the villagers of Gudimallam.Worship in the temple has stopped since then. Most of the statues were stolen. There is a toy similar to this organ on copper coins found in Ujjain in the past. There is a similar sculpture in the Mathura Museum. There is no other information about this temple except for two books titled ‘Parameswara Temple at Gudimallam’, ‘Development of Early Shaiva Art and Architecture’ written by Inguva Karthikeya Sharma, and some sculptural and art history research papers. Right now the temple market is going to fall under the spell of God.
+Another mysterious scene related to this temple is popular. The main room is flooded every sixty years and the entire interior is submerged by the floodwaters. The floodwater suddenly touches the top of the Shiva lingam and then flows down at once. This underground tank then dries up. This seems to have happened on December 4, 2005. The floodwaters lasted for about 4 hours and then disappeared as if nothing had happened in the temple again. Ramayana, a 75-year-old villager, was described by many as having seen it in 1945.
+The rays of the rising sun fall directly on the forehead of the main Shiva lingam through the grille carved on these stone walls twice in the north and south.
+There are many small temples in this spacious temple complex. All around, there is a brick wall on the left and the left. There is a large dome entrance on the west side of this wall. This gateway, and the well built for the anointing water of the Swami, belong to the Yadava Devaraya period (13th-14th century AD).</p>       
+          <h1 class="favourite-place-card-heading1">Festivals celebrated in Parasurameswara Temple</h1>
+         <div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Maha Shivaratri</a></li>
+        <li><a href="#tabs-2">Ugadi</a></li>
+        <li><a href="#tabs-3">Navaratri</a></li>
+
+    </ul>
+    <div id="tabs-1">
+    <h2 class="favourite-place-card-heading2">Maha Shivaratri</h2>
+     <p  class="favourite-place-card-description">Maha Shivaratri, celebrated at Sri Parasurameswara Swamy Temple in Gudimallam, is a grand and spiritually charged festival. Devotees gather in large numbers to honor Lord Shiva, the presiding deity of the temple, with deep reverence.
+
+The day starts early with special abhishekams (ritual baths) of Lord Parasurameswara Swamy and Lord Shiva. As the day progresses, various pujas and rituals are performed, accompanied by the rhythmic sound of temple bells and devotional hymns. The temple's atmosphere becomes highly charged with devotion.
+
+The pinnacle of the celebration is the Maha Shivaratri night. Devotees engage in an all-night vigil, staying awake to demonstrate their unwavering dedication to Lord Shiva. They participate in bhajans (devotional songs), listen to spiritual discourses, and conduct abhishekam using sacred substances like milk and honey.
+
+Maha Shivaratri at Gudimallam Temple offers a profound spiritual experience, fostering a deep connection between devotees and Lord Shiva. It's a testament to the</p>
+    </div>
+    <div id="tabs-2">
+        <h2 class="favourite-place-card-heading2">Ugadi</h2>
+         <p  class="favourite-place-card-description">
+Ugadi, the Telugu New Year, is celebrated with immense joy and reverence at Sri Parasurameswara Swamy Temple in Gudimallam. The festival marks the beginning of a new lunar calendar year and symbolizes the dawn of a fresh start. Devotees throng the temple to seek blessings for a prosperous and harmonious year ahead.
+The day begins with a special ritual in which the temple priests decorate the deities with new clothes and offer prayers. Traditional Ugadi Pachadi, a unique mixture symbolizing the varied experiences of life, is prepared and distributed to devotees. This Pachadi typically consists of ingredients like tamarind, neem flowers, jaggery, green chilies, and raw mango, signifying different aspects of life.
+
+Cultural programs and events are organized, including music and dance performances that showcase the rich heritage of the region. Ugadi at the Sri Parasurameswara Swamy Temple is a time for spiritual reflection, cultural celebration, and seeking blessings for a harmonious year filled with prosperity and joy.
+
+ </p>
+    </div>
+    <div id="tabs-3">
+     <h2 class="favourite-place-card-heading2">Navaratri</h2>
+        <p  class="favourite-place-card-description">Navaratri, a vibrant and spiritually significant festival, is celebrated with great enthusiasm at Sri Parasurameswara Swamy Temple in Gudimallam. This festival spans nine nights and is dedicated to the worship of Goddess Durga and her various forms.
+
+The temple is adorned with colorful decorations, and a sense of divinity fills the air as the faithful congregate to celebrate the victory of good over evil. Special pujas, devotional music, and dance performances take place throughout Navaratri, creating a spiritually charged atmosphere.
+
+The highlight of the festival is the performance of traditional folk dances like Garba and Dandiya Raas, where devotees participate with fervor. These dances are a way to pay homage to the divine mother and express their devotion.
+
+The temple offers a variety of prasadam (consecrated food) to devotees, and the celebrations culminate with the Vijayadashami or Dussehra festival when idols of deities are taken in grand processions. Navaratri at Sri Parasurameswara Swamy Temple is a time of cultural richness, spirituality, and community celebration.</p>
+    </div>    
+</div>
+     <h1 class="favourite-place-card-heading1">Location</h1>
+        <p class="favourite-place-card-description">
+     Sri Parasurameswara Temple located in Yerpedu Mandalam, Papanaidupet, Gudimallam Road, Tirupati Rural, Chittoor District , Andhra Pradesh.</p>
+    <h1 class="favourite-place-card-heading1">Gallery</h1>
+    <div class="container" style="width: 600px; height: 400px;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://www.templepurohit.com/wp-content/uploads/2016/04/Gudimallam-Temple.jpg" style="width: 600px; height: 400px;  padding: 25px;">
+  </div>
+
+  <div class="mySlides" >
+    <div class="numbertext">2 / 6</div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Gudimallam_statue_details.jpg/330px-Gudimallam_statue_details.jpg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXnbDAlp9xsn62O7nfr-B-jTZmFBRHydjbGw&usqp=CAU" style="width: 600px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-QhWC2QHKoIM4OkKwBrkcGixMqIWeBv0f_A&usqp=CAU" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaVRNPy2FJVFALg_u5zcuFwxYhjE1KmjHijg&usqp=CAU" style="width: 500px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://indianobserverpost.in/Upload/picture_library/VwnJpxlKr3OdfZBMlnavSri%20Parasurameshwara%20Swamy,%20Gudimallam%20Cover3.JPG" style="width: 500px; height: 400px;">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+      </div>
+    </div>
+  </div>
+  <div id="sectionTajMahalDetailedView"></div>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

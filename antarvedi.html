@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<style>
+.favourite-places-bg-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  background-image: url("https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=");
+  background-size: cover;
+  padding: 20px;
+}
+.favourite-place-card-heading {
+  color: #ff0000;
+  font-family: "Times New Roman";
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading1 {
+  color: #DAA520;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading2 {
+  color: #808000;
+  font-family: "Times New Roman";
+  font-size: 17px;
+  font-weight: normal;
+  text-align: start;
+}
+.favourite-place-card-container {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin: 15px;
+  /* Arrange elements horizontally */
+   /* Center vertically */
+}
+
+.favourite-place-card-image {
+  width: 150px;
+  height: 150px;
+  float: left;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.favourite-place-card-description {
+  padding: 10px;
+  margin-left-right: 10px 10px;
+  color: #05070a;
+  font-family: "Times New Roman";
+  font-size: 16px;
+
+  /* Allow content to grow and take available space */
+  
+}
+
+.favourite-places-heading {
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 7px; /* Add margin at the bottom of the heading */
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="favourite-places-bg-container">
+    <div class="favourite-place-card-container">
+    <h1 class="favourite-place-card-heading">Antarvedi Lakshmi Narasimha Swamy Temple</h1>
+        <p class="favourite-place-card-description">
+     The temple is called as an island temple because of its confluence. This temple is among the rarities as the main Deity i.e. Lord Sri Lakshmi Narasimha Swamy(one of the ten incarnations of Lord Vishnu) who faces towards West instead of East (usual direction of other temples in India) constructed between the 15th and 16th centuries. This is 32 kshetra of 108 Narashima kshetrams. It is a temple of 5 storeyed Vimana Gopuram. As one enters the temple one can Garuda on one side and Bhaktha Anjaneya on the other side of temple entrance. While approaching "Garbha Gudi" (Sanctum Sanctorum) one can see an adorable "Vatapatra Sayi" (Lord Krishna on a palm leaf) on its roof. The idol is made from a single stone. In the Garbha Gudi, one can have a darshan of the magnificient Lord Sri Lakshmi Narasimha Swamy with his Consort Goddess Lakshmi Devi on his lap.
+After the darshan, one has to go around the sanctum, as there are different deities. On the east side of the prakaram(wall), is Goddess Rajyalakshmi and Lord Venkateshwara, to the north side is Bhoodevi and Ranganadha Swamy, to the west side of the prakaram is Santhana Gopala Swamy and Keshava Swamy, and finally to the south side of the prakaram is the Acharyas and Alwars sannidhi(small temples) and Chaturbhuja (four-armed) Anjaneya. Apart from the presiding Deity, Lord Narasimha Swamy, there are also Deities of Brahma, Vishnu, and Shiva. A temple of Neelakanteshwara (Lord Shiva) is also present which is located at the other side, almost nearer to the bank of Godavari, also called, Vasishta Godavari is a must see. This deity was installed by Lord Sri Rama and is said to be worshipped by Brahma himself.</p>
+      <img
+        src="https://images.newindianexpress.com/uploads/user/imagelibrary/2021/3/9/w900X450/Antarvedi_temple_express.jpg?w=400&dpr=2.6"
+        style="width: 300px; height: 300px;  object-fit: fill;  border: 3px solid #f03a3a;  border-radius: 15%; margin: 20px; float: left; align-items: center; "
+      />
+        <h1 class="favourite-place-card-heading1">History Of Lakshmi Narasimha Swamy Temple</h1>
+        <p class="favourite-place-card-description">
+    This temple was constructed in the year 2005-06. This Mahameru Sahita Sri Kurma pratishtapana of Vasishta Devalayam is near Sri Narashima Swamy temple. The building is in circular form and the height is 54. It is said that Sri chakram is kept to same depth down i.e. 54. One has to climb few steps to reach the first level. Here, one can see Saligrama tortoise, a sacred Gandaki river stone which is believed to be a special Avatara of Maha Vishnu and is always placed with Tulasi (signifying Goddess Lakshmi). It is on this Saligrama that the Maha Meru of Emerald is installed. Thankfully, one is allowed to enter inside the sanctum, and as one goes around one can see Dashavataram (10 incarnations of the Lord) sculptures of Saligrahama stone that have been installed. On the second level one can have the darshan of Saptha Maharishis.<br>
+<strong>History:</strong>Also known as "Dakshina Kashi (Kashi of the South), Antarvedi, is an important pilgrim centre in the East Godavari district of Andhra Pradesh state in India, situated at the interior part at East coast. Lord Brahma, in order to get freed from the sins he had committed against Lord Sankara, had performed Rudrayaga and installed Lord Neela kantheswara there. As that place was made a stage or "Vedik" to perform the Yagam, it was named as "ANTARVEDI" It is a small village in Sakhinetipalle Mandal which is located close to Narsapur near the Bay of Bengal Coast and Vashishtha River. This river is said to have been brought by Maharishi Vashishtha, one of the Sapthrishis(seven great sages) of Hindu Mythology. It draws people from far off places throughout the year because of its unique rarity: the confluence or mergence of Bay of Bengal and Vashishtha River, a tributary of River Godavari. The place of confluence where the mighty ocean Bay of Bengal meets the Vashishtha River is called the "Sapta Sagara Sangam Pradesam" and also as "Anna Chelli Gattu". One can even taste the water here as it is not salty but quite
+</p>       
+          <h1 class="favourite-place-card-heading1">Festivals celebrated in Lakshmi Narasimha Swamy Temple</h1>
+         <div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Sri Swamy Vari Kalyanam</a></li>
+        <li><a href="#tabs-2">Rathayatra Magha Sudha Ekadasi</a></li>
+        <li><a href="#tabs-3">Sri Venkateswara Swamy kalyanam</a></li>
+        <li><a href="#tabs-4">Sri Narasimha Jayanthi</a></li>
+        <li><a href="#tabs-5">Kalyanamohasthavams</a></li>
+
+
+    </ul>
+    <div id="tabs-1">
+    <h2 class="favourite-place-card-heading2">Sri Swamy Vari Kalyanam (Magha Sudda Dasami)</h2>
+     <p  class="favourite-place-card-description">Sri Swamy Vari Kalyanam, celebrated on Magha Sudda Dasami, is one of the most significant and revered festivals held at the Antarvedi Sri Lakshmi Narasimha Swamy Temple in Andhra Pradesh. This festival is a grand celebration of the divine wedding of Lord Lakshmi Narasimha, an incarnation of Lord Vishnu, and Goddess Lakshmi.
+
+Devotees from far and wide gather at the temple to witness and participate in the sacred wedding rituals. The entire temple complex is adorned beautifully, with Lord Narasimha and Goddess Lakshmi as the bride and groom.
+
+The rituals and ceremonies include the "Kalyanam," which is the symbolic marriage ceremony, accompanied by the recitation of Vedic hymns and devotional songs. The divine couple is showered with flowers, silks, and jewels, signifying their union. The atmosphere is filled with devotion and spiritual fervor.
+
+Sri Swamy Vari Kalyanam is not only a religious event but also a cultural extravaganza. It showcases the rich traditions and customs of the region, offering a unique and vibrant experience for the devotees who partake in the celebrations. It is a day of immense significance, and devotees believe that witnessing this divine wedding brings blessings and prosperity into their lives.</p>
+    </div>
+    <div id="tabs-2">
+        <h2 class="favourite-place-card-heading2">Rathayatra Magha Sudha Ekadasi</h2>
+         <p  class="favourite-place-card-description">Rathayatra Magha Sudha Ekadasi is a significant festival celebrated at Antarvedi Sri Lakshmi Narasimha Swamy Temple in Andhra Pradesh. This festival typically falls on the auspicious day of Magha Sudha Ekadasi. The main highlight of the celebration is a grand procession in which the idol of Lord Lakshmi Narasimha is placed in a beautifully adorned chariot or "Ratha."
+
+Devotees gather in large numbers to participate in this divine procession, joyfully pulling the massive chariot through the streets. They chant devotional hymns and sing songs dedicated to the Lord. This event symbolizes the return of Lord Narasimha to his celestial abode after defeating the demon Hiranyakashipu. The Rathayatra is a spiritually uplifting and colorful occasion, drawing devotees from near and far who seek the divine blessings and grace of Lord Lakshmi Narasimha on this auspicious day.
+ </p>
+    </div>
+    <div id="tabs-3">
+     <h2 class="favourite-place-card-heading2">Sri Venkateswara Swamy kalyanam</h2>
+        <p  class="favourite-place-card-description">Sri Venkateswara Swamy Kalyanam, celebrated on Jasta Sudha Ekadasi, is a sacred and joyous festival held at the Antarvedi Sri Lakshmi Narasimha Swamy Temple in Andhra Pradesh. This significant event commemorates the divine wedding of Lord Venkateswara (an incarnation of Lord Vishnu) and Goddess Padmavati.
+
+On this auspicious day, beautifully adorned idols of Lord Venkateswara and Goddess Padmavati are placed on a special platform, and their celestial marriage is ritually reenacted amidst great devotional fervor. The temple is adorned with fragrant flowers and colorful decorations, creating an atmosphere of divine bliss.
+
+Devotees from various places gather to witness this sacred ceremony and seek the blessings of the divine couple for a blissful and prosperous life. It is a day filled with religious rituals, devotional songs, and an overwhelming sense of spirituality, making it one of the most revered festivals at the Antarvedi Sri Lakshmi Narasimha Swamy Temple.
+</p>
+    </div>
+<div id="tabs-4">
+     <h2 class="favourite-place-card-heading2">Sri Narasimha Jayanthi</h2>
+       <p class="favourite-place-card-description">Sri Narasimha Jayanthi, celebrated on Vysakha Sudha Chaturdasi, is a significant and spiritually charged festival at the Antarvedi Sri Lakshmi Narasimha Swamy Temple in Andhra Pradesh. This auspicious day marks the divine appearance of Lord Narasimha, an incarnation of Lord Vishnu, who emerged to protect his devotee, Prahlada, by defeating the demon king Hiranyakashipu.
+
+Devotees gather at the temple to observe this festival with great reverence and enthusiasm. The highlight of the celebration is the special abhishekam (ritual bathing) of the idol of Lord Narasimha with various holy substances and herbal waters. The temple resonates with melodious hymns and prayers, creating a deeply spiritual atmosphere.
+
+Devotees seek the blessings of Lord Narasimha for protection and courage, and it's a day that inspires faith and devotion among those who participate. This festival reinforces the divine connection between the Lord and his devotees, reminding everyone of the omnipotent grace of Lord Narasimha.
+</p>
+</div>    
+    
+<div id="tabs-5">
+     <h2 class="favourite-place-card-heading2">Kalyanamohasthavams</h2>
+        <p class="favourite-place-card-description">Kalyanamohasthavams, celebrated from Magha Sukla Sapthami to Magha Bahula Panchami, is a grand and spiritually uplifting festival at the Antarvedi Sri Lakshmi Narasimha Swamy Temple in Andhra Pradesh. This festival spans several days and is dedicated to the divine wedding of Lord Narasimha Swamy with his divine consort, Goddess Lakshmi.
+
+During these auspicious days, the temple premises come alive with vibrant decorations, traditional music, and religious fervor. The highlight of the celebration is the divine wedding ceremony (Kalyanotsavam) of Lord Narasimha and Goddess Lakshmi. Elaborate rituals and pujas are performed, and the deities are adorned in resplendent attire.
+
+Devotees from far and wide gather to witness and partake in this divine union, seeking the blessings of the Lord and the Goddess for happiness, prosperity, and marital harmony. It is a time of great joy and devotion, and the temple's sanctity and spiritual energy are palpable during this grand celebration. Kalyanamohasthavams reaffirm the sacred bond between the Lord and his divine consort, offering a sense of spiritual fulfillment to all who attend.
+</p>
+</div>          
+</div>
+     <h1 class="favourite-place-card-heading1">Location</h1>
+        <p class="favourite-place-card-description">
+     Antarvedi is 130 Kms from Kakinada and 100 kms from Rajahmundry. One can reach Antarvedi either by train or by road. For those who travel by train one can either board or get down at either Rajahmundry or Narsapur. There are number of buses available from Kakinada and Rajahmundry also. Or one can board a bus at Hyderabad to Razole, whereon they can go to Malkipuram and thereto Antarvedi. Antarvedi can also be reached by boat from Narsapur, which is 112-km south of Rajahmundry.</p>
+    <h1 class="favourite-place-card-heading1">Gallery</h1>
+    <div class="container" style="width: 600px; height: 400px;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/2a/34/d1/lakshmi-narasimha-in.jpg" style="width: 600px; height: 400px;  padding: 25px;">
+  </div>
+
+  <div class="mySlides" >
+    <div class="numbertext">2 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR48oZ0PzwJ6hkFLIQHKg-KeARdv7NVuqzvkQ&usqp=CAU" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr-0YeXOEQEP67KLV7tdnDO07qNETyqpP_Kw&usqp=CAU" style="width: 600px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6yp-OYbDLC9h_yMI7SGjzvVfX6PCPyCTIXQ&usqp=CAU" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://3.bp.blogspot.com/-QT56_sG6jaI/VlQENbYLA-I/AAAAAAAAY1M/YNRrs6ADnrE/s1600/Antarvedi%2BLakshmi%2BTemple%2B7.jpg" style="width: 500px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiiiVizVAKQEmh0rD8SHgfUY0-ABXgabjZTA&usqp=CAU" style="width: 500px; height: 400px;">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+      </div>
+    </div>
+  </div>
+  <div id="sectionTajMahalDetailedView"></div>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

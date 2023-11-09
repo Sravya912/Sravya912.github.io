@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<style>
+.favourite-places-bg-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  background-image: url("https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=");
+  background-size: cover;
+  padding: 20px;
+}
+.favourite-place-card-heading {
+  color: #ff0000;
+  font-family: "Times New Roman";
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading1 {
+  color: #DAA520;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading2 {
+  color: #808000;
+  font-family: "Times New Roman";
+  font-size: 17px;
+  font-weight: normal;
+  text-align: start;
+}
+.favourite-place-card-container {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin: 15px;
+  /* Arrange elements horizontally */
+   /* Center vertically */
+}
+
+.favourite-place-card-image {
+  width: 150px;
+  height: 150px;
+  float: left;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.favourite-place-card-description {
+  padding: 10px;
+  margin-left-right: 10px 10px;
+  color: #05070a;
+  font-family: "Times New Roman";
+  font-size: 16px;
+
+  /* Allow content to grow and take available space */
+  
+}
+
+.favourite-places-heading {
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 7px; /* Add margin at the bottom of the heading */
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="favourite-places-bg-container">
+    <div class="favourite-place-card-container">
+    <h1 class="favourite-place-card-heading">Gandi Anjaneya Swamy Temple</h1>
+        <p class="favourite-place-card-description">
+    Gandi Sri Anjaneya Temple, situated in Andhra Pradesh, is a revered Hindu shrine dedicated to Lord Hanuman. The temple is known for its serene ambiance and splendid architecture. Devotees flock to this sacred site from near and far to seek blessings from Lord Hanuman. The main deity is beautifully adorned with orange flowers, and various offerings like sweets and fruits are made during daily rituals and pujas. Hanuman Jayanti, the birthday of Lord Hanuman, is a major celebration at the temple, marked by grand processions and festivities. Gandi Sri Anjaneya Temple is a cherished spiritual haven, embodying faith and devotion in a tranquil setting.
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Arasavilli_Sri_Suryanarayanamurty_Remple_of_Srikakulam._Andhrapradesh_%284%29.JPG/375px-Arasavilli_Sri_Suryanarayanamurty_Remple_of_Srikakulam._Andhrapradesh_%284%29.JPG"
+        style="width: 300px; height: 300px;  object-fit: fill;  border: 3px solid #f03a3a;  border-radius: 15%; margin: 20px; float: left; align-items: center; "
+      />
+        <h1 class="favourite-place-card-heading1">History Of Gandi Anjaneya Swamy Temple</h1>
+        <p class="favourite-place-card-description">
+     The history of Kshetram dates back to Treta Yuga, the time of the Ramayana. According to the legend, while resting at this spot, Lord Rama himself drew the image of Lord Hanuman on the rock with his arrow, and received the hospitality of Lord Vayuu (God of Air and Father of Lord Hanuman).<br>With the exception of the little finger of Lord Hanuman’s left hand, Lord Sri Rama completed Lord Hanuman’s painting. This drawing was later sculpted into an idol by Vyasaraja, when Vyasaraja was attempting to sculpt even the little finger of the left hand of Lord Hanuman, it is said that the idol’s finger was cut off by itself and began to bleed. Which demonstrates the purpose of Lord Hanuman to preserve the idol as drawn by Lord Sri Rama.
+
+Legends also state that Lord Vayu adorned this place with a festoon of golden flowers to welcome Lord Sri Rama on his way back north to Ayodhya after listening to the news of Lord Sri Rama’s victory over the demon Lord Ravana. People assume that those who are close to death are able to see this festoon of golden flowers.</p>       
+          <h1 class="favourite-place-card-heading1">Festivals celebrated in Gandi Anjaneya Swamy Temple</h1>
+         <div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Sri Rama Navami</a></li>
+        <li><a href="#tabs-2">Hanuman Jayanti</a></li>
+        <li><a href="#tabs-3">Deepavali</a></li>
+        <li><a href="#tabs-4">Sri Veeranjaneya Swamy Tirunala</a></li>
+    </ul>
+    <div id="tabs-1">
+    <h2 class="favourite-place-card-heading2">Sri Rama Navami</h2>
+     <p  class="favourite-place-card-description">Sri Rama Navami is a prominent and spiritually significant festival celebrated with great fervor at the Gandi Sri Veeranjaneya Swamy Temple in Kadapa. This festival, observed in honor of Lord Rama, commemorates his divine birth. Devotees and pilgrims from far and wide gather at the temple to participate in the celebrations.
+
+The festivities typically begin with early morning prayers and special pujas conducted for Lord Rama. The idol of Lord Rama is adorned with exquisite attire and jewelry, making the temple a sight of divine splendor. Devotees chant hymns, recite verses from the Ramayana, and offer their heartfelt prayers. Bhajans and kirtans fill the air with melodious devotional music.
+
+The temple premises buzz with activity, and a sense of joy and spiritual ecstasy prevails throughout the day. Devotees often observe fasts and engage in acts of charity as an expression of their devotion. Sri Rama Navami is not only a celebration of Lord Rama's birth but also a reminder of his ideals and teachings, emphasizing the importance of righteousness, dharma, and unwavering faith.</p>
+    </div>
+    <div id="tabs-2">
+        <h2 class="favourite-place-card-heading2">Hanuman Jayanti</h2>
+         <p  class="favourite-place-card-description">
+Hanuman Jayanti is a significant festival celebrated at Gandi Sri Veeranjaneya Swamy Temple in Kadapa with great enthusiasm. It commemorates the birth of Lord Hanuman, a revered deity known for his unwavering devotion and immense strength. Devotees gather at the temple to pay their respects and seek the blessings of Lord Hanuman. The celebrations include special pujas, recitation of Hanuman Chalisa, and devotional songs. The temple is beautifully adorned, and a divine atmosphere prevails as people chant hymns and immerse themselves in Hanuman's divine presence. It's a day of deep spiritual significance and reinforces the faith and devotion of those who participate.
+ </p>
+    </div>
+    <div id="tabs-3">
+     <h2 class="favourite-place-card-heading2">Deepavali</h2>
+        <p  class="favourite-place-card-description">Deepavali, the festival of lights, is celebrated at Gandi Sri Veeranjaneya Swamy Temple in Kadapa with great enthusiasm and devotion. The temple comes alive with the radiance of countless oil lamps, candles, and decorative lights. Devotees gather to seek the blessings of Lord Hanuman and offer prayers for the triumph of light over darkness.
+
+During this festival, special pujas and rituals are conducted to honor the significance of Deepavali. The temple is adorned with colorful decorations, and the air is filled with the sweet fragrance of incense. It's a time for families and friends to come together, exchange gifts, and enjoy the festive atmosphere, reinforcing the spirit of unity and goodwill.</p>
+    </div>
+<div id="tabs-4">
+     <h2 class="favourite-place-card-heading2">Sri Veeranjaneya Swamy Tirunala</h2>
+       <p class="favourite-place-card-description">Sri Veeranjaneya Swamy Tirunala is a significant festival celebrated at Gandi Sri Veeranjaneya Swamy Temple in Kadapa during the months of July and August. This annual event is dedicated to Lord Hanuman and witnesses a surge of devotees who come to participate in the festivities.
+The celebrations include various religious rituals, pujas, and processions where the idol of Lord Hanuman is taken on a chariot around the temple premises. Devotees fervently offer prayers, perform special aartis, and seek blessings. The temple resonates with the sounds of hymns and bhajans, creating a spiritually uplifting atmosphere during this auspicious occasion. It is a time of deep devotion and devotion towards Lord Hanuman, reinforcing the faith of the devotees.</p>
+</div>     
+</div>
+     <h1 class="favourite-place-card-heading1">Location</h1>
+        <p class="favourite-place-card-description">
+     This temple is known as the Temple of Abhayahasta Anjaneya and is situated on the banks of the Papaghni River. Gandi implies a narrow passage in the Telugu language for the water to flow out. This place seems to be a small passage between the hills of the Eastern Ghats for the river to flood. This place is situated in the district of Kadapa, 34 km away from the town of Pulivendula.</p>
+    <h1 class="favourite-place-card-heading1">Gallery</h1>
+    <div class="container" style="width: 600px; height: 400px;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://cdn.s3waas.gov.in/s37dcd340d84f762eba80aa538b0c527f7/uploads/2018/08/2018080815.jpg" style="width: 600px; height: 400px;  padding: 25px;">
+  </div>
+
+  <div class="mySlides" >
+    <div class="numbertext">2 / 6</div>
+    <img src="https://templesofindia.org/assets/compressed/c32bffc482784e34ac6e8c34ec734d17_113962.png" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://i0.wp.com/www.rvatemples.com/wp-content/uploads/2018/08/gandi-sri-anjaneya-temple2.jpg?ssl=1" style="width: 600px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://templesofindia.org/assets/compressed/072672b26b024bb89c8d6acdf516d741_113962.png" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJzlIRDYx19Lwdz0TcAdJ4soC5qnOpYx5-Hw&usqp=CAU" style="width: 500px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://gotirupati.com/wp-content/uploads/2019/04/Brahmamgari-Matam-Aradhanotsavam-310x165.jpg" style="width: 500px; height: 400px;">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+      </div>
+    </div>
+  </div>
+  <div id="sectionTajMahalDetailedView"></div>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

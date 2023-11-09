@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<style>
+.favourite-places-bg-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  background-image: url("https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=");
+  background-size: cover;
+  padding: 20px;
+}
+.favourite-place-card-heading {
+  color: #ff0000;
+  font-family: "Times New Roman";
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading1 {
+  color: #DAA520;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading2 {
+  color: #808000;
+  font-family: "Times New Roman";
+  font-size: 17px;
+  font-weight: normal;
+  text-align: start;
+}
+.favourite-place-card-container {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin: 15px;
+  /* Arrange elements horizontally */
+   /* Center vertically */
+}
+
+.favourite-place-card-image {
+  width: 150px;
+  height: 150px;
+  float: left;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.favourite-place-card-description {
+  padding: 10px;
+  margin: 10px;
+  color: #05070a;
+  font-family: "Times New Roman";
+  font-size: 16px;
+
+  /* Allow content to grow and take available space */
+  
+}
+
+.favourite-places-heading {
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 7px; /* Add margin at the bottom of the heading */
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="favourite-places-bg-container">
+    <div class="favourite-place-card-container">
+    <h1 class="favourite-place-card-heading">Sri Padmavathi Devi Temple</h1>
+        <p class="favourite-place-card-description">
+     Tiruchanoor, is one of the oldest pilgrim towns located 5km away from Tirupati, is abode of Goddess Sri Padmavathi Devi, the beloved consort of Lord Venkateswara. This pilgrim centre is popularly known as “Alarmelmangapuram” (Alar-Lotus, Mel-top, Manga-Goddess, Puram-town) or Alimelumangapuram. According to temple legend as Goddess Mahalakshmi emerged on the golden lotus as Padmavathi Devi located at the centre of Padmasarovaram-the temple tank, this place became famous by the name “Alarmelmangapuram”.
+There is a strong belief among the pilgrims that they should pave visit to Padmavathi and seek Her divine blessings before they visit Lord Venkateswara as Tirumala during their pilgrimage.<br>
+Sub-temples in its premises are :<br>
+Sri Krishnaswamy Temple<br>
+Sri Sundara Rajaswamivari Temple<br>
+Sri Suryanarayana Swamivari Temple</p>
+      <img
+        src="https://media-cdn.tripadvisor.com/media/photo-s/17/36/7b/c9/alamelu-mangapuram-tiruchanoor.jpg"
+        style="width: 300px; height: 300px;  object-fit: fill;  border: 3px solid #f03a3a;  border-radius: 15%; margin: 20px; float: left; align-items: center; "
+      />
+        <h1 class="favourite-place-card-heading1">History Of Sri Padmavathi Devi Temple</h1>
+        <p class="favourite-place-card-description">
+     The advent of Goddess Padmavathi Devi, the consort of Lord Venkateswara, is narrated in many puranas. According to a legend, there was once a pious Brahmin called Pundarika. Though he performed all the duties prescribed in the shastras, he did not have a son. Finally at the age of 50, he got a son whom he named Madhava. He brought up the child carefully making him proficient in all branches of learning and got him married to a devout lady. After some time, Madhava deviated from the righteous path and followed another woman. After her death he wandered like a mad man. One day he followed a group of pilgrims going to Tirumala. When he bathed in the holy Sudarshana Lake and climbed the hills his sins were washed off. There he heard a voice from the sky, which asked him to bathe in the Swamy Pushkarini and seek the blessings of Lord Varaha Swamy. Later he was born to King Mitravarman of Thondamandalam and was named Akasharaja.<br>
+Akasharaja grew up to be a handsome and wise prince. He married Dharanidevi. The royal couple was sad because they had no children. On the advice of priest, Akasharaja decided to perform a yagna. When the sacrificial ground was ploughed, the couple found a lovely girl in a thousand petal lotus. A divine voice urged the king to bring up the child with love and care. The child was named Padamavathi as she was found in a lotus (Padma). When Padmavathi grew up, Lord Venkateshwara came in search of her. The celestial marriage of Lord Srinivasa and Goddess Padmavathi took place on a grand note.
+The temple was constructed in the time of Tondaman Chakravarthi, who happens to be the elder brother of Goddess Padmavathi.
+Another popular story which is prominently heard is that of Sage Bhrigu, who hit Lord Mahavishnu on His Chest which happens to be the residing place of His consort Goddess Maha Lakshmi. Angered with this gesture, Goddess left Vaikuntham and reached Patalalokahere is a small story behind this temple.In Vykuntam,a maharshi called Brugu has beaten the Lord`s heart with his feet. In return,Lord offered many services instead of getting anger. This made angry to Padmavathi and went to Patalokam, where she heard a divine voice stating that a ‘Pushkarini’ was dug on the banks of the river ‘Swarnamukhi’. Goddess Maha Lakshmi immersed herself in penance for 12 years. In the 13th year she emerged as Sri Padmavati from a golden lotus located at the centre of pushkarini on the auspicious Panchami Day in the holy month of Karthika with the advent of Uttarashadha Nakshatra.</p>       
+          <h1 class="favourite-place-card-heading1">Festivals celebrated in Sri Padmavathi Devi </h1>
+         <div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Navarathri festival (Dasara)</a></li>
+        <li><a href="#tabs-2"> Kartheeka Brahmotsavam</a></li>
+        <li><a href="#tabs-3">Float festival</a></li>
+        <li><a href="#tabs-4">Vasanthotsavam</a></li>
+        <li><a href="#tabs-5">Rathasapthami</a></li>
+        <li><a href="#tabs-6">Avatharotsavam</a></li>
+
+    </ul>
+    <div id="tabs-1">
+    <h2 class="favourite-place-card-heading2">Navarathri festival (Dasara)</h2>
+     <p  class="favourite-place-card-description">
+The Navaratri festival, also known as Dasara, is celebrated with great enthusiasm and devotion at the Sri Padmavathi Temple in Tiruchanur, Andhra Pradesh. This nine-night festival is one of the most important and widely celebrated Hindu festivals, dedicated to the worship of the divine feminine in her various forms.<br>
+Navaratri, which means "nine nights," commemorates the triumph of good over evil and is celebrated in honor of the goddess, most commonly as Durga, Lakshmi, and Saraswati. At the Sri Padmavathi Temple, the festival primarily pays homage to Goddess Padmavathi, an incarnation of Goddess Lakshmi and the divine consort of Lord Venkateswara (Lord Balaji).<br>
+The temple is beautifully adorned with flowers, lights, and colorful decorations. The deity of Goddess Padmavathi is embellished with various ornaments and garments. Devotees observe a nine-day fast and engage in prayer, singing devotional songs, and reading sacred texts. Special pujas and homas (fire rituals) are conducted during these days.Cultural programs, including classical music and dance performances, are organized to celebrate the goddess's divine qualities and her victory over evil.Processions of the temple deity on different vahanas (vehicles) take place during the festival. These processions are a significant attraction for devotees.On the final day of the festival, a Kumkum Archana ritual is performed, where devotees offer vermilion to the goddess, seeking her blessings for their well-being and prosperity.The tenth day of Navaratri, known as Vijayadashami, is especially important. It symbolizes the victory of good over evil and is considered an auspicious day for starting new ventures and educational pursuits.Annadanam, the act of offering free meals to devotees, is a common practice during Navaratri, reflecting the spirit of service and charity. The festival at the Sri Padmavathi Temple in Tiruchanur not only brings spiritual enrichment but also provides a cultural and social platform for people to come together and experience the divine grace of the goddess.
+ </p>
+    </div>
+    <div id="tabs-2">
+        <h2 class="favourite-place-card-heading2">Kartheeka Brahmotsavam</h2>
+         <p  class="favourite-place-card-description">The Karthika Brahmotsavam is a significant and highly celebrated festival at the Sri Padmavathi Temple in Tiruchanur, Andhra Pradesh. This festival is dedicated to Goddess Padmavathi, an incarnation of Goddess Lakshmi and the divine consort of Lord Venkateswara (Lord Balaji). The Karthika Brahmotsavam is a grand nine-day celebration that attracts devotees from far and wide.<br>
+The Karthika Brahmotsavam holds immense religious and cultural significance at the Sri Padmavathi Temple. It is a festival that celebrates the divine presence of Goddess Padmavathi and seeks her blessings for prosperity, well-being, and marital harmony. Brahmotsavam is a series of religious rituals and festivities dedicated to the temple deity.The festival includes a series of colorful and elaborate processions of the temple deity on different vahanas (vehicles). These processions are a major attraction for devotees and feature beautifully decorated idols of the goddess.<br>Karthika Deepotsavam: A significant aspect of the festival is the lighting of countless lamps and oil lamps (deepams) in and around the temple premises, creating a mesmerizing and divine atmosphere.
+The Karthika Brahmotsavam festival at Sri Padmavathi Temple typically culminates with the "Chakra Snanam." This ritual involves the ceremonial cleansing of the holy Sudarshana Chakra, which is considered an emblem of divine protection.
+ </p>
+    </div>
+    <div id="tabs-3">
+     <h2 class="favourite-place-card-heading2">Float festival(Teppotsavam)</h2>
+        <p  class="favourite-place-card-description">
+The Float Festival, also known as <strong>"Teppotsavam,"</strong> is a significant and visually captivating celebration at the Sri Padmavathi Temple in Tiruchanur, Andhra Pradesh. This festival is dedicated to Goddess Padmavathi, an incarnation of Goddess Lakshmi and the divine consort of Lord Venkateswara (Lord Balaji).<br>
+The Float Festival is celebrated with great devotion and fervor, and it is one of the most awaited events at the Sri Padmavathi Temple. The festival centers around the procession of the temple deity on a beautifully decorated and illuminated float in a sacred water body.<br>
+The central element of the festival is the beautifully crafted and ornamented float (teppa) that is typically shaped like a divine chariot. The temple deity, Goddess Padmavathi, is seated on this float.The float is adorned with vibrant flowers, lights, and colorful decorations, creating a spectacular visual display.The float carrying the goddess proceeds through a sacred water body, which can be a temple tank, river, or pond, depending on the location.Devotees gather in large numbers to witness and participate in the Float Festival. They offer prayers, sing devotional songs, and seek the blessings of Goddess Padmavathi.The evening celebration is accompanied by the illumination of lamps and oil lamps (deepams), creating a magical and divine ambiance.<br>
+Every year during Phalguna Pournami, this festival is celebrated on a grand scale in the Swami Pushkarini for five days in the month of chaitra (March).<br>
+On the first day, Lord Rama with Sita and Lakshmana is offered worship and taken out for a celestial ride on the finely decked float in Swamy Pushkarini.<br>
+On the second day, Lord Sri Krishna and Rukmini are offered puja and taken for pleasure ride on float.<br>
+During the remaining three days beginning with Trayodasi and ending with Pournami, Sri Malayappa Swami along with Sridevi and Bhudevi are taken out for a ride in the temple tank.<br>
+On the third day, there will be three rounds followed by five rounds and on the final day, the utsava murtis will be taken out for pleasure ride on the impressively decorated float for seven rounds. The pilgrims throng to see the grandeur of the deities on this particular day since, the charm of full moon is an added attraction to the divine beauty of the deities.</p>
+    </div>
+<div id="tabs-4">
+     <h2 class="favourite-place-card-heading2">Vasanthotsavam</h2>
+       <p class="favourite-place-card-description">The Vasanthotsavam festival celebrated at the Sri Padmavathi Temple in Tiruchanur, Andhra Pradesh, is a colorful and spiritually significant event dedicated to Goddess Padmavathi, an incarnation of Goddess Lakshmi and the divine consort of Lord Venkateswara (Lord Balaji).<br>
+The Vasanthotsavam, also known as the Spring Festival, is a joyous celebration that marks the arrival of spring, which is considered a season of rejuvenation, freshness, and prosperity. The festival is dedicated to Goddess Padmavathi and seeks her blessings for a prosperous and fruitful season.<br>
+The three-day Salakatla vasanthotsavam will be observed in the famous shrine of Sri Padmavathi Ammavari temple in Tiruchanoor from May 9-11. In this connection Ankurarpanam was performed on Monday evening.<br>
+On the second day of Vasanthotsavam on May 10, Swarnarathotsavam will be performed at 8:15am in four made streets. While in the evening the Goddess will take celestial ride on Golden Tiruchi (Palanquin) between 7:30pm to 8:30pm.<br>
+The Grihastas (devotees) who are willing to take part in this fete should pay Rs.150 per ticket. They will be presented with one laddu and a vada.<br>
+The temple authorities have cancelled arjitha (daily) sevas including Kalyanotsavam, Unjal Seva on these three day. While on last day on Thursday, Tiruppavada Seva-the weekly Seva was also cancelled in connection with this three day annual festival.</p>
+</div>    
+    
+<div id="tabs-5">
+     <h2 class="favourite-place-card-heading2">Rathasapthami</h2>
+        <p class="favourite-place-card-description">Rathasapthami is a significant Hindu festival celebrated at the Sri Padmavathi Temple in Tiruchanur, Andhra Pradesh, and it is dedicated to Goddess Padmavathi, an incarnation of Goddess Lakshmi and the divine consort of Lord Venkateswara (Lord Balaji). This festival holds immense religious and cultural importance.<br>
+Rathasapthami, also known as Surya Jayanti, is celebrated to honor the Sun God, Surya, and seek his blessings for a prosperous and healthy life. It is believed that on this day, the Sun God moves his chariot drawn by seven horses. Devotees offer their prayers to the Sun God for his benevolence.
+All these Seven Vahanams procession took place before Sunset.
+
+Those seven vahanams are namely, Ashwa Vahanam, Chandra prabha vahanam, Garuda Vahanam, Hanumantha Vahanam and Simha vahanam’s procession held at Tiruchanoor Sri Padmavathi Amma Vari Temple on the day of Rathasapthami ( Surya Jayanthi).
+
+Tiruchanoor four maada streets is filled with Devotees who rush to watch Vahanams, as it is auspicious day.
+The direct bus is available from tirupati bus station to tiruchanur. It takes 15 mins from Tirupati bus station.
+
+Crowd will be high during this time. Darshan might be around 1 hour.</p>
+</div>    
+    
+<div id="tabs-6">
+     <h2 class="favourite-place-card-heading2">Pavithrotsava</h2>
+        <p class="favourite-place-card-description">Pavithrotsava, an important three-day festival at the Tirumala temple, begins on August 09. Pavithrotsava will be observed at Tirumala. This is one of the important festivals at Tirumala with a hoary antiquity, agamic sanction, puranic reference and high religious significance. Basically during this utsava, the presiding deity and the other deities in the hilltown and in the temple itself are adorned with pavithras (sanctified garlands of thread). Homa is performed, vedic mantras are chanted, puranas are read.
+
+This utsava is penitential as well as propitiatory and its main objective is to get rid of the evil that might have been caused due to omissions and commissions in the performance of various rituals throughout the year. That is why this utsava is referred to severally as “Dosha Nivaarana,” “Sarva Yajna Phalapradha,” “Sarva Doshopasamana,” “Sarva Tushtikara,” “Sarvakaamapradha, “Sarvalokasantida.”
+
+Pavithrotsava,as the very word indicates is derived from the combination of two words “pavithra and utsava.” Pavithra is a means towards purification. That is why a darba grass worn in a loose knot round the finger usually heralds the performance of any religious rite. The Jayakhya Samhita explains that pavithra protects one from evil.
+
+The puranas also prescribe “Pavithra Aaropana,” i.e., adorning the deity with pavithra, as an integral part of the rituals during the worship of Lord Vishnu. </p>
+</div>           
+</div>
+     <h1 class="favourite-place-card-heading1">Location</h1>
+        <p class="favourite-place-card-description">
+     The famous sri padmavathi Temple situated in Alamelumangapuram, Tiruchanoor, 5 Km From Tirumala, Tiruchanur, Andhra Pradesh, 517503</p>
+    <h1 class="favourite-place-card-heading1">Gallery</h1>
+    <div class="container" style="width: 600px; height: 400px;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://padmavathitravels.com/assets/images/padmavathi-temple-tour-package-from-chennai.png" style="width: 600px; height: 400px;  padding: 25px;">
+  </div>
+
+  <div class="mySlides" >
+    <div class="numbertext">2 / 6</div>
+    <img src="https://2.bp.blogspot.com/-AxR4vgntniM/VIosyWckmgI/AAAAAAAAE8c/SiA1FCz1knc/s1600/chandraprabha-vahanam-copy.jpg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://assets.thehansindia.com/hansindia-bucket/8883_c.jpg" style="width: 600px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://www.hindudayashankar.com/wp-content/uploads/2023/05/SRI-PAT-VASANTHOTSAVAM-1-1-200x300.jpg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://1.bp.blogspot.com/-qFd7qU1fOJc/XjaIVIovcfI/AAAAAAAMmXc/F1sLItdFOf0_rlIHL0MCvwNHJ3NwCnIywCLcBGAsYHQ/s1600/SRI%2BPAT%2B_%2BSURYAPRABHA%2BVAHANAM%2B-%2B%25281%2529.jpg" style="width: 500px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://1.bp.blogspot.com/-rjY73oRbSGI/YQQdhGcdc9I/AAAAAAAAoRM/dcawTAg1DkwdT5WJP5pfaolzTEYZkISUwCLcBGAsYHQ/s1280/176986376_1399195177098740_284396266697385380_n.jpg" style="width: 500px; height: 400px;">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+      </div>
+    </div>
+  </div>
+  <div id="sectionTajMahalDetailedView"></div>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

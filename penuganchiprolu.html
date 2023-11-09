@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<style>
+.favourite-places-bg-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  background-image: url("https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=");
+  background-size: cover;
+  padding: 20px;
+}
+.favourite-place-card-heading {
+  color: #ff0000;
+  font-family: "Times New Roman";
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading1 {
+  color: #DAA520;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading2 {
+  color: #808000;
+  font-family: "Times New Roman";
+  font-size: 17px;
+  font-weight: normal;
+  text-align: start;
+}
+.favourite-place-card-container {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin: 15px;
+  /* Arrange elements horizontally */
+   /* Center vertically */
+}
+
+.favourite-place-card-image {
+  width: 150px;
+  height: 150px;
+  float: left;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.favourite-place-card-description {
+  padding: 10px;
+  margin-left-right: 10px 10px;
+  color: #05070a;
+  font-family: "Times New Roman";
+  font-size: 16px;
+
+  /* Allow content to grow and take available space */
+  
+}
+
+.favourite-places-heading {
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 7px; /* Add margin at the bottom of the heading */
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="favourite-places-bg-container">
+    <div class="favourite-place-card-container">
+    <h1 class="favourite-place-card-heading"> Sri Lakshmi Tirupatamma Temple</h1>
+        <p class="favourite-place-card-description">
+          Penuganchiprolu Previously Called "Pedakanchi" . There Are More Than 101 Temples In Penuganchprolu. Penuganchiprolu Is One Of The Great Piligrim Places In Andhra Pradesh. The Temple Named Sri Lakshmi Tirupatamma Devastanam Has The Great Goddess "Sri Laxmi Tirupathamma, Gopaiah". Every Year, More Than Ten Lacs Of Piligrams Visit ThIs Temple. Thousands Of Women Carry Bonalu (Recipi Cooked With Rice, Milk And Jaggery) As Offering For The Temple Fair (Tirunallu) At Penuganchiprolu. Prime Attraction Is The Sri Tirupatamma Ammavari Temple.</p>
+      <img
+        src="https://atmanirvana.com/wp-content/uploads/2020/10/66646496_2576219709078264_7333678605202882560_n.jpg"
+        style="width: 300px; height: 300px;  object-fit: fill;  border: 3px solid #f03a3a;  border-radius: 15%; margin: 20px; float: left; align-items: center; "
+      />
+        <h1 class="favourite-place-card-heading1">History Of Sri Lakshmi Tirupatamma Temple</h1>
+        <p class="favourite-place-card-description">
+            Sri Lakshmi Tirupatamma temple that was built as far back as in the seventeenth century is attracting streams of devotees round the year and is one of
+            the very famous temples in the Krishna district of Andhra Pradesh, whose phenomenal growth started from the date of her immolation (Agnipravesham).Every
+            year lakhs of devotees visit the temple seeking Sri Lakshmi Tirupatamma talli(Mother/Goddess) blessings during Tirunallu (Ritual celebrated during the 
+            months of March and April). Penuganchiprolu is a village located in the Krishna district of Andhra-Pradesh state, India. This Place is in the border of
+            the Krishna District and Khammam District.Sri Tirupatamba is worshipped in the Penuganchiprolu Temple as the image of "Shakti". She preached virtuous 
+            qualities of life to her devotees and made her, abode at Penuganchiprolu.Mudiraj Papamamba was her principal devotee and therefore, her family members
+            are ordained to perform poojas and other sevas in the Temple.According to the folklore there were 101 Temples existing in ancient times and therefore,
+            it was deemed as Pedakanchipuram. Muniyeru (a stream) flowing, along the Temple and it was said to be created with the spiritual power of Moudgalya 
+            Maharishi and hence it was named after him.According to temple assistant executive office Meda Gopala Rao the annual income had touched Rs.11+ crore.
+            A diamond crown worth Rs.2 crore had been presented to the deity. The temple authorities have also deposited Rs.5 crore with the government for the 
+            acquisition of 16 acres adjacent to the temple for developing more amenities for pilgrim.</p>       
+          <h1 class="favourite-place-card-heading1">Festivals celebrated in Sri Lakshmi Tirupatamma Temple</h1>
+         <div id="tabs">
+    <ul>
+        <br>
+        <li><a href="#tabs-1">Sri Krishna Janmashtami</a></li>
+        <li><a href="#tabs-2">Deepavali</a></li>
+        <li><a href="#tabs-3">Vaikunta Ekadasi</a></li>
+        <li><a href="#tabs-4">Vasanthotsavam</a></li>
+    </ul>
+    <div id="tabs-1">
+        <h2 class="favourite-place-card-heading2">Sri Krishna Janmashtami</h2>
+         <p  class="favourite-place-card-description">This is the birthday of Lord Krishna. It is celebrated for nine days starting from Sravana Bahula Ashtami.<br />
+          1st Day - Vratam<br>
+          2nd Day - Utti Festival from 7 pm at the Holy Garden.<br />
+          3rd Day up to 9th Day - The function will be celebrated from 6pm onwards<br />
+          Prasadams will be distributed to the devotees
+         </p>
+    </div>
+    <div id="tabs-2">
+        <h2 class="favourite-place-card-heading2">Deepavali</h2>
+         <p  class="favourite-place-card-description">On Asweeyuja Bahula Chaturdasi & Amavasya the Lord is taken in procession to the holy garden. An idol of Narakasura is made & burnt as sign of victory of good over evil. On the next day i.e on Diwali day the temple will be illuminated with special lights.
+         </p>
+    </div>
+    <div id="tabs-3">
+        <h2 class="favourite-place-card-heading2">Vaikunta Ekadasi</h2>
+         <p  class="favourite-place-card-description"> On this day the Vaikunta Dwara, the way to Heaven (North door) is opened. Devotees entering the temple through that dwara. Temple is treated as Heaven that day (auspiciously). Special Vratam and Annadanam will be performed on that day.
+         </p>
+    </div>
+    <div id="tabs-4">
+        <h2 class="favourite-place-card-heading2">Vasanthotsavam</h2>
+         <p  class="favourite-place-card-description">  Vasanthotsavam festival is a celebration of the beauty of nature, symbolizing the rejuvenation and blossoming of life in the season of spring. It is an auspicious time for devotees to express their devotion and seek the divine grace of Lord Venkateswara.
+         </p>
+    </div>
+</div>
+     <h1 class="favourite-place-card-heading1">Location</h1>
+        <p class="favourite-place-card-description">
+          The Sri Lakshmi Tirupatamma Devastanam in Penuganchiprolu is located in the Krishna district of Andhra Pradesh, India. It is situated near the Krishna River.</p>
+    <h1 class="favourite-place-card-heading1">Gallery</h1>
+    <div class="container" style="width: 600px; height: 400px;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://utsav.gov.in/public/uploads/event_cover_image/event_1813/16923415281724521031.jpg" style="width: 600px; height: 400px;  padding: 25px;">
+  </div>
+
+  <div class="mySlides" >
+    <div class="numbertext">2 / 6</div>
+    <img src="data:image/jpeg;base64,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" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVvfkfdv-CNMBEOm8rV9_msn_tRTWYQdfkHA&usqp=CAU" style="width: 600px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNfYeKxJNUhJo1tHR3gfzpMPW8fYuDDCrx4Q&usqp=CAU" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZNDhfY-CekrgQTfwwJaN6JODrQ4qbnhybuw&usqp=CAU" style="width: 500px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHEsgERYIUFSAQmh9kZNQDHwsM0lLcbDDVmA&usqp=CAU" style="width: 500px; height: 400px;">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+      </div>
+    </div>
+  </div>
+  <div id="sectionTajMahalDetailedView"></div>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

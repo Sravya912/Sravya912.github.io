@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<style>
+.favourite-places-bg-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  background-image: url("https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=");
+  background-size: cover;
+  padding: 20px;
+}
+.favourite-place-card-heading {
+  color: #ff0000;
+  font-family: "Times New Roman";
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading1 {
+  color: #DAA520;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+.favourite-place-card-heading2 {
+  color: #808000;
+  font-family: "Times New Roman";
+  font-size: 17px;
+  font-weight: normal;
+  text-align: start;
+}
+.favourite-place-card-container {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  margin: 15px;
+  /* Arrange elements horizontally */
+   /* Center vertically */
+}
+
+.favourite-place-card-image {
+  width: 150px;
+  height: 150px;
+  float: left;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.favourite-place-card-description {
+  padding: 10px;
+  margin-left-right: 10px 10px;
+  color: #05070a;
+  font-family: "Times New Roman";
+  font-size: 16px;
+
+  /* Allow content to grow and take available space */
+  
+}
+
+.favourite-places-heading {
+  padding: 2px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 7px; /* Add margin at the bottom of the heading */
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="favourite-places-bg-container">
+    <div class="favourite-place-card-container">
+    <h1 class="favourite-place-card-heading">Srisailam Mallikarjuna Swamy Temple</h1>
+        <p class="favourite-place-card-description">
+    Srisailam is one of the eighteen Shakti Peethas, with Bhramaramba radiating her divine presence.Srisaila Kshetra, one of the
+     most prominent Shaiva Kshetras, holds a sacred significance in the worship of Lord Shiva. Within the framework of Sanatana 
+     Dharma, worshipping the Shiva Linga as a symbol of the primordial and intermediate Parabrahma has been a time-honored tradition.
+     The Rishis and the Munis have regarded the Shivalinga as the embodiment of Jyoti, signifying the divine light of the cosmos.
+     Srisailam Kshetra boasts a unique tradition where, during the puja's commencement, it is mandatory to declare the direction 
+     in which one is offering worship to the Lord. This distinctive practice serves as a testament to the authenticity of this 
+     sacred place. As the Krishnaveni Patalganga flows northward, paying homage to the three mountains—Brahmagiri, Vishnugiri,
+     and Rudragiri—this location is blessed with a unique geographical setting..</p>
+      <img
+        src="https://jyotirlingatemples.in/images/mallikarjun/mallikarjun_4.jpg"
+        style="width: 300px; height: 300px;  object-fit: fill;  border: 3px solid #f03a3a;  border-radius: 15%; margin: 20px; float: left; align-items: center; "
+      />
+        <h1 class="favourite-place-card-heading1">History Of Srisailam Mallikarjuna Swamy Temple</h1>
+        <p class="favourite-place-card-description">
+     Srisailam in ancient scriptures belonging to the 3rd century C.E. Satakarni in scriptures describing lands under his rule 
+     mentioned Srisailam as Chakora Shetagiri. Post the Satavahanas, the Ikshvaku dynasty ruled Andhra.India is home to twelve
+     Jyotirlinga Kshetras, with Srisailam being celebrated as 'Srishaile Mallikarjunam' in the hymn beginning with 'Saurashtre
+     Somanathancha...'. During Devi Navratri, it is considered highly sacred for the Shakteyas to worship Bhramaramba as a 
+     manifestation of Adiparashakti. A well-known legend tells of Adi Shakti defeating the demon Arun, who had assumed the form 
+     of a buffalo, in the battle by creating delusional rathankrits. Srisailam is one of the eighteen Shakti Peethas, with 
+     Bhramaramba radiating her divine presence.Srisailam, a hallowed site where both the Jyotirlinga and Shakti Peetha coexist, 
+     shines as a beacon of light. Devotees consider it the life essence of the Vedas. In the Chaturvedas, Yajurveda is considered
+     the heart, with the Rudra Namaka mantras within it regarded as its core. The 'Namasshivaya' Panchakshari mantra in this Veda
+     represents the heart of the Namaka, and the name of Shiva, akin to a beautiful soul, is seen as the essence of all the Vedas. 
+     The scriptures affirm that a pilgrimage to Srisaila, where devotees chant this powerful name with every step, is tantamount 
+     to a Vedic revelation.Srisailam, spanning across a vast area of 147,456 square kilometers, is believed to house forty-four 
+     rivers, sixty crore Tirtharajas, the Tapovana region of Parashara and Bharadwaja sages, the holy Chandra Kunda and Suryukunda
+     Pushkarinas, mystical herbs, numerous Lingas, and miraculous remedies. The route leading to Srisaila Mallanna Sannidhi, beyond
+     Girula Baru, offers a delightful journey. Devotees revere the Sahasra Lingams consecrated by Sitarams, the Sadyojati Lingams,
+     and the Panchapadava Lingams erected by the Pandavas, all symbolizing mythological grandeur.
+     The exact date of Srisailam's discovery remains elusive, but it has been praised in the Ashtadasa Puranas and Indian epics like
+     the Ramayana. References to this region can be found in Sanskrit, Andhra, Kannada, and Marathi texts. Poets in these languages
+     have extolled the glory of Srigiri, narrating the enchanting evening dance of Vyomakesa and Haimayata Samanognja. Skandapurana's 
+     Srisaila Khandam, with its sixty-four chapters, elaborates on the greatness of this place. Adi Shankara, deeply impressed by 
+     the serenity of this location, engaged in penance here, composing the 'Sivananda Lahari' and offering prayers to Mallikarjuna. 
+     The Sri Chakra was consecrated in the presence of Bhramaramba, enhancing the spiritual aura of Srisailam.
+     According to the 'Guru Charitra,' a devotee named Tanta was fortunate to receive divine grace when he visited Srisailam.
+     Holding the feet of Nrisimha Saraswati Swami while discussing the greatness of this place, he was blessed. Devotees believe 
+     that Swamiji's avatar concluded at Patalganga, from where he incarnated in Kadalivana.
+     In different ages, notable figures and deities have graced Srisailam. In the Krita Yuga, it is believed that Hiranyakashipu 
+     performed worship at Srisailam. In the Treta Yuga, after Lord Rama vanquished Ravana, he visited this place to atone for the
+     sin of Brahmahatya, installed and worshipped the Sahasralinga. According to popular legend, the Pandavas, during their exile 
+     in the Dwapara Yuga, also visited this hill and performed Linga Pratishtha.Skandapurana recounts the emergence of Srisaila, 
+     with the sage Silatha having two sons named Nandi and Parvathu. Both were ardent devotees of Lord Shiva. Their unwavering 
+     devotion led to a divine vision of Lord Shiva, who granted Nandi's request to become his vehicle. Nandi became Nandika, 
+     Shiva's divine vehicle. Parvathu, the second son, transformed into a hill as a testament to his desire to be eternally with 
+     Uma Maheswara. This hill, named Sriparvatam initially, gradually became Srisailam over time.
+     Srisailam is also linked to the story of Mallikarjuna and the devout Lingayat, Chandraketu. Chandraketu was a king who ruled 
+     with Brahmagiri as his capital on the banks of the Krishna River. His daughter, Chandramati, was born after years of 
+     childlessness. Upon returning from a victorious journey, Chandraketu's lustful desire led him to a conflict within his family.
+     A tragic series of events followed, and Chandramati prayed to Lord Shiva to save her. As a result, Chandraketu was transformed 
+     into a green rock by Lord Shiva, a rock that rolled from the cave's entrance. Emerging from the cave, Chandramati witnessed a 
+     divine sight of a Shivalinga anointed with milk flowing from a cow's udder.</p>       
+          <h1 class="favourite-place-card-heading1">Festivals celebrated in Srisailam Mallikarjuna Swamy Temple</h1>
+         <div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Shravan Utsav</a></li>
+        <li><a href="#tabs-2">Mahashivratri Utsav</a></li>
+        <li><a href="#tabs-3">Ugadi Utsav</a></li>
+        <li><a href="#tabs-4">Dasara Celebrations</a></li>
+        <li><a href="#tabs-5">Kumbhothsavams</a></li>
+        
+
+    </ul>
+    <div id="tabs-1">
+    <h2 class="favourite-place-card-heading2">Shravan Utsav</h2>
+     <p  class="favourite-place-card-description">Held in the Shravan month of the Hindu calendar. Several pujas are being offered during this Utsav. The main attraction is the continuous bhajan singing which takes place all round the clock through the entire Shravan month. </p>
+    </div>
+    <div id="tabs-2">
+        <h2 class="favourite-place-card-heading2">Mahashivratri Utsav</h2>
+         <p  class="favourite-place-card-description">
+Held in the Magh month of the Hindu Calendar usually in the month of February/ March. It is a festival of seven days. On the Mahashivrathri day which falls on 29 th day of Magh month there are grand celebrations. The events are Anjuarpana, Dhwajarohana, Vahana Sevas to God amd Goddess. Lingodhbhavakala, Maharudhabhisekam to God, Pagalanakarana, Kalyanaothsavam and Radhothsavamas.
+ </p>
+    </div>
+    <div id="tabs-3">
+     <h2 class="favourite-place-card-heading2">Ugadi Utsav</h2>
+        <p  class="favourite-place-card-description">
+The celebration starts 3 days before the Ugadi Day, the new year day for the people from Karnataka and Andhra Pradesh, which falls mostly during the month of March or April. It lasts for the period of 5 days with lot of pilgrims from neighbouring states attending the festival.</p>
+    </div>
+<div id="tabs-4">
+     <h2 class="favourite-place-card-heading2">Dasara Celebrations</h2>
+       <p class="favourite-place-card-description">
+Held in the Asvina month of the Hindu Calendar usually in the month of September/ Ocrober. It is a festival of nine days. In this festival Goddess Bhramaramba Devi is worshipped. The events are Chandiyagam, Rudrayagam, Navadurga alankaras to Goddess and Vahana Sevas to God and Goddess. </p>
+</div>    
+    
+<div id="tabs-5">
+     <h2 class="favourite-place-card-heading2">Kumbhothsavams</h2>
+        <p class="favourite-place-card-description">
+Kumbhothsavam is held in month day of Chaitram, the beginning month of Hindu Calendar. It is the most important festival at Srisailam temple and is dedicated to Goddess Bhramaramba Devi.</p>
+</div>    
+      
+</div>
+     <h1 class="favourite-place-card-heading1">Location</h1>
+        <p class="favourite-place-card-description">
+      Srisailam is located in the Kurnool district of the Indian state of Andhra Pradesh. It is at a distance of 180 Kilometers from 
+     Kurnool with coordinates 16.0833 North, 78.8667 East. Srisailam is located amidst dense Nallamalla forests with the Krishna River
+     touching all its three directional points.</p>
+    <h1 class="favourite-place-card-heading1">Gallery</h1>
+    <div class="container" style="width: 600px; height: 400px;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://jyotirlingatemples.in/images/mallikarjun/mallikarjun_1.jpg" style="width: 600px; height: 400px;  padding: 25px;">
+  </div>
+
+  <div class="mySlides" >
+    <div class="numbertext">2 / 6</div>
+    <img src="https://jyotirlingatemples.in/images/mallikarjun/mallikarjun_2.jpg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://jyotirlingatemples.in/images/mallikarjun/mallikarjun_3.jpg" style="width: 600px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-5i1ltlh26neka5e88ctds9so05-20190226052124.Medi.jpeg" style="width: 600px; height: 400px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://images.newindianexpress.com/uploads/user/imagelibrary/2021/1/14/w900X450/Bhogi.jpg?w=400&dpr=2.6" style="width: 500px; height: 400px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/b2/20/43/mallikarjuna-swamy-temple.jpg?w=1200&h=1200&s=1" style="width: 500px; height: 400px;">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+      </div>
+    </div>
+  </div>
+  <div id="sectionTajMahalDetailedView"></div>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>
